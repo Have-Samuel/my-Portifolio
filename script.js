@@ -1,13 +1,13 @@
 const menuIcon = document.querySelector('.hamburger-menu');
-const navbar = document.querySelector('.bar');
+const bar = document.querySelector('.bar .navbar');
 
-const list = document.querySelectorAll('.nav-list > li');
+const list = document.querySelectorAll('.nav-list');
 list.forEach((element) => {
   element.addEventListener('click', () => {
-    navbar.classList.toggle('change');
+    bar.classList.toggle('change');
   });
 });
 
 menuIcon.addEventListener('click', () => {
-  navbar.classList.toggle('change');
+  bar.classList.toggle('change');
 });
