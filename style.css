@@ -269,3 +269,22 @@ hr {
   text-decoration: none;
   margin-left: 1.5rem;
 }
+
+.description {
+  height: 386px;
+  width: 327px;
+  background: linear-gradient(180.45deg, rgba(48, 47, 47, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/Grounding.png');
+}
+
+.description h4 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  padding: 5.3rem 1rem 0.75rem 1rem;
+}
+
+.description p {}
