@@ -341,7 +341,9 @@ hr {
 }
 
 .aboutme-section {
-  background: #1c1a19;
+  background: url('./images/Group-aboutme.png'), #1c1a19;
+  background-repeat: no-repeat;
+  background-position: bottom 60% right;
   margin-top: 7.5rem;
 }
 
@@ -355,3 +357,35 @@ hr {
   color: rgba(255, 107, 0, 1);
   padding: 7.5rem 1.5rem 1.5rem 1.5rem;
 }
+
+.aboutme p {
+  height: 148px;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+  color: rgba(244, 245, 247, 1);
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.aboutme button {
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 26px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+}
+
+.vector-line {
+  width: 80%;
+  margin: 13rem 1rem 8rem 2.3rem;
+  border: 1px solid #928c8c;
+}
+
