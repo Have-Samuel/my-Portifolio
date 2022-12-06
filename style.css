@@ -227,6 +227,45 @@ hr {
   padding: 0 1.5rem 0.75rem 1.5rem;
 }
 
-.language-container ul {
+/* .language-container {
   display: flex;
+} */
+
+.language-container__units {
+  display: flex;
+  padding: 7px;
+  margin: 8px;
+  border-radius: 4px;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.language-container__unit {
+  padding: 7px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #091e42;
+}
+
+.language-container__unit:hover,
+.language-container__unit:active {
+  border-color: #c2a597;
+  color: #6881ad;
+}
+
+.storie-Btn {
+  height: 48px;
+  width: 124px;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: #ff6b00;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
 }
