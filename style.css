@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Montserrat:wght@500&family=Poppins:wght@200&family=Roboto:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Crete+Round&family=Dosis:wght@300;400&family=Inter:wght@400;600;800&family=Montserrat:wght@700&family=Poppins:wght@200;600&family=Quicksand:wght@700&family=Roboto:wght@700&family=Space+Mono:ital@1&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   font-family: 'Dosis', sans-serif;
@@ -128,4 +134,41 @@ ul {
 .nav-link:hover::after,
 .nav-link:hover::before {
   transform: scaleX(1);
+}
+
+.headline {
+  height: 590px;
+  width: 375px;
+  padding: 120px 24px 120px 24px;
+  background-color: #1c1a19;
+}
+
+.headline h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+}
+
+.headline h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff5e1;
+}
+
+.headline p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
 }

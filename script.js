@@ -1,7 +1,7 @@
+const bar = document.querySelector('.bar');
 const menuIcon = document.querySelector('.hamburger-menu');
-const bar = document.querySelector('.bar .navbar');
 
-const list = document.querySelectorAll('.nav-list');
+const list = document.querySelectorAll('.nav-item');
 list.forEach((element) => {
   element.addEventListener('click', () => {
     bar.classList.toggle('change');
