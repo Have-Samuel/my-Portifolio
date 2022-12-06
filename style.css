@@ -226,3 +226,7 @@ hr {
   color: rgba(9, 30, 66, 1);
   padding: 0 1.5rem 0.75rem 1.5rem;
 }
+
+.language-container ul {
+  display: flex;
+}
