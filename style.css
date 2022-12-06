@@ -191,7 +191,7 @@ body {
   padding: 5.5rem 1rem 1.5rem 1.5rem;
 }
 
-hr {
+.lining {
   width: 80%;
   color: rgba(33, 33, 33, 1);
   margin: 0.5rem 1.5rem;
@@ -343,7 +343,7 @@ hr {
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
   background-repeat: no-repeat;
-  background-position: bottom 60% right;
+  background-position: bottom 71% right;
   margin-top: 7.5rem;
 }
 
@@ -385,7 +385,145 @@ hr {
 
 .vector-line {
   width: 80%;
-  margin: 13rem 1rem 8rem 2.3rem;
+  margin: 14rem 1rem 8rem 2.3rem;
   border: 1px solid #928c8c;
 }
 
+.aboutme-Languages {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-languages {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.diagonal-img {
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 1.5rem;
+}
+
+.languages-1 {
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.languages-1:hover {
+  text-decoration: underline #87ceeb;
+  cursor: pointer;
+}
+
+.aboutme-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutme-item {
+  padding: 10px 4px;
+}
+
+.aboutme-item:hover {
+  text-decoration: underline #87ceeb;
+  cursor: pointer;
+}
+
+.aboutme-frameworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.rectangle-img {
+  height: 30px;
+  margin: 8px;
+  margin-right: 1.5rem;
+}
+
+.rectangle-img:hover {
+  border: 1px solid #87ceeb;
+}
+
+.frameworks {
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.frameworks-1:hover {
+  text-decoration: underline #87ceeb;
+}
+
+.aboutme-frameworks-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutme-frame-item {
+  padding: 10px 4px;
+}
+
+.aboutme-frame-item:hover {
+  text-decoration: underline #87ceeb;
+}
+
+.circle-img {
+  height: 30px;
+  margin: 0 1rem 0 0.5rem;
+}
+
+.skills {
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 2.5rem;
+}
+
+.skills:hover {
+  text-decoration: underline #87ceeb;
+  cursor: pointer;
+}
+
+.aboutme-skills-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutme-skills-item {
+  padding: 10px 4px;
+}
+
+.aboutme-skills-item:hover {
+  text-decoration: underline #87ceeb;
+}
