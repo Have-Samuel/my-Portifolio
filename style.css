@@ -140,7 +140,9 @@ ul {
   height: 590px;
   width: 375px;
   padding: 120px 24px 120px 24px;
-  background-color: #1c1a19;
+  background: url("images/Group.png"), rgb(28, 26, 25);
+  background-repeat: no-repeat;
+  background-position: 100% 115%;
 }
 
 .headline h1 {
@@ -171,4 +173,11 @@ ul {
   letter-spacing: 0;
   text-align: left;
   color: #fff;
+}
+
+.unit-items {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 30px;
+  padding: 1rem 9.44rem 7.5rem 0;
 }
