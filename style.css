@@ -271,6 +271,13 @@ body {
   margin-left: 1.5rem;
 }
 
+.storie-Btn:hover,
+.storie-Btn:active {
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+}
+
 .description {
   height: 386px;
   width: 327px;
@@ -382,6 +389,13 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 8px;
+}
+
+.aboutme button:hover,
+.aboutmebutton:active {
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
 }
 
 .vector-line {
@@ -541,3 +555,68 @@ body {
   margin: 5rem 1.5rem 4.6rem 1.5rem;
 }
 
+form {
+  margin: 0 auto;
+}
+
+.input-contact {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  margin: 33px 40px 0 40px;
+  border: none;
+  padding-bottom: 1rem;
+}
+
+.new-lining {
+  width: 80%;
+  color: rgba(33, 33, 33, 1);
+  margin: 0.5rem 1.5rem;
+}
+
+.contact-section textarea {
+  background-color: #fbf8f7;
+  margin: 24px;
+  padding: 12px;
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.contact-button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  background-color: #ff6b00;
+  border: none;
+  width: 40%;
+  color: #fff;
+  margin: 0 7rem 8.5rem 5.8rem;
+  border-radius: 8px;
+}
+
+.contact-button:hover,
+.contact-button:active {
+  cursor: pointer;
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.contact-section ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 0;
+  gap: 1rem;
+}
