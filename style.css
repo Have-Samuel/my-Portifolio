@@ -345,6 +345,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 71% right;
   margin-top: 7.5rem;
+  height: 105rem;
 }
 
 .aboutme h2 {
@@ -527,3 +528,16 @@ body {
 .aboutme-skills-item:hover {
   text-decoration: underline #87ceeb;
 }
+
+.contact-section__form p {
+  width: 330px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #172b4d;
+  margin: 5rem 1.5rem 4.6rem 1.5rem;
+}
+
