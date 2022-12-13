@@ -347,6 +347,13 @@ body {
   margin-left: 1.5rem;
 }
 
+.card-Btn:hover,
+.card-Btn:active {
+  color: #e4752b;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+}
+
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
   background-repeat: no-repeat;
