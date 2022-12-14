@@ -45,7 +45,7 @@ body {
   z-index: 10;
 }
 
-.bar .logo {
+.logo {
   color: white;
   text-decoration: none;
   font-weight: 700;
@@ -72,6 +72,11 @@ body {
     top: 0;
     transform: rotate(0);
   }
+}
+
+.logo:hover,
+.logo:active {
+  color: #e4752b;
 }
 
 .change {
@@ -674,15 +679,19 @@ form {
     align-items: center;
   } */
 
+  .bar {
+    position: fixed;
+    width: 1440px;
+    height: 10vh;
+  }
+
   .desktop-nav {
     display: flex;
-    height: 10vh;
     justify-content: center;
     align-items: center;
   }
 
   .desktop-nav_items {
-    margin: 12px 0 12px 24px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -692,6 +701,7 @@ form {
     transition-property: margin;
     transition-duration: 500ms;
     display: flex;
+    /* justify-content: flex-end; */
   }
 
   .desktop_link {
