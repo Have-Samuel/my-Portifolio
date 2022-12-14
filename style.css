@@ -746,6 +746,16 @@ form {
     padding-top: 2rem;
   }
 
+  .presentation p {
+    width: 39%;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
   .unit-items {
     display: flex;
     flex-direction: column;
@@ -753,5 +763,30 @@ form {
     margin-top: 12rem;
     gap: 1rem;
     padding: 0 6rem 0 1rem;
+  }
+
+  .recent-works {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headers h2 {
+    width: 25%;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .lining {
+    align-items: center;
+    margin-top: 5rem;
+    width: 71%;
   }
 }
