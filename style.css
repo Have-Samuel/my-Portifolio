@@ -730,4 +730,8 @@ form {
     height: 870px;
     width: 1440px;
   }
+
+  .presentation {
+    order: 1;
+  }
 }
