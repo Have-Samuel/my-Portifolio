@@ -641,24 +641,25 @@ form {
   body {
     width: 1440px;
   }
-
+/* 
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-  }
+  } */
+
+  /* .container {
+    display: flex;
+  } */
 
   .desktop-nav {
     display: flex;
     justify-content: flex-end;
-    
   }
 
   .desktop-nav_items {
     display: flex;
     flex-direction: row;
-    
   }
 
   .bar {
