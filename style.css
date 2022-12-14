@@ -658,7 +658,7 @@ form {
   display: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1300px) {
   .hamburger-menu {
     display: none;
   }
@@ -683,6 +683,7 @@ form {
     position: fixed;
     width: 1440px;
     height: 10vh;
+    padding: 0 8rem;
   }
 
   .desktop-nav {
@@ -722,7 +723,11 @@ form {
     background-color: #e4752b;
   }
 
-  /* .bar {
-    height: 10vh;
-  } */
+  .headline {
+    background: url('./images/Illustration-header.png'), rgba(28, 26, 25, 1);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 870px;
+    width: 1440px;
+  }
 }
