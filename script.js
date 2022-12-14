@@ -1,4 +1,4 @@
-const bar = document.querySelector('.bar');
+const bar = document.getElementById('mobile_navbar');
 const menuIcon = document.querySelector('.hamburger-menu');
 
 const list = document.querySelectorAll('.nav-item');
