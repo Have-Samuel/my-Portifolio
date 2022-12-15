@@ -671,7 +671,7 @@ form {
     position: fixed;
     width: 1440px;
     height: 10vh;
-    padding: 0 10rem;
+    padding: 0 12rem;
   }
 
   .desktop-nav {
@@ -714,7 +714,7 @@ form {
     background: url('./images/Illustration-header.png'), rgba(28, 26, 25, 1);
     background-repeat: no-repeat;
     background-position: right;
-    height: 870px;
+    height: 800px;
     width: 1440px;
     display: flex;
     flex-direction: row-reverse;
@@ -729,6 +729,11 @@ form {
 
   .presentation h1 {
     padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .presentation h2 {
+    padding-left: 2rem;
   }
 
   .presentation p {
@@ -739,6 +744,7 @@ form {
     line-height: 32px;
     letter-spacing: 0;
     text-align: left;
+    padding-left: 2rem;
   }
 
   .unit-items {
@@ -746,7 +752,7 @@ form {
     flex-direction: column;
     margin-top: 12rem;
     gap: 1rem;
-    padding: 0 6rem 0 1rem;
+    padding: 0 3rem 0 4rem;
   }
 
   .recent-works {
@@ -760,34 +766,30 @@ form {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    margin: auto 4rem;
-  }
-
-  .headers h2 {
-    width: 30%;
-    vertical-align: middle;
-    align-items: center;
+    margin: auto 6.4rem;
   }
 
   .lining {
     align-items: center;
     margin-top: 5rem;
-    width: 70%;
+    width: 52%;
   }
 
   .recent-works_placeholder {
     display: flex;
-    margin: 3rem;
+    margin: 4rem 9rem;
+    gap: 3rem;
+    width: 60%;
   }
 
   .placeholder {
     padding: 0;
     max-width: 684px;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
 
   .placeholder:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
     transition-duration: 250ms;
     cursor: pointer;
   }
@@ -818,17 +820,17 @@ form {
 
   .section-cards {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    gap: 1rem;
   }
 
   .card {
-    width: 388px;
+    width: 349px;
     height: 26.25rem;
-    margin: 1.5rem;
   }
 
   .card-Btn {
@@ -917,4 +919,40 @@ form {
     background-size: cover;
   }
 
+  .aboutme-section {
+    background: url('./images/Group.png'), #1c1a19;
+    background-position: right top 19%;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 566px; */
+    padding: 8.1rem 0 8.1rem 6.5rem;
+    /* margin: 0 0 0 8.9rem; */
+  }
+
+  .aboutme h2 {
+    width: 566px;
+    font-family: 'Crete Round', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .aboutme p {
+    height: 148px;
+    width: 566px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .aboutme button {
+    width: 171px;
+    padding: 12px;
+  }
 }
