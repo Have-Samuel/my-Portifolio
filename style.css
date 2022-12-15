@@ -41,7 +41,6 @@ body {
   cursor: pointer;
   padding: 1.9rem;
   background-color: #3c3a39;
-  /* height: 10vh; */
   z-index: 10;
 }
 
@@ -86,9 +85,6 @@ body {
 .hamburger-menu {
   width: 35px;
   height: 25px;
-  /* position: fixed;
-  top: 30px;
-  right: 50px; */
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -101,10 +97,6 @@ body {
   background-color: #fff;
   transition: all 0.8s;
 }
-
-/* ul {
-  list-style: none;
-} */
 
 .change .line-1 {
   transform: rotateZ(-405deg) translate(-8px, 8px);
@@ -228,11 +220,6 @@ body {
   padding: 3.6rem 1.5rem 0 1.5rem;
 }
 
-/* .project-info {
-  display: flex;
-  flex-direction: column;
-} */
-
 .stories {
   display: flex;
   font-family: "Crete Round", serif;
@@ -253,10 +240,6 @@ body {
   color: rgba(9, 30, 66, 1);
   padding: 0 1.5rem 0.75rem 1.5rem;
 }
-
-/* .language-container {
-  display: flex;
-} */
 
 .language-container__units {
   display: flex;
@@ -293,7 +276,6 @@ body {
   background: #ff6b00;
   color: #fff;
   text-decoration: none;
-  /* margin-left: 1.5rem; */
   margin: 4rem 0  1rem 1.5rem;
 }
 
@@ -620,10 +602,6 @@ form {
 }
 
 .contact-button {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -667,18 +645,6 @@ form {
     width: 1440px;
   }
 
-  /* header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
-
-  /* .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
-
   .bar {
     position: fixed;
     width: 1440px;
@@ -702,7 +668,6 @@ form {
     transition-property: margin;
     transition-duration: 500ms;
     display: flex;
-    /* justify-content: flex-end; */
   }
 
   .desktop_link {
@@ -734,8 +699,6 @@ form {
   }
 
   .presentation {
-    /* height: 739px; */
-    /* width: 566px; */
     padding: 6rem 0;
     display: flex;
     flex-direction: column;
@@ -759,7 +722,6 @@ form {
   .unit-items {
     display: flex;
     flex-direction: column;
-    /* margin-left: 3rem; */
     margin-top: 12rem;
     gap: 1rem;
     padding: 0 6rem 0 1rem;
@@ -793,9 +755,7 @@ form {
 
   .recent-works_placeholder {
     display: flex;
-    /* width: 1156px; */
     margin: 3rem;
-    /* align-items: center; */
   }
 
   .placeholder {
@@ -810,12 +770,7 @@ form {
     cursor: pointer;
   }
 
-  /* .recent-work_desc {
-    width: 448px;
-  } */
-
   .recent-work_desc h3 {
-    /* height: 48px; */
     min-width: 327px;
     width: 448px;
     font-family: 'Crete Round', serif;
