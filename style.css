@@ -827,7 +827,7 @@ form {
 
   .card {
     width: 388px;
-    height: 24.25rem;
+    height: 26.25rem;
     margin: 1.5rem;
   }
 
@@ -854,7 +854,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 24.25rem;
+    height: 26.25rem;
   }
 
   #content {
@@ -862,11 +862,16 @@ form {
   }
 
   .card > h4 {
-    margin-left: 14px;
+    margin-left: 1rem;
+    margin-top: 5rem;
   }
 
   .card > p {
-    margin-left: 14px;
+    margin-left: 1rem;
+  }
+
+  .card-items {
+    margin-left: 2rem;
   }
 
   #one {
