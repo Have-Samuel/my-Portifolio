@@ -243,7 +243,7 @@ body {
   padding: 1.5rem 1.5rem 0.75rem 1.5rem;
 }
 
-.section2-paragraph {
+.paragraph {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -264,7 +264,6 @@ body {
   margin: 8px;
   border-radius: 4px;
   flex-direction: row;
-  cursor: pointer;
 }
 
 .language-container__unit {
@@ -276,12 +275,12 @@ body {
 
 .language-container__unit:hover,
 .language-container__unit:active {
-  border-color: #c2a597;
-  color: #6881ad;
+  border-color: #ff6b00;
+  color: #ff6b00;
+  cursor: pointer;
 }
 
-.storie-Btn {
-  height: 48px;
+.story-Btn {
   width: 124px;
   border-radius: 8px;
   padding: 12px;
@@ -294,7 +293,8 @@ body {
   background: #ff6b00;
   color: #fff;
   text-decoration: none;
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
+  margin: 4rem 0  1rem 1.5rem;
 }
 
 .storie-Btn:hover,
@@ -793,33 +793,31 @@ form {
 
   .recent-works_placeholder {
     display: flex;
-    width: 1156px;
+    /* width: 1156px; */
     margin: 3rem;
     /* align-items: center; */
   }
 
   .placeholder {
     padding: 0;
-    min-width: 327px;
     max-width: 684px;
-    min-height: 237px;
-    max-height: 448px;
     margin-left: 3rem;
   }
 
   .placeholder:hover {
     transform: scale(1.01);
     transition-duration: 250ms;
+    cursor: pointer;
   }
 
-  .recent-work_desc {
+  /* .recent-work_desc {
     width: 448px;
-  }
+  } */
 
   .recent-work_desc h3 {
     /* height: 48px; */
     min-width: 327px;
-    /* width: 448px; */
+    width: 448px;
     font-family: 'Crete Round', serif;
     font-size: 40px;
     font-weight: 400;
@@ -828,19 +826,16 @@ form {
     color: #091e42;
   }
 
-  .recent-work_desc p {
-    min-width: 327px;
-    height: auto;
-    /* margin: 0 24px 12px 24px; */
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #091e42;
+  .paragraph {
+    width: 410px;
   }
 
   .stories {
     padding: 0 0 1rem 1.5rem;
+  }
+
+  .stories .story-Btn {
+    padding: 13rem;
+    margin-left: 1.5rem;
   }
 }
