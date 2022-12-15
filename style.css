@@ -838,4 +838,20 @@ form {
     padding: 13rem;
     margin-left: 1.5rem;
   }
+
+  .section-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    width: 388px;
+  }
+
+  .card-Btn {
+    width: 388px;
+  }
 }
