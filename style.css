@@ -618,6 +618,7 @@ form {
   font-weight: 400;
   letter-spacing: 0;
   text-align: left;
+  border: none;
 }
 
 .contact-button {
@@ -920,11 +921,7 @@ form {
     background: url('./images/Group.png'), #1c1a19;
     background-position: right top 19%;
     background-repeat: no-repeat;
-    /* display: flex;
-    flex-direction: column; */
-    /* width: 566px; */
     padding: 8.1rem 0 8.1rem 9.5rem;
-    /* margin: 0 0 0 8.9rem; */
   }
 
   .aboutme h2 {
@@ -955,12 +952,10 @@ form {
 
   .language-section {
     display: flex;
-    gap: 13rem;
+    gap: 12rem;
   }
 
   .aboutme-Languages {
-    /* display: flex;
-    flex-direction: row; */
     display: block;
     margin-left: 5.4rem;
   }
@@ -996,8 +991,46 @@ form {
     margin-top: 2rem;
   }
 
-  /* .header-languages img {
-    padding-right: 10px;
-    padding-top: 14px;
-  } */
+  form {
+    margin: 4rem auto;
+  }
+
+  .contact-section__form {
+    display: flex;
+    margin: 6.1rem 10.5rem;
+    /* gap: 3rem; */
+  }
+
+  .contact-section__form textarea {
+    width: 92%;
+  }
+
+  .contact-section__form p {
+    width: 915px;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .new-lining {
+    width: 92%;
+  }
+
+  .contact-button {
+    width: 7.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-left: 1.5rem;
+  }
+
+  .contact-section ul {
+    gap: 2rem;
+  }
 }
