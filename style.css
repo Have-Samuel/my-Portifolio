@@ -505,10 +505,6 @@ body {
   margin-right: 1.5rem;
 }
 
-.rectangle-img:hover {
-  border: 1px solid #87ceeb;
-}
-
 .frameworks {
   font-family: "inter", sans-serif;
   font-size: 32px;
@@ -516,8 +512,9 @@ body {
   color: #fff;
 }
 
-.frameworks-1:hover {
+.frameworks:hover {
   text-decoration: underline #87ceeb;
+  cursor: pointer;
 }
 
 .aboutme-frameworks-items {
