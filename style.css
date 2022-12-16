@@ -958,12 +958,49 @@ form {
 
   .language-section {
     display: flex;
-    gap: 8rem;
+    gap: 13rem;
   }
 
   .aboutme-Languages {
-    display: flex;
-    flex-direction: column;
-    
+    /* display: flex;
+    flex-direction: row; */
+    display: block;
+    margin-left: 5.4rem;
   }
+
+  .header-languages {
+    display: flex;
+    margin-left: -70px;
+  }
+
+  .header-languages p {
+    margin-left: 0;
+  }
+
+  .aboutme-items {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: -3rem;
+  }
+
+  .aboutme-frameworks-items {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: -3rem;
+  }
+
+  .aboutme-skills-items {
+    justify-content: center;
+    align-items: center;
+    margin-left: -3rem;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* .header-languages img {
+    padding-right: 10px;
+    padding-top: 14px;
+  } */
 }
