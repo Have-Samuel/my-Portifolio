@@ -926,7 +926,7 @@ form {
     /* display: flex;
     flex-direction: column; */
     /* width: 566px; */
-    padding: 8.1rem 0 8.1rem 6.5rem;
+    padding: 8.1rem 0 8.1rem 9.5rem;
     /* margin: 0 0 0 8.9rem; */
   }
 
@@ -954,5 +954,16 @@ form {
   .aboutme button {
     width: 171px;
     padding: 12px;
+  }
+
+  .language-section {
+    display: flex;
+    gap: 8rem;
+  }
+
+  .aboutme-Languages {
+    display: flex;
+    flex-direction: column;
+    
   }
 }
