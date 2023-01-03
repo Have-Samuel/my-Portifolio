@@ -731,6 +731,10 @@ form {
     color: #e4752b;
   }
 
+  .envelope {
+    margin-left: 1.5rem;
+  }
+
   .envelope:hover,
   .envelope:active {
     transform: scale(1.3);
