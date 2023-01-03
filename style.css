@@ -287,9 +287,6 @@ body {
 }
 
 .card {
-  /* height: 400px; */
-  /* width: 327px; */
-  /* margin: 1.5rem 1.5rem 0 1.5rem; */
   margin-top: 1.5rem;
   background: linear-gradient(180.45deg, rgba(48, 47, 47, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/Grounding.png');
   background-repeat: no-repeat;
@@ -349,7 +346,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   height: 58px;
-  /* width: 327px; */
   color: #fff;
   cursor: pointer;
   border: none;
@@ -368,7 +364,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   height: 58px;
-  /* width: 327px; */
   color: #fff;
   cursor: pointer;
   border: none;
