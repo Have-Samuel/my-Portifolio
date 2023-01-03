@@ -1,13 +1,13 @@
-const bar = document.getElementById('mobile_navbar');
 const menuIcon = document.querySelector('.hamburger-menu');
+const navbar = document.querySelector('.navbar');
 
-const list = document.querySelectorAll('.nav-item');
+const list = document.querySelectorAll('.nav-list > li');
 list.forEach((element) => {
   element.addEventListener('click', () => {
-    bar.classList.toggle('change');
+    navbar.classList.toggle('change');
   });
 });
 
 menuIcon.addEventListener('click', () => {
-  bar.classList.toggle('change');
+  navbar.classList.toggle('change');
 });
