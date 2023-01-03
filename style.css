@@ -31,7 +31,7 @@ body {
 }
 
 .navbar {
-  width: 375px;
+  width: 100%;
   font-family: 'inter', sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -459,9 +459,19 @@ body {
   align-items: center;
 }
 
-.header-languages {
+.header-languages1 {
   display: flex;
-  margin-left: 3rem;
+  margin-left: 5rem;
+}
+
+.header-languages2 {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.header-languages3 {
+  display: flex;
+  margin-left: 8rem;
 }
 
 .diagonal-img {
@@ -560,7 +570,6 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
-  margin-left: 2.5rem;
 }
 
 .skills:hover {
