@@ -292,6 +292,8 @@ body {
   /* margin: 1.5rem 1.5rem 0 1.5rem; */
   margin-top: 1.5rem;
   background: linear-gradient(180.45deg, rgba(48, 47, 47, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/Grounding.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card h4 {
@@ -863,7 +865,7 @@ form {
 
   .card > h4 {
     margin-left: 1rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 
   .card > p {
