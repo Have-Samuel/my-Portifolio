@@ -401,7 +401,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 71% right;
   margin-top: 7.5rem;
-  height: 105rem;
+  /* height: 105rem; */
 }
 
 .aboutme h2 {
@@ -453,39 +453,56 @@ body {
   border: 1px solid #928c8c;
 }
 
-/* .language-section {
+.language-section {
   display: flex;
   flex-direction: column;
-} */
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: center; */
+}
 
 .aboutme-Languages {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* display: block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .header-languages1 {
   display: flex;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+  /* margin-left: 3rem; */
+  /* margin-top: 2rem; */
+  /* flex-direction: row;
+  
+  justify-content: center; */
+  /* 
+   */
 }
 
 .header-languages2 {
   display: flex;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  /* gap: 1rem; */
+  align-items: center;
+  /* margin-left: 3rem;
+  margin-top: 2rem; */
 }
 
 .header-languages3 {
   display: flex;
-  margin-left: 6rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+  /* margin-left: 6rem;
+  margin-top: 2rem; */
 }
 
 .diagonal-img {
-  height: 40px;
-  margin-left: 10px;
-  margin-right: 1.5rem;
+  height: 25px;
+  /* margin-left: 10px;
+  margin-right: 1.5rem; */
 }
 
 .languages-1 {
@@ -503,7 +520,7 @@ body {
 .aboutme-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   font-family: "inter", sans-serif;
   color: #fff;
@@ -511,6 +528,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 1rem;
 }
 
 .aboutme-item {
@@ -530,7 +548,7 @@ body {
 }
 
 .rectangle-img {
-  height: 30px;
+  height: 20px;
   margin: 8px;
   margin-right: 1.5rem;
 }
@@ -550,7 +568,7 @@ body {
 .aboutme-frameworks-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-family: "inter", sans-serif;
   color: #fff;
@@ -558,6 +576,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 1rem;
 }
 
 .aboutme-frame-item {
@@ -569,8 +588,8 @@ body {
 }
 
 .circle-img {
-  height: 30px;
-  margin: 0 1rem 0 0.5rem;
+  height: 21px;
+  /* margin: 0 1rem 0 0.5rem; */
 }
 
 .skills {
@@ -588,14 +607,15 @@ body {
 .aboutme-skills-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-family: "inter", sans-serif;
   color: #fff;
   font-size: 20px;
   list-style: none;
-  margin: 0;
+  margin: 0 0 7.5rem 0;
   padding: 0;
+  gap: 1rem;
 }
 
 .aboutme-skills-item {
