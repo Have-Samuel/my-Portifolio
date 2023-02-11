@@ -1019,7 +1019,6 @@ form {
   .contact-section__form {
     display: flex;
     margin: 6.1rem 10.5rem;
-    /* gap: 3rem; */
   }
 
   .contact-section__form textarea {
