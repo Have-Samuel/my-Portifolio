@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 1.9rem;
+  padding: 1.9rem 3rem;
   background-color: #3c3a39;
 }
 
@@ -174,10 +174,12 @@ body {
   padding: 120px 24px 120px 24px;
   background: url("./images/first-pic.png"), rgb(28, 26, 25);
   background-repeat: no-repeat;
-  background-position: 100% 115%;
+  background-position: 100% 112%;
+  height: 690px;
 }
 
 .headline h1 {
+  margin-top: 7rem;
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -219,13 +221,17 @@ body {
   font-family: 'Crete Round', serif;
   font-size: 40px;
   font-weight: 400;
-  padding: 5.5rem 1rem 1.5rem 1.5rem;
+  /* padding: 5.5rem 1rem 1.5rem 1.5rem;*/
+  padding: 5rem 0 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lining {
   width: 80%;
   color: rgba(33, 33, 33, 1);
-  margin: 0.5rem 1.5rem;
+  margin: 1rem 2rem;
 }
 
 .placeholder {
@@ -290,10 +296,11 @@ body {
   color: #fff;
   text-decoration: none;
   margin: 4rem 0  1rem 1.5rem;
+  border-style: none;
 }
 
-.storie-Btn:hover,
-.storie-Btn:active {
+.story-Btn:hover,
+.story-Btn:active {
   color: #ff6b00;
   background-color: #fff;
   border: 1px solid #ff6b00;
