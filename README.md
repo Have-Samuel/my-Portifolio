@@ -39,11 +39,15 @@ Make any necessary editing.
 ## Authors
 
 👤 **Have-Samuel**
-- GitHub: (https://github.com/Have-Samuel)
-- Twitter: (https://twitter.com/home)
-- LinkedIn: (https://www.linkedin.com/feed/)
+- GitHub: [Have ](https://github.com/Have-Samuel)
+- Twitter: [samie@1](https://twitter.com/home)
+- LinkedIn: [Have Samuel](https://www.linkedin.com/feed/)
 
 ## 🤝 Contributing
+GitHub: 
+Twitter: @twitterhandle
+LinkedIn: LinkedIn
+
 
 Contributions, issues, and feature requests are welcome!
 
