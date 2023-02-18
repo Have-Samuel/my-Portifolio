@@ -120,6 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  justify-content: space-evenly;
 }
 
 .nav-item {
@@ -684,14 +685,12 @@ form {
   }
 
   body {
-    /* overflow: hidden; */
     width: 100%;
     margin: 0 auto;
   }
 
-  .bar {
-    position: fixed;
-    width: 100%;
+  .container {
+    padding: 1rem 9rem;
   }
 
   .desktop-nav {
@@ -707,8 +706,8 @@ form {
     font-size: 18px;
     line-height: 24px;
     height: 24px;
-    transition-property: margin;
-    transition-duration: 500ms;
+    /* transition-property: margin;
+    transition-duration: 500ms; */
     display: flex;
   }
 
@@ -786,14 +785,14 @@ form {
 
   .recent-works_placeholder {
     display: flex;
-    margin: 4rem 9rem;
-    gap: 3rem;
-    width: 60%;
+    margin: 8rem 5rem;
+    /* gap: 3rem; */
+    /* width: 80%; */
   }
 
   .placeholder {
     padding: 0;
-    max-width: 684px;
+    width: 100%;
     margin-left: 2.5rem;
   }
 
