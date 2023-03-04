@@ -255,35 +255,40 @@
         <div class="contact-section__form">
           <p>
             I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
+            like to chat please get in touch. action="https://formspree.io/f/mgebwvlw" 
           </p>
-          <form action="https://formspree.io/f/mgebwvlw" method="post">
-            <input
-              class="input-contact second-names"
+          
+          <form class="form js-form" method="post">
+            <div class="form__field">
+              <input
+              class="input-contact second-names js-name-input"
               type="text"
               name="name-input"
               placeholder="Full name"
               maxlength="20"
             />
+            <div class="form__error"></div>
+            </div>
             <hr class="new-lining" />
             <input
-              class="input-contact"
+              class="input-contact js-email-input"
               type="email"
               name="email-input"
-              id="email"
               placeholder="Email address"
             />
-            <br />
-            <hr class="new-lining" />
+            <div class="form__error"></div>
+            <hr class="new-lining" /> 
             <textarea
+            class="input-contact js-textarea"
               name="comments-input"
               id="comments"
               cols="100"
               rows="5"
               maxlength="500"
-              placeholder="Enter text here"
-            ></textarea>
-            <input type="submit" name="submit" class="contact-button" value="Get in touch" />
+              placeholder="Enter text here">
+            </textarea>
+            <div class="form__error"></div>
+            <button type="submit" name="button" class="contact-button">Get in touch</button>
           </form>
         </div>
         <hr class="last-line" />
