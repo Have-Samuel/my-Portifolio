@@ -14,16 +14,23 @@
     "pug": "2.0.0-beta11"
   },
   "hintConfig": {
-        "connector": {
-            "name": "local"
-        },
-        "formatters": ["stylish"],
-        "parsers": ["parserName"],
-        "hints": {
-            "hint1": "error",
-            "hint2": "warning",
-            "hint3": "off"
-        },
-        "hintsTimeout": 120000
-    }
+    "connector": {
+      "name": "local"
+    },
+    "formatters": [
+      "stylish"
+    ],
+    "parsers": [
+      "parserName"
+    ],
+    "hints": {
+      "hint1": "error",
+      "hint2": "warning",
+      "hint3": "off"
+    },
+    "hintsTimeout": 120000
+  },
+  "devDependencies": {
+    "hint": "^7.1.5"
+  }
 }
