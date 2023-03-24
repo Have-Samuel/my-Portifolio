@@ -616,6 +616,11 @@ form {
   margin: 0 auto;
 }
 
+.form__field--error {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
 .input-contact {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -623,6 +628,7 @@ form {
   margin: 33px 40px 0 40px;
   border: none;
   padding-bottom: 1rem;
+  width: 80%;
 }
 
 .new-lining {
