@@ -12,13 +12,12 @@
 body {
   margin: 0 auto;
   font-family: 'Dosis', sans-serif;
-  /* width: 100%; */
   overflow-x: hidden;
 }
 
 .container {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -713,8 +712,8 @@ form {
     font-size: 18px;
     line-height: 24px;
     height: 24px;
-    /* transition-property: margin;
-    transition-duration: 500ms; */
+    transition-property: margin;
+    transition-duration: 500ms;
     display: flex;
   }
 
@@ -794,16 +793,12 @@ form {
   .recent-works_placeholder {
     display: flex;
     margin: 8rem 5rem;
-    /* z-index: -1; */
-    /* gap: 3rem; */
-    /* width: 80%; */
   }
 
   .placeholder {
     padding: 0;
     width: 100%;
     margin-left: 2.5rem;
-    /* z-index: -1; */
   }
 
   .placeholder:hover {
@@ -964,12 +959,12 @@ form {
   .language-section {
     display: flex;
     flex-direction: row;
-    gap: 12rem;
+    gap: 13rem;
   }
 
   .aboutme-Languages {
     display: block;
-    margin-left: 2.4rem;
+    margin-left: 2rem;
   }
 
   .header-languages {
@@ -978,7 +973,8 @@ form {
   }
 
   .header-languages1 {
-    margin-left: 5rem;
+    margin-left: 2.5rem;
+    margin-top: -4rem;
   }
 
   .header-languages2 {
@@ -987,26 +983,29 @@ form {
 
   .header-languages3 {
     margin-left: 1rem;
+    margin-top: 6rem;
   }
 
   .aboutme-items {
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
+    align-items: flex-start;
     margin-top: 2rem;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
 
   .aboutme-frameworks-items {
     justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
     margin-top: 2rem;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
 
   .aboutme-skills-items {
     justify-content: center;
-    align-items: center;
-    margin-left: 3rem;
+    align-items: flex-start;
+    margin-left: 2rem;
     gap: 2rem;
     margin-top: 2rem;
   }
