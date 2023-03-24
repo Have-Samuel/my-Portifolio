@@ -21,7 +21,7 @@
                 <a href="#aboutme" class="desktop_link">About</a>
               </li>
               <li class="desktop-nav_item">
-                <a href="#contact-section_nav" class="desktop_link">Contact</a>
+                <a href="#contact-me" class="desktop_link">Contact</a>
               </li>
               <li class="desktop-nav-item">
                 <a href="#"><img class="envelope" src="images/envelope.svg" alt="Envelope icon"></a>
@@ -61,14 +61,17 @@
             <li class="unit-item">
               <a href="https://github.com/Have-Samuel"><img src="images/Github1.png" alt="github" /></a>
             </li>
-            <li class="unit-item">
-              <a href="https://www.linkedin.com/in/have-samuel/"><img src="images/linkedIn.png" alt="images-inner" /></a>
+            <li>
+              <a href="https://angel.co/u/have-samuel"><img src="images/Peace1.png" alt="AngelList" /></a>
             </li>
             <li class="unit-item">
-              <a href="https://twitter.com/samhave1"><img src="images/Twitter1.png" alt="twitter-icon" /></a>
+              <a href="https://www.linkedin.com/in/have-samuel/"><img src="images/linkedIn.png" alt="LinkedIn" /></a>
             </li>
             <li class="unit-item">
-              <a href="https://samiehave9@gmail.com"><img src="images/email.png" alt="mail-icon" /></a>
+              <a href="https://twitter.com/samhave1"><img src="images/Twitter1.png" alt="Twitter" /></a>
+            </li>
+            <li class="unit-item">
+              <a href="https://samiehave9@gmail.com"><img src="images/email.png" alt="Email" /></a>
             </li>
           </ul>
       </section>
@@ -94,8 +97,8 @@
               </p>
               <div class="language-container">
                 <ul class="language-container__units">
-                  <li class="language-container__unit">css</li>
-                  <li class="language-container__unit">html</li>
+                  <li class="language-container__unit">Javascript</li>
+                  <li class="language-container__unit">ReactJS</li>
                   <li class="language-container__unit">Ruby</li>
                   <li class="language-container__unit">Rails</li>
                 </ul>
@@ -226,7 +229,7 @@
               <p class="frameworks">Frameworks</p>
             </div>
             <ul class="aboutme-frameworks-items">
-              <li class="aboutme-frame-item">Bootstrap</li>
+              <li class="aboutme-frame-item">React.js</li>
               <li class="aboutme-frame-item">Ruby on Rails</li>
               <li class="aboutme-frame-item">RSPec</li>
               <li class="aboutme-frame-item">CapyBara</li>
@@ -239,11 +242,11 @@
               <p class="skills">Skills</p>
             </div>
             <ul class="aboutme-skills-items">
-              <li class="aboutme-skills-item">Codekit</li>
-              <li class="aboutme-skills-item">Github</li>
-              <li class="aboutme-skills-item">Codepen</li>
-              <li class="aboutme-skills-item">Gitlab</li>
-              <li class="aboutme-skills-item">Terminal</li>
+              <li class="aboutme-skills-item">Data Management</li>
+              <li class="aboutme-skills-item">Version Control</li>
+              <li class="aboutme-skills-item">CLI</li>
+              <li class="aboutme-skills-item">API Design</li>
+              <li class="aboutme-skills-item">Web Development</li>
             </ul>
           </div>
         </div>
@@ -254,37 +257,42 @@
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
           </p>
-          <form action="https://formspree.io/f/mgebwvlw" method="post">
-            <input
-              class="input-contact second-names"
+          
+          <form class="form js-form" method="post">
+            <div class="form__field">
+              <input
+              class="input-contact second-names js-name-input"
               type="text"
-              name="full_name"
+              name="name-input"
               placeholder="Full name"
               maxlength="20"
-              required
             />
+            <div class="form__error"></div>
+            </div>
             <hr class="new-lining" />
-            <input
-              class="input-contact"
+            <div class="form__field">
+              <input
+              class="input-contact js-email-input"
               type="email"
-              name="email"
-              id="email"
-              placeholder="Email address"
-              required
-            />
-            <br />
+              name="email-input"
+              placeholder="Email address" />
+            <div class="form__error"></div>
+            </div>
             <hr class="new-lining" />
-            <textarea
-              name="comments"
+            <div class="form__field">
+              <textarea
+              class="input-contact js-textarea"
+              name="comments-input"
               id="comments"
               cols="100"
               rows="5"
               maxlength="500"
-              placeholder="Enter text here"
-              required
-            ></textarea>
-            <input type="button" class="contact-button" value="Get in touch" />
-          </form>
+              placeholder="Enter text here">
+            </textarea>
+            <div class="form__error"></div>
+            </div>
+            <button type="submit" name="button" class="contact-button">Get in touch</button>
+          </form>    
         </div>
         <hr class="last-line" />
         <ul class="items">

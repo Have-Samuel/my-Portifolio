@@ -3,8 +3,11 @@
 # Portfolio: Mobile version 
 
 > This is my fast Portfolio page.
-
-![screenshot](./portfolio.png)
+![screenshot](./images/Image1.png)
+![screenshot](./images/Image2.png)
+![screenshot](./images/Image3.png)
+![screenshot](./images/Image4.png)
+![screenshot](./images/Image5.png)
 
 This is the screenshot of my page
 
@@ -39,9 +42,10 @@ Make any necessary editing.
 ## Authors
 
 👤 **Have-Samuel**
-- GitHub: [Have ](https://github.com/Have-Samuel)
+
+- GitHub: [Have](https://github.com/Have-Samuel)
 - Twitter: [samie@1](https://twitter.com/home)
-- LinkedIn: [Have Samuel](https://www.linkedin.com/feed/)
+- LinkedIn: [Have](https://www.linkedin.com/in/have-samuel/)
 
 ## 🤝 Contributing
 GitHub: 
