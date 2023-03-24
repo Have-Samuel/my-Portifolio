@@ -628,6 +628,7 @@ form {
   border: none;
   padding-bottom: 1rem;
   width: 80%;
+  outline: none;
 }
 
 .new-lining {
@@ -999,13 +1000,13 @@ form {
     align-items: flex-start;
     gap: 2rem;
     margin-top: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
   }
 
   .aboutme-skills-items {
     justify-content: center;
     align-items: flex-start;
-    margin-left: 2rem;
+    margin-left: 1rem;
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -1019,18 +1020,21 @@ form {
     margin: 6.1rem 10.5rem;
   }
 
-  .contact-section__form textarea {
-    width: 92%;
-  }
-
   .contact-section__form p {
-    width: 915px;
+    width: 540px;
+    text-align: left;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    letter-spacing: 0;
-    text-align: left;
+    color: #000;
+  }
+
+  .contact-section__form textarea {
+    width: 92%;
+    outline: none;
+    border: 1px solid #dbd8d7;
+    border-radius: 5px;
   }
 
   .new-lining {
