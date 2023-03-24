@@ -42,11 +42,16 @@ Make any necessary editing.
 ## Authors
 
 👤 **Have-Samuel**
+
 - GitHub: [Have](https://github.com/Have-Samuel)
 - Twitter: [samie@1](https://twitter.com/home)
 - LinkedIn: [Have](https://www.linkedin.com/in/have-samuel/)
 
 ## 🤝 Contributing
+GitHub: 
+Twitter: @twitterhandle
+LinkedIn: LinkedIn
+
 
 Contributions, issues, and feature requests are welcome!
 
