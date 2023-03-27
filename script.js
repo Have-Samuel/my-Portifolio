@@ -57,14 +57,14 @@ function createProject(project, name) {
 <div class='${name}'>
     <section class='section3 section-cards empty-card'>
     <div id='post-container'>
-    <img class='card' src='${project.featuredImage}' alt='portfolio'/>
+    <img class='section3__image' src='${project.featuredImage}' alt='project image'>
     </div>
   <div class='section-paragraph'>
-    <h4 class='section3-heading'>${project.name}</h4>
-      <ul class='skills'></ul>
-  <p class='section3-paragraph'>
+    <h4 class='card'>${project.name}</h4>
+    <p class='card'>
     ${project.description}
   </p>
+      <ul class='skills'>${project.technologies}</ul>
   <ul class='section3-items'>
 ${project.technologies
     .map(
