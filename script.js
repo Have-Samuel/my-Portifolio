@@ -82,7 +82,7 @@ ${project.technologies
   return techItem;
 }
 
-for (let i = 0; i < 6; i += 1) {
+for (let i = 0; i < 2; i += 1) {
   allProjects.innerHTML += createProject(projects[0], arrClassName[i]);
 }
 
