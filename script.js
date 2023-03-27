@@ -52,7 +52,7 @@ const projects = [
 
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-function createProject(project) {
+function createProject(project, name) {
   const techItem = `
 <div class="section-cards">
     <section class='card empty-card'>
@@ -68,7 +68,7 @@ function createProject(project) {
   <ul class='section3-items'>
 ${project.technologies
     .map(
-      (tech) => `<li class='section3-item1 section3-item2 section3-item3'>${tech}</li>`
+      (tech) => `<li class='section3-item1 section3-item2 section3-item3'>${tech}</li>`,
     )
     .join('')}
 </ul>
