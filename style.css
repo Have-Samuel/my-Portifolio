@@ -295,6 +295,11 @@ body {
   border: 1px solid #ff6b00;
 }
 
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   margin-top: 1.5rem;
   background: linear-gradient(180.45deg, rgba(48, 47, 47, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/Grounding.png');
