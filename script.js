@@ -43,7 +43,7 @@ const projects = [
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or '
       + 'sign-ups required. has been the industry\'s standard',
-    featuredImage: 'images/Background.png',
+    featuredImage: './images/Background.png',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
@@ -52,19 +52,19 @@ const projects = [
 
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-function createProject(project, name) {
+function createProject(project) {
   const techItem = `
-<div class='${name}'>
-    <section class='section3 section-cards empty-card'>
+<div class="section-cards">
+    <section class='card empty-card'>
     <div id='post-container'>
-    <img class='section3__image' src='${project.featuredImage}' alt='project image'>
+    <img class='image' src='${project.featuredImage}' >
     </div>
   <div class='section-paragraph'>
-    <h4 class='card'>${project.name}</h4>
-    <p class='card'>
+    <h4 class=''>${project.name}</h4>
+    <p class=''>
     ${project.description}
   </p>
-      <ul class='skills'>${project.technologies}</ul>
+      
   <ul class='section3-items'>
 ${project.technologies
     .map(
@@ -82,7 +82,7 @@ ${project.technologies
   return techItem;
 }
 
-for (let i = 0; i < 1; i += 1) {
+for (let i = 0; i < 6; i += 1) {
   allProjects.innerHTML += createProject(projects[0], arrClassName[i]);
 }
 
