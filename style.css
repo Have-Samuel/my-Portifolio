@@ -861,11 +861,11 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto 12rem;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .card {
-    width: 30%;
+    width: 31%;
     height: 26.25rem;
   }
 
