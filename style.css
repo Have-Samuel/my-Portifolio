@@ -865,8 +865,9 @@ form {
   }
 
   .card {
-    width: 31%;
+    width: 29%;
     height: 26.25rem;
+    border-radius: 10px;
   }
 
   .card-Btn {
