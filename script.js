@@ -41,12 +41,11 @@ const projects = [
   {
     projectId: 'projectOne',
     name: 'Printing Data One',
-    description: 'A daily selection of privately personalized reads; no accounts or '
-      + 'sign-ups required. has been the industry\'s standard',
+    description: 'A daily selection of privately personalized reads; no accounts or ',
     featuredImage: './images/Background.png',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
+    // liveLink: 'https://have-samuel.github.io/portfolio1/',
+    // sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
   },
 ];
 
@@ -64,7 +63,6 @@ function createProject(project, name) {
     <p class=''>
     ${project.description}
   </p>
-      
   <ul class='section3-items'>
 ${project.technologies
     .map(
