@@ -24,6 +24,7 @@ body {
   cursor: pointer;
   padding: 1.9rem 3rem;
   background-color: #3c3a39;
+  z-index: 100;
 }
 
 .navbar {
@@ -329,7 +330,7 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .card h4 {
@@ -895,10 +896,6 @@ form {
     height: 100%;
   } */
 
-  #content {
-    display: none;
-  }
-
   .card > h4 {
     margin-left: 1rem;
     margin-top: 4rem;
@@ -910,6 +907,7 @@ form {
 
   .card-items {
     margin-left: 2rem;
+    cursor: pointer;
   }
 
   /* #one {

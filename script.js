@@ -54,7 +54,7 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 function createProject(project, name) {
   const techItem = `
 <div class="section-cards">
-    <section class='card empty-card'>
+    <section class='card'>
     <div id='post-container'>
     <img class='image' src='${project.featuredImage}' >
     </div>
