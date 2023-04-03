@@ -44,8 +44,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or ',
     featuredImage: './images/Background.png',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    // liveLink: 'https://have-samuel.github.io/portfolio1/',
-    // sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
   },
 ];
 
