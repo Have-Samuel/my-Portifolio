@@ -306,17 +306,17 @@ body {
 }
 
 .card-img {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
-  /* width: 100%;
+  left: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  max-width: 100%; */
-  /* border: 5px solid red; */
-  /* margin-top: 1.5rem;
-  margin-bottom: 2.5rem; */
+  max-width: 100%;
+  border: 5px solid red;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .card {
@@ -339,7 +339,7 @@ body {
   line-height: 44px;
   letter-spacing: 0;
   text-align: left;
-  color: #fff;
+  /* color: #fff; */
   padding: 5.3rem 1rem 0 1rem;
 }
 
@@ -351,7 +351,7 @@ body {
   letter-spacing: 0;
   text-align: left;
   padding: 0.75rem 1rem;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .card-technologies {
@@ -373,6 +373,24 @@ body {
 .card-tech-item:active {
   color: #000;
   background-color: white;
+}
+
+.card-Btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  height: 58px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background-color: #ff6b00;
+  text-decoration: none;
+  margin-top: 1.5rem;
 }
 
 .card-btn {
@@ -400,24 +418,6 @@ body {
   color: #e4752b;
   background-color: #fff;
   border: 1px solid #ff6b00;
-}
-
-.card-Btn1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "inter", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  height: 58px;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  background-color: #ff6b00;
-  text-decoration: none;
-  margin-top: 1.5rem;
 }
 
 .aboutme-section {
