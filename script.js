@@ -35,24 +35,26 @@ menuIcon.addEventListener('click', () => {
 
 // PROJECTS
 const allProjects = document.querySelector('#section-cards');
-const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-const Projects = [
+const projects = [
   {
     projectId: 'projectOne',
     featuredImage: './images/Background.png',
-    name: 'Printing Data One',
+    idx: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or ',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     button: 'See Project',
   },
 ];
 
+const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+
 // Creating a card
-function createProjects(project, name) {
+function createProjects(project, idx) {
   const projectItem = `
-  <div class='section'>
-  <section class='card'>
+  <div class='${idx}'>
+  <section class='section-cards'>
+  <div class='card-img'>
   <img src='${project.featuredImage}' alt='Project'>
   </div>
   <div class='section-paragraph'>
@@ -60,40 +62,40 @@ function createProjects(project, name) {
   <p class='card-paragraph'>${project.description}</p>
   <ul class='card-technologies'>${project.technologies.map((tech) => `<li class='card-tech-item'>${tech}</li>`).join('')}
   <ul>
-  button class='' onclick='model('.${name}')' id='${project.projectId}'>See Project</button>
-  <.div>
+  <a href="#" class="card-Btn">${project.button}</a>
+  </div>
   </section>
   </div>
   `;
   return projectItem;
 }
 
-for (let i = 0; i < 2; i += 1) {
-  allProjects.textContent += createProjects(projects[0], arrClassName[i]);
+for (let i = 0; i < 1; i += 1) {
+  allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
 const createProjectsCard = (project) => {
   const projectImgContainer = document.createElement('div');
-  projectImgContainer.classList.add('card');
+  // projectImgContainer.classList.add('card');
 
   // project Header
   const header = document.createElement('h4');
-  header.classList.add('card-header');
+  // header.classList.add('card-header');
   header.textContent = project.name;
 
   // project paragraph
   const paragraph = document.createElement('p');
-  paragraph.classList.add('card-paragraph');
+  // paragraph.classList.add('card-paragraph');
   paragraph.textContent = project.description;
 
   // project technologies
   const technologies = document.createElement('ul');
-  technologies.classList.add('card-technologies');
+  // technologies.classList.add('card-technologies');
 
   // project technologies list
   for (let i = 0; i < project.technologies.length; i += 1) {
     const techItem = document.createElement('li');
-    techItem.classList.add('card-tech-item');
+    // techItem.classList.add('card-tech-item');
     techItem.textContent = project.technologies[i];
     technologies.appendChild(techItem);
   }
@@ -108,9 +110,9 @@ const createProjectsCard = (project) => {
 
 // loop through the array of objects
 const updataProjects = (projectSection) => {
-  for (let i = 0; i < Project.length; i += 1) {
-    projectSection.append(createProjectsCard(Project[i]));
+  for (let i = 0; i < projects.length; i += 1) {
+    projectSection.append(createProjectsCard(projects[i]));
   }
 };
 
-updataProjects(Project);
+updataProjects(projects);
