@@ -49,9 +49,11 @@ const Project = [
 
 // const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-
-const projects = document.querySelector('sproject');
-
+const projects = document.querySelector('#section-cards');
+const createProjectsCard = (project) => {
+  const data = document.createElement('div');
+  data.classList.add('card');
+}
 
 
 
