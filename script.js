@@ -34,57 +34,66 @@ $form.addEventListener('submit', (e) => {
 });
 
 // PROJECTS
-const allProjects = document.querySelector('.project');
+// const allProjects = document.querySelector('#projects');
 // const popup = document.querySelector('.popup-project');
 
-const projects = [
+const Project = [
   {
     projectId: 'projectOne',
-    name: 'Printing Data One',
-    description: 'A daily selection of privately personalized reads; no accounts or '
-      + 'sign-ups required. has been the industry\'s standard',
     featuredImage: './images/Background.png',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or ',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1/tree/popup-menu',
+    button: 'See Project',
   },
 ];
 
-const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+// const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-function createProject(project, name) {
-  const techItem = `
-<div class="section-cards">
-    <section class='card empty-card'>
-    <div id='post-container'>
-    <img class='image' src='${project.featuredImage}' >
-    </div>
-  <div class='section-paragraph'>
-    <h4 class=''>${project.name}</h4>
-    <p class=''>
-    ${project.description}
-  </p>
-      
-  <ul class='section3-items'>
-${project.technologies
-    .map(
-      (tech) => `<li class='section3-item1 section3-item2 section3-item3'>${tech}</li>`,
-    )
-    .join('')}
-</ul>
-<button class=section3__project1' onclick='model('.${name}')' id='${
-  project.projectId
-}'>See Project</button>
-</div>
-</section>
-</div>
-`;
-  return techItem;
-}
+const projects = document.querySelector('#section-cards');
+const createProjectsCard = (project) => {
+  const projectImgContainer = document.createElement('div');
+  projectImgContainer.classList.add('card');
 
-for (let i = 0; i < 2; i += 1) {
-  allProjects.innerHTML += createProject(projects[0], arrClassName[i]);
-}
+  // project Header
+  const header = document.createElement('h4');
+  header.classList.add('card-header');
+  header.textContent = project.name;
+
+  // project paragraph
+  const paragraph = document.createElement('p');
+  paragraph.classList.add('card-paragraph');
+  paragraph.textContent = project.description;
+
+  // project technologies
+  const technologies = document.createElement('ul');
+  technologies.classList.add('card-technologies');
+
+  // project technologies list
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    const techItem = document.createElement('li');
+    techItem.classList.add('card-tech-item');
+    techItem.textContent = project.technologies[i];
+    technologies.appendChild(techItem);
+  }
+
+  const techItem = document.createElement('li');
+  techItem.classList.add('card-tech-item');
+  techItem.textContent = project.technologies;
+
+  technologies.appendChild(techItem);
+
+  // project href
+  const btn = document.createElement('a');
+  btn.classList.add('card-btn');
+  btn.textContent = project.button;
+
+  projectImgContainer.append(header, paragraph, technologies, btn);
+};
+
+// loop through the array of objects
+
+
 
 function model(name) {
   const languages = ['html', 'Bootstrap', 'Ruby on Rails'];
