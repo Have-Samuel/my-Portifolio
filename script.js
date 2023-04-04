@@ -44,6 +44,8 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or ',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     button: 'See Project',
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
   },
 ];
 
@@ -58,11 +60,11 @@ function createProjects(project, idx) {
   <img src='${project.featuredImage}' alt='Project'>
   </div>
   <div class='section-paragraph'>
-  <h4 class='card-header'>${project.name}</h4>
+  <h4 class='card-header'>${project.idx}</h4>
   <p class='card-paragraph'>${project.description}</p>
   <ul class='card-technologies'>${project.technologies.map((tech) => `<li class='card-tech-item'>${tech}</li>`).join('')}
   <ul>
-  <a href="#" class="card-Btn">${project.button}</a>
+  <a href='${project.liveLink}' class="card-Btn">${project.button}</a>
   </div>
   </section>
   </div>
