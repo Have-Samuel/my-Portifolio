@@ -330,7 +330,7 @@ body {
   width: 100%;
 }
 
-.card h4 {
+.card-header {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -341,7 +341,7 @@ body {
   padding: 5.3rem 1rem 0 1rem;
 }
 
-.card p {
+.card-paragraph {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -352,14 +352,14 @@ body {
   color: #fff;
 }
 
-.card-items {
+.card-technologies {
   display: flex;
   list-style: none;
   gap: 1rem;
   margin: 0.5rem 1rem;
 }
 
-.card-item {
+.card-tech-item {
   background-color: #b4b0b07e;
   padding: 8px;
   color: white;
@@ -367,13 +367,13 @@ body {
   cursor: pointer;
 }
 
-.card-item:hover,
-.card-item:active {
+.card-tech-item:hover,
+.card-tech-item:active {
   color: #000;
   background-color: white;
 }
 
-.card-Btn {
+.card-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,6 +389,15 @@ body {
   background-color: #ff6b00;
   text-decoration: none;
   margin-top: 1.5rem;
+}
+
+.card-tech-item:hover,
+.card-tech-item:active,
+.card-Btn1:hover,
+.card-Btn1:active {
+  color: #e4752b;
+  background-color: #fff;
+  border: 1px solid #ff6b00;
 }
 
 .card-Btn1 {
@@ -407,15 +416,6 @@ body {
   background-color: #ff6b00;
   text-decoration: none;
   margin-top: 1.5rem;
-}
-
-.card-Btn:hover,
-.card-Btn:active,
-.card-Btn1:hover,
-.card-Btn1:active {
-  color: #e4752b;
-  background-color: #fff;
-  border: 1px solid #ff6b00;
 }
 
 .aboutme-section {
