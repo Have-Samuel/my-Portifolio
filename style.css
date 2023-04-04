@@ -301,8 +301,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  position: relative;
+}
+
+.section3 {
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .card-img {
@@ -310,26 +320,27 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   z-index: -1;
-  max-width: 100%;
   border: 5px solid red;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   border: 3px solid #04e268;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./images/Background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card-header {

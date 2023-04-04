@@ -40,7 +40,7 @@ const projects = [
   {
     projectId: 'projectOne',
     featuredImage: './images/Background.png',
-    idx: 'Printing Data One',
+    name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or ',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     button: 'See Project',
@@ -52,19 +52,19 @@ const projects = [
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
 // Creating a card
-function createProjects(project, idx) {
+function createProjects(project, name) {
   const projectItem = `
-  <div class='${idx}'>
-  <section class='section-cards'>
-  <div class='card-img'>
-  <img src='${project.featuredImage}' alt='Project'>
+  <div class='${name}'>
+  <section class='section3 card section-cards'>
+  <div class='img-div'>
+  <img class='card-img' src='${project.featuredImage}' alt='Project'>
   </div>
   <div class='section-paragraph'>
-  <h4 class='card-header'>${project.idx}</h4>
+  <h4 class='card-header'>${project.name}</h4>
   <p class='card-paragraph'>${project.description}</p>
   <ul class='card-technologies'>${project.technologies.map((tech) => `<li class='card-tech-item'>${tech}</li>`).join('')}
   <ul>
-  <a href='${project.liveLink}' class="card-Btn">${project.button}</a>
+  <a href='${project.liveLink}' class="card-Btn1">${project.button}</a>
   </div>
   </section>
   </div>
@@ -72,13 +72,18 @@ function createProjects(project, idx) {
   return projectItem;
 }
 
-for (let i = 0; i < 1; i += 1) {
+for (let i = 0; i < 3; i += 1) {
   allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
 const createProjectsCard = (project) => {
   const projectImgContainer = document.createElement('div');
   // projectImgContainer.classList.add('card');
+
+  // image
+  const projectImage = document.createElement('img');
+  // projectImage.classList.add('card-img');
+  projectImage.src = project.featuredImage;
 
   // project Header
   const header = document.createElement('h4');
@@ -106,8 +111,8 @@ const createProjectsCard = (project) => {
   const btn = document.createElement('a');
   btn.classList.add('card-btn');
   btn.textContent = project.button;
-
-  projectImgContainer.append(header, paragraph, technologies, btn);
+  projectImage.append(header, paragraph, technologies, btn);
+  projectImgContainer.appendChild(projectImage);
 };
 
 // loop through the array of objects
