@@ -37,7 +37,7 @@ $form.addEventListener('submit', (e) => {
 const allProjects = document.querySelector('.project');
 // const popup = document.querySelector('.popup-project');
 
-const projects = [
+const allProjects = [
   {
     projectId: 'projectOne',
     name: 'Printing Data One',
@@ -51,38 +51,48 @@ const projects = [
 
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
-function createProject(project, name) {
-  const techItem = `
-<div class="section-cards">
-    <section class='card'>
-    <div id='post-container'>
-    <img class='image' src='${project.featuredImage}' >
-    </div>
-  <div class='section-paragraph'>
-    <h4 class=''>${project.name}</h4>
-    <p class=''>
-    ${project.description}
-  </p>
-  <ul class='section3-items'>
-${project.technologies
-    .map(
-      (tech) => `<li class='section3-item1 section3-item2 section3-item3'>${tech}</li>`,
-    )
-    .join('')}
-</ul>
-<button class=section3__project1' onclick='model('.${name}')' id='${
-  project.projectId
-}'>See Project</button>
-</div>
-</section>
-</div>
-`;
-  return techItem;
-}
 
-for (let i = 0; i < 2; i += 1) {
-  allProjects.innerHTML += createProject(projects[0], arrClassName[i]);
-}
+const projects = document.querySelector('.project');
+
+
+
+
+
+
+
+
+// function createProject(project, name) {
+//   const techItem = `
+// <div class="section-cards">
+//     <section class='card'>
+//     <div id='post-container'>
+//     <img class='image' src='${project.featuredImage}' >
+//     </div>
+//   <div class='section-paragraph'>
+//     <h4 class=''>${project.name}</h4>
+//     <p class=''>
+//     ${project.description}
+//   </p>
+//   <ul class='section3-items'>
+// ${project.technologies
+//     .map(
+//       (tech) => `<li class='section3-item1 section3-item2 section3-item3'>${tech}</li>`,
+//     )
+//     .join('')}
+// </ul>
+// <button class=section3__project1' onclick='model('.${name}')' id='${
+//   project.projectId
+// }'>See Project</button>
+// </div>
+// </section>
+// </div>
+// `;
+//   return techItem;
+// }
+
+// for (let i = 0; i < 2; i += 1) {
+//   allProjects.innerHTML += createProject(projects[0], arrClassName[i]);
+// }
 
 function model(name) {
   const languages = ['html', 'Bootstrap', 'Ruby on Rails'];
