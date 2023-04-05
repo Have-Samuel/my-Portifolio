@@ -46,6 +46,51 @@ const projects = [
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
     button: 'See Project',
   },
+  {
+    projectId: 'projectOne',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
+  {
+    projectId: 'projectOne',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
+  {
+    projectId: 'projectOne',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
+  {
+    projectId: 'projectOne',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
+  {
+    projectId: 'projectOne',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
 ];
 
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
@@ -54,7 +99,7 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 function createProjects(project, name) {
   const projectItem = `
   <div class='${name}'>
-  <section class='section3 card section-cards changer'>
+  <section class='section3 card'>
   <div class='img-div'>
  
   </div>
