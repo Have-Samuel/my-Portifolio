@@ -76,52 +76,28 @@ for (let i = 0; i < 3; i += 1) {
   allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
-const createProjectsCard = (project) => {
+const createProjectsCard = () => {
   const projectImgContainer = document.createElement('div');
   // projectImgContainer.classList.add('card');
 
   // image
   const projectImage = document.createElement('img');
-  // projectImage.classList.add('card-img');
-  projectImage.src = project.featuredImage;
+  // // projectImage.classList.add('card-img');
+  // projectImage.src = project.featuredImage;
 
   // project Header
   const header = document.createElement('h4');
-  // header.classList.add('card-header');
-  header.textContent = project.name;
 
   // project paragraph
   const paragraph = document.createElement('p');
-  // paragraph.classList.add('card-paragraph');
-  paragraph.textContent = project.description;
 
   // project technologies
   const technologies = document.createElement('ul');
-  // technologies.classList.add('card-technologies');
-
-  // project technologies list
-  for (let i = 0; i < project.technologies.length; i += 1) {
-    const techItem = document.createElement('li');
-    // techItem.classList.add('card-tech-item');
-    techItem.textContent = project.technologies[i];
-    technologies.appendChild(techItem);
-  }
 
   // project button
   const btn = document.createElement('a');
-  // btn.classList.add('card-btn');
-  // btn.textContent = project.button;
-  projectImage.append(header, paragraph, technologies, btn);
-  projectImgContainer.appendChild(projectImage);
+
+  projectImgContainer.append(projectImage, header, paragraph, technologies, btn);
 };
-
-// loop through the array of objects
-// const updataProjects = (projectSection) => {
-//   for (let i = 0; i < projects.length; i += 1) {
-//     projectSection.append(createProjectsCard(projects[i]));
-//   }
-// };
-
-// updataProjects();
 
 createProjectsCard();
