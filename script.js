@@ -71,7 +71,7 @@ function createProjects(project, name) {
   return projectItem;
 }
 
-for (let i = 0; i < 3; i += 1) {
+for (let i = 0; i < 6; i += 1) {
   allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
