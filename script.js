@@ -39,7 +39,6 @@ const allProjects = document.querySelector('#section-cards');
 const projects = [
   {
     projectId: 'projectOne',
-    featuredImage: 'images/Background.png',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -57,7 +56,7 @@ function createProjects(project, name) {
   <div class='${name}'>
   <section class='section3 card section-cards'>
   <div class='img-div'>
-  <img class='card-img' src='${project.featuredImage}' alt='Project'>
+ 
   </div>
   <div class='section-paragraph'>
   <h4 class='card-header'>${project.name}</h4>

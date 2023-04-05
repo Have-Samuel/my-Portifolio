@@ -316,15 +316,8 @@ body {
 } */
 
 .card-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
-  border: 5px solid red;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
   max-width: 100%;
   height: auto;
 }
@@ -874,17 +867,17 @@ form {
     padding: 0 0 1rem 1.5rem;
   }
 
-  .section-cards {
+  /* .section-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .section3 {
+  /* .section3 {
     margin: 1rem;
     border-radius: 10px;
-  }
+  } */
 
   /* .img-div {
     display: flex;
@@ -892,7 +885,7 @@ form {
     align-items: center;
     margin-bottom: 1.5rem;
   } */
-
+/*
   .card-img {
     position: absolute;
     top: 0;
@@ -1012,7 +1005,7 @@ form {
     margin: auto 12rem;
     gap: 2rem;
   }
-
+ 
   .card {
     width: 29%;
     height: 26.25rem;
@@ -1038,14 +1031,6 @@ form {
     background-color: #fff;
   }
 
-  /* .empty-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 26.25rem;
-    height: 100%;
-  } */
-
   .card > h4 {
     margin-left: 1rem;
     margin-top: 4rem;
@@ -1058,7 +1043,7 @@ form {
   .card-items {
     margin-left: 2rem;
     cursor: pointer;
-  }
+  } */
 
   /* #one {
     grid-area: one;
