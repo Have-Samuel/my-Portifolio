@@ -308,12 +308,12 @@ body {
   border-radius: 10px;
 }
 
-.img-div {
+/* .img-div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-}
+} */
 
 .card-img {
   position: absolute;
@@ -327,6 +327,16 @@ body {
   margin-bottom: 2.5rem;
   max-width: 100%;
   height: auto;
+}
+
+.section-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  margin-top: 1rem;
 }
 
 .card {
@@ -350,7 +360,7 @@ body {
   line-height: 44px;
   letter-spacing: 0;
   text-align: left;
-  /* color: #fff; */
+  color: #fff;
   padding: 5.3rem 1rem 0 1rem;
 }
 
@@ -362,14 +372,15 @@ body {
   letter-spacing: 0;
   text-align: left;
   padding: 0.75rem 1rem;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .card-technologies {
-  display: flex;
+  /* display: flex; */
+  flex-direction: column;
   list-style: none;
   gap: 1rem;
-  margin: 0.5rem 1rem;
+  /* margin: 0.5rem 1rem; */
 }
 
 .card-tech-item {
@@ -399,9 +410,10 @@ body {
   color: #fff;
   cursor: pointer;
   border: none;
-  background-color: #ff6b00;
+  background: rgba(255, 107, 0, 1);
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .card-btn {

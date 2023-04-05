@@ -122,4 +122,4 @@ const updataProjects = (projectSection) => {
   }
 };
 
-updataProjects(projects);
+updataProjects();
