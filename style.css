@@ -333,14 +333,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
   margin-top: 1rem;
 }
 
 .card {
-  border: 3px solid #04e268;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./images/Background.png');
@@ -364,13 +360,8 @@ body {
   padding: 5.3rem 1rem 0 1rem;
 }
 
-/* .card-paragraph {
-
-} */
-
 .card-technologies {
   display: flex;
-  flex-direction: column;
   list-style: none;
   gap: 1rem;
   margin: 0.5rem 1rem;

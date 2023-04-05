@@ -63,7 +63,7 @@ function createProjects(project, name) {
   <h4 class='card-header'>${project.name}</h4>
   <p class='card-paragraph'>${project.description}</p>
   <ul class='card-technologies'>${project.technologies.map((tech) => `<li class='card-tech-item'>${tech}</li>`).join('')}
-  <ul>
+  </ul>
   <a href='${project.liveLink}' class="card-Btn1">${project.button}</a>
   </div>
   </section>
@@ -72,7 +72,7 @@ function createProjects(project, name) {
   return projectItem;
 }
 
-for (let i = 0; i < 3; i += 1) {
+for (let i = 0; i < 6; i += 1) {
   allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
