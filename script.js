@@ -43,9 +43,9 @@ const projects = [
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or ',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    button: 'See Project',
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
   },
 ];
 
@@ -109,8 +109,8 @@ const createProjectsCard = (project) => {
 
   // project button
   const btn = document.createElement('a');
-  btn.classList.add('card-btn');
-  btn.textContent = project.button;
+  // btn.classList.add('card-btn');
+  // btn.textContent = project.button;
   projectImage.append(header, paragraph, technologies, btn);
   projectImgContainer.appendChild(projectImage);
 };
