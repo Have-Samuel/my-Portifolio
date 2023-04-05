@@ -39,9 +39,9 @@ const allProjects = document.querySelector('#section-cards');
 const projects = [
   {
     projectId: 'projectOne',
-    featuredImage: './images/Background.png',
+    featuredImage: 'images/Background.png',
     name: 'Printing Data One',
-    description: 'A daily selection of privately personalized reads; no accounts or ',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -72,7 +72,7 @@ function createProjects(project, name) {
   return projectItem;
 }
 
-for (let i = 0; i < 6; i += 1) {
+for (let i = 0; i < 3; i += 1) {
   allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
 }
 
@@ -116,10 +116,12 @@ const createProjectsCard = (project) => {
 };
 
 // loop through the array of objects
-const updataProjects = (projectSection) => {
-  for (let i = 0; i < projects.length; i += 1) {
-    projectSection.append(createProjectsCard(projects[i]));
-  }
-};
+// const updataProjects = (projectSection) => {
+//   for (let i = 0; i < projects.length; i += 1) {
+//     projectSection.append(createProjectsCard(projects[i]));
+//   }
+// };
 
-updataProjects();
+// updataProjects();
+
+createProjectsCard();
