@@ -874,6 +874,13 @@ form {
     align-items: center;
   } */
 
+  .changer {
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* width: 100%; */
+  }
+
   /* .section3 {
     display: flex;
     flex-direction: column;
@@ -882,44 +889,33 @@ form {
     margin: 1rem;
     border-radius: 10px;
   } */
-
-  /* .img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  } */
-
+/* 
   .card-img {
-    /* width: 100%; */
+    width: 100%;
     object-fit: cover;
-    z-index: -1;
-    border: 5px solid red;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
-    /* max-width: 100%; */
+    max-width: 100%;
     height: auto;
-  }
+  } */
 
-  .section-paragraph {
+  /* .section-paragraph {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
-  }
+  } */
 
-  /* .card {
+  .card {
+    width: 29%;
+    height: 26.25rem;
+    border-radius: 10px;
     margin-bottom: 2.5rem;
     margin-top: 2rem;
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./images/Background.png');
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./desktop-images/imagecard2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  } */
+  }
 
   .card-header {
     font-family: 'Crete Round', sans-serif;
@@ -972,24 +968,6 @@ form {
     width: 100%;
   }
 
-  /* .card-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "inter", sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    height: 58px;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    background-color: #ff6b00;
-    text-decoration: none;
-    margin-top: 1.5rem;
-  } */
-
   .card-tech-item:hover,
   .card-tech-item:active,
   .card-Btn1:hover,
@@ -998,27 +976,6 @@ form {
     background-color: #fff;
     border: 1px solid #ff6b00;
   }
-
-  .section-cards {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    margin: 1rem;
-    /* flex-wrap: nowrap; */
-    margin: auto 12rem;
-    /* gap: 2rem; */
-  }
-
-  .card {
-    width: 29%;
-    height: 26.25rem;
-    border-radius: 10px;
-  }
-
-  /* .card-Btn {
-    width: 388px;
-  } */
 
   .card-Btn1:hover,
   .card-Btn:active {

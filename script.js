@@ -54,7 +54,7 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 function createProjects(project, name) {
   const projectItem = `
   <div class='${name}'>
-  <section class='section3 card section-cards'>
+  <section class='section3 card section-cards changer'>
   <div class='img-div'>
  
   </div>
