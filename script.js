@@ -47,7 +47,7 @@ const projects = [
     button: 'See Project',
   },
   {
-    projectId: 'projectOne',
+    projectId: 'projecttwo',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -56,7 +56,7 @@ const projects = [
     button: 'See Project',
   },
   {
-    projectId: 'projectOne',
+    projectId: 'projectThree',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -65,7 +65,7 @@ const projects = [
     button: 'See Project',
   },
   {
-    projectId: 'projectOne',
+    projectId: 'projectFour',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -74,16 +74,7 @@ const projects = [
     button: 'See Project',
   },
   {
-    projectId: 'projectOne',
-    name: 'Printing Data One',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
-  },
-  {
-    projectId: 'projectOne',
+    projectId: 'projectSix',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -94,6 +85,8 @@ const projects = [
 ];
 
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+
+// Looping through the cards
 
 // Creating a card
 function createProjects(project, name) {
