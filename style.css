@@ -296,24 +296,10 @@ body {
   border: 1px solid #ff6b00;
 }
 
-/* .section-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 .section3 {
   margin: 1rem;
   border-radius: 10px;
 }
-
-/* .img-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
-} */
 
 .card-img {
   width: 100%;

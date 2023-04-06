@@ -74,6 +74,15 @@ const projects = [
     button: 'See Project',
   },
   {
+    projectId: 'projectFive',
+    name: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
+    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    button: 'See Project',
+  },
+  {
     projectId: 'projectSix',
     name: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
@@ -87,54 +96,28 @@ const projects = [
 const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
 // Looping through the cards
-
-// Creating a card
-function createProjects(project, name) {
-  const projectItem = `
-  <div class='${name}'>
-  <section class='section3 card'>
-  <div class='img-div'>
- 
-  </div>
-  <div class='section-paragraph'>
-  <h4 class='card-header'>${project.name}</h4>
-  <p class='card-paragraph'>${project.description}</p>
-  <ul class='card-technologies'>${project.technologies.map((tech) => `<li class='card-tech-item'>${tech}</li>`).join('')}
-  </ul>
-  <a href='${project.liveLink}' class="card-Btn1">${project.button}</a>
-  </div>
-  </section>
-  </div>
+for (let i = 0; i < projects.length; i += 1) {
+  const project = projects[i];
+  const projectCard = document.createElement('div');
+  projectCard.className = `card ${arrClassName[i]}`;
+  projectCard.id = project.projectId;
+  projectCard.innerHTML = `
+    <div class="card-img">
+      <img src="./images/Snapshoot.png" alt="project image">
+    </div>
+    <div class="card-content">
+      <h2 class="card-title">${project.name}</h2>
+      <p class="card-text">${project.description}</p>
+      <ul class="card-list">
+        <li class="card-list-item">${project.technologies[0]}</li>
+        <li class="card-list-item">${project.technologies[1]}</li>
+        <li class="card-list-item">${project.technologies[2]}</li>
+        <li class="card-list-item">${project.technologies[3]}</li>
+      </ul>
+      <div class="card-btn">
+        <a href="${project.liveLink}" class="card-btn-link" target="_blank">${project.button}</a>
+      </div>
+    </div>
   `;
-  return projectItem;
+  allProjects.appendChild(projectCard);
 }
-
-for (let i = 0; i < 6; i += 1) {
-  allProjects.innerHTML += createProjects(projects[0], arrClassName[i]);
-}
-
-const createProjectsCard = () => {
-  const projectImgContainer = document.createElement('div');
-  // projectImgContainer.classList.add('card');
-
-  // image
-  const projectImage = document.createElement('img');
-  // // projectImage.classList.add('card-img');
-  // projectImage.src = project.featuredImage;
-
-  // project Header
-  const header = document.createElement('h4');
-
-  // project paragraph
-  const paragraph = document.createElement('p');
-
-  // project technologies
-  const technologies = document.createElement('ul');
-
-  // project button
-  const btn = document.createElement('a');
-
-  projectImgContainer.append(projectImage, header, paragraph, technologies, btn);
-};
-
-createProjectsCard();
