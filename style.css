@@ -311,6 +311,7 @@ body {
   max-width: 100%;
   height: auto;
   position: relative;
+  background-color: magenta;
 }
 
 .image {
@@ -327,6 +328,7 @@ body {
   justify-content: center;
   margin-top: 1rem;
   /* position: absolute; */
+  /* z-index: 1; */
 }
 
 .card {
