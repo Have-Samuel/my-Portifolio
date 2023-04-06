@@ -105,12 +105,11 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 for (let i = 0; i < projects.length; i += 1) {
   const project = projects[i];
   const projectCard = document.createElement('div');
-  projectCard.className = `section3 card ${arrClassName[i]}`;
+  projectCard.className = `card, ${arrClassName[i]}`;
   // projectCard.id = project.projectId;
   projectCard.innerHTML = `
     <div class="card-img">
-      <img class="image" src='${project.featuredImage}' alt="project image">
-    
+      <img class='image' src="${project.featuredImage}" alt="project image">
     <div class="card-content">
       <h2 class="card-header">${project.name}</h2>
       <p class="card-paragraph">${project.description}</p>
