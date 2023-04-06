@@ -17,7 +17,7 @@ body {
 
 .container {
   position: fixed;
-  width: 100%;
+  width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,12 +296,12 @@ body {
   border: 1px solid #ff6b00;
 }
 
-.section-cards {
+/* .section-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .section3 {
   margin: 1rem;
@@ -316,15 +316,8 @@ body {
 } */
 
 .card-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
-  border: 5px solid red;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
   max-width: 100%;
   height: auto;
 }
@@ -358,6 +351,17 @@ body {
   text-align: left;
   color: #fff;
   padding: 5.3rem 1rem 0 1rem;
+}
+
+.card-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .card-technologies {
@@ -733,6 +737,7 @@ form {
   }
 
   .container {
+    width: 100%;
     padding: 1rem 9rem;
     z-index: 1;
   }
@@ -862,30 +867,79 @@ form {
     padding: 0 0 1rem 1.5rem;
   }
 
-  .section-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto 12rem;
-    gap: 2rem;
+  #section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    border: 1px solid red;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .card {
-    width: 29%;
-    height: 26.25rem;
     border-radius: 10px;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./desktop-images/imagecard2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .card-Btn {
-    width: 388px;
+  .card-header {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+    padding: 5.3rem 1rem 0 1rem;
   }
 
-  .card .card-Btn {
-    display: none;
+  .card-technologies {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .card-tech-item {
+    background-color: #b4b0b07e;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .card-tech-item:hover,
+  .card-tech-item:active {
+    color: #000;
+    background-color: white;
   }
 
   .card-Btn1 {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    height: 58px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: rgba(255, 107, 0, 1);
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card-tech-item:hover,
+  .card-tech-item:active,
+  .card-Btn1:hover,
+  .card-Btn1:active {
+    color: #e4752b;
+    background-color: #fff;
+    border: 1px solid #ff6b00;
   }
 
   .card-Btn1:hover,
@@ -894,71 +948,6 @@ form {
     color: #ff6b00;
     background-color: #fff;
   }
-
-  /* .empty-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 26.25rem;
-    height: 100%;
-  } */
-
-  .card > h4 {
-    margin-left: 1rem;
-    margin-top: 4rem;
-  }
-
-  .card > p {
-    margin-left: 1rem;
-  }
-
-  .card-items {
-    margin-left: 2rem;
-    cursor: pointer;
-  }
-
-  /* #one {
-    grid-area: one;
-    background: url('./images/imageCard1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
-  }
-
-  #two {
-    grid-area: two;
-    background: url('./images/imagecard2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #three {
-    grid-area: three;
-    background: url('./images/imagecard3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #four {
-    grid-area: four;
-    background: url('./images/imagecard4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #five {
-    grid-area: five;
-    background: url('./images/imagecard5.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #six {
-    grid-area: six;
-    background: url('./images/imagecard6.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
   .aboutme-section {
     background: url('./images/Group.png'), #1c1a19;
