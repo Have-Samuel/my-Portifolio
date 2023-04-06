@@ -306,11 +306,12 @@ body {
 
 .card-img {
   /* background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);   */
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   max-width: 100%;
   height: auto;
   position: relative;
+  background-color: magenta;
 }
 
 .image {
@@ -318,7 +319,9 @@ body {
   height: 100%;
   object-fit: cover;
   max-width: 100%;
-  /* position: relative; */
+  position: relative;
+  border: 2px solid red;
+  border-radius: 10px;
 }
 
 .card-content {
@@ -327,12 +330,13 @@ body {
   justify-content: center;
   margin-top: 1rem;
   /* position: absolute; */
+  /* z-index: 1; */
 }
 
 .card {
   /* margin-bottom: 2.5rem;
   margin-top: 2rem; */
-  /* background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%); */
+  /* background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./images/Background.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

@@ -99,18 +99,36 @@ const projects = [
   },
 ];
 
-const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+// const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
 
 // Looping through the cards
 for (let i = 0; i < projects.length; i += 1) {
   const project = projects[i];
   const projectCard = document.createElement('div');
-  projectCard.className = `section3 card ${arrClassName[i]}`;
+  projectCard.classList.add('card');
+
+  // image
+  const image = document.createElement('img');
+  image.classList.add('image');
+  image.src = project.featuredImage;
+  image.alt = 'project image';
+  projectCard.appendChild(image);
+
+  // card content
+  const cardContent = document.createElement('div');
+  cardContent.classList.add('card-content');
+  projectCard.appendChild(cardContent);
+
+  // card header
+  const cardHeader = document.createElement('h2');
+  cardHeader.classList.add('card-header');
+  cardHeader.textContent = project.name;
+  
+  // projectCard.className = `card, ${arrClassName[i]}`;
   // projectCard.id = project.projectId;
   projectCard.innerHTML = `
     <div class="card-img">
-      <img class="image" src='${project.featuredImage}' alt="project image">
-    
+      <img class='image' src="${project.featuredImage}" alt="project image">
     <div class="card-content">
       <h2 class="card-header">${project.name}</h2>
       <p class="card-paragraph">${project.description}</p>
