@@ -106,22 +106,22 @@ for (let i = 0; i < projects.length; i += 1) {
   const project = projects[i];
   const projectCard = document.createElement('div');
   projectCard.className = `section3 card ${arrClassName[i]}`;
-  projectCard.id = project.projectId;
+  // projectCard.id = project.projectId;
   projectCard.innerHTML = `
     <div class="card-img">
       <img class="image" src='${project.featuredImage}' alt="project image">
     </div>
     <div class="card-content">
-      <h2 class="card-title">${project.name}</h2>
-      <p class="card-text">${project.description}</p>
-      <ul class="card-list">
-        <li class="card-list-item">${project.technologies[0]}</li>
-        <li class="card-list-item">${project.technologies[1]}</li>
-        <li class="card-list-item">${project.technologies[2]}</li>
-        <li class="card-list-item">${project.technologies[3]}</li>
+      <h2 class="card-header">${project.name}</h2>
+      <p class="card-paragraph">${project.description}</p>
+      <ul class="card-technologies">
+        <li class="card-tech_item">${project.technologies[0]}</li>
+        <li class="card-tech_item">${project.technologies[1]}</li>
+        <li class="card-tech_item">${project.technologies[2]}</li>
+        <li class="card-tech_item">${project.technologies[3]}</li>
       </ul>
       <div class="card-btn">
-        <a href="${project.liveLink}" class="card-btn-link" target="_blank">${project.button}</a>
+        <a href="${project.button}" class="card-Btn1" target="_blank">${project.button}</a>
       </div>
     </div>
   `;
