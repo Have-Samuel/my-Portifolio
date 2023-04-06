@@ -40,6 +40,7 @@ const projects = [
   {
     projectId: 'projectOne',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard2.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -49,6 +50,7 @@ const projects = [
   {
     projectId: 'projecttwo',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard3.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -58,6 +60,7 @@ const projects = [
   {
     projectId: 'projectThree',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard4.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -67,6 +70,7 @@ const projects = [
   {
     projectId: 'projectFour',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard5.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -76,6 +80,7 @@ const projects = [
   {
     projectId: 'projectFive',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard6.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -85,6 +90,7 @@ const projects = [
   {
     projectId: 'projectSix',
     name: 'Printing Data One',
+    featuredImage: './desktop-images/imagecard2.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
@@ -99,11 +105,11 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 for (let i = 0; i < projects.length; i += 1) {
   const project = projects[i];
   const projectCard = document.createElement('div');
-  projectCard.className = `card ${arrClassName[i]}`;
+  projectCard.className = `section3 card ${arrClassName[i]}`;
   projectCard.id = project.projectId;
   projectCard.innerHTML = `
     <div class="card-img">
-      <img src="./images/Snapshoot.png" alt="project image">
+      <img src='${project.featuredImage}' alt="project image">
     </div>
     <div class="card-content">
       <h2 class="card-title">${project.name}</h2>
@@ -119,5 +125,6 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
     </div>
   `;
+
   allProjects.appendChild(projectCard);
 }
