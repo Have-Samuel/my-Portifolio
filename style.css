@@ -308,6 +308,10 @@ body {
   height: auto;
 }
 
+/* .image {
+  width: 50%;
+} */
+
 .section-paragraph {
   display: flex;
   flex-direction: column;

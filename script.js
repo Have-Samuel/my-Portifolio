@@ -109,7 +109,7 @@ for (let i = 0; i < projects.length; i += 1) {
   projectCard.id = project.projectId;
   projectCard.innerHTML = `
     <div class="card-img">
-      <img src='${project.featuredImage}' alt="project image">
+      <img class="image" src='${project.featuredImage}' alt="project image">
     </div>
     <div class="card-content">
       <h2 class="card-title">${project.name}</h2>
