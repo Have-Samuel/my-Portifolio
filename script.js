@@ -107,10 +107,11 @@ for (let i = 0; i < projects.length; i += 1) {
   const projectCard = document.createElement('div');
   projectCard.className = `card, ${arrClassName[i]}`;
   projectCard.id = project.projectId;
-  
+
   projectCard.innerHTML = `
     <div class="card-img">
       <img class='image' src="${project.featuredImage}" alt="project image">
+       </div>
     <div class="card-content">
       <h2 class="card-header">${project.name}</h2>
       <p class="card-paragraph">${project.description}</p>
@@ -122,7 +123,6 @@ for (let i = 0; i < projects.length; i += 1) {
       </ul>
       <div class="card-btn">
         <a href="${project.button}" class="card-Btn1" target="_blank">${project.button}</a>
-      </div>
       </div>
     </div>
   `;
