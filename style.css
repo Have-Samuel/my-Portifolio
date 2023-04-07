@@ -305,8 +305,8 @@ body {
 }
 
 .card-img {
-  /* background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);   */
-  /* width: 100%; */
+  /* background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('/images/Background.png'); */
+  width: 100%;
   object-fit: cover;
   max-width: 100%;
   height: auto;
