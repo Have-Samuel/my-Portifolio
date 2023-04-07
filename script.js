@@ -107,6 +107,7 @@ for (let i = 0; i < projects.length; i += 1) {
   const projectCard = document.createElement('div');
   projectCard.className = `card, ${arrClassName[i]}`;
   projectCard.id = project.projectId;
+  
   projectCard.innerHTML = `
     <div class="card-img">
       <img class='image' src="${project.featuredImage}" alt="project image">
