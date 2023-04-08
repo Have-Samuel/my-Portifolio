@@ -107,11 +107,8 @@ for (let i = 0; i < projects.length; i += 1) {
   const projectCard = document.createElement('div');
   projectCard.className = `card ${arrClassName[i]}`;
   projectCard.innerHTML = `
-  <div class="">
     <section class="section3">
-    <div class="card-img">
       <img class='image' src="${project.featuredImage}" alt="project image">
-    </div>
     <div class="card-content">
       <h2 class="card-header">${project.name}</h2>
       <p class="card-paragraph">${project.description}</p>
@@ -121,7 +118,6 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
     </div>
   </section>
-  </div>
   `;
 
   allProjects.appendChild(projectCard);
