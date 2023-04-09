@@ -81,7 +81,7 @@ const projects = [
 function techs(tech) {
   return `
   <ul class="tech-list">
-    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 3).join('')}
+    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 4).join('')}
   </ul>
   `;
 }
