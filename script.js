@@ -38,44 +38,44 @@ const allProjects = document.querySelector('#section-cards');
 
 const projects = [
   {
-    projectId: 'projectOne',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard2.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projecttwo',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard3.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectThree',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard4.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectFour',
-    name: 'Printing Data One',
-    featuredImage: './desktop-images/imagecard5.png',
+    title: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './desktop-images/imagecard5.png',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
     projectId: 'projectFive',
@@ -105,18 +105,16 @@ const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5'
 for (let i = 0; i < projects.length; i += 1) {
   const project = projects[i];
   const projectCard = document.createElement('div');
-  projectCard.className = `card ${arrClassName[i]}`;
+  projectCard.className = `section3 ${arrClassName[i]}`;
   projectCard.innerHTML = `
-    <section class="section3">
+    <section class="card">
       <img class='image' src="${project.featuredImage}" alt="project image">
-    <div class="card-content">
       <h2 class="card-header">${project.name}</h2>
       <p class="card-paragraph">${project.description}</p>
       <ul class="card-technologies">${project.technologies.map((tech) => `<li class='card-tech_item'>${tech}</li>`).join('')}</ul>
       <div class="card-btn">
         <a href="${project.button}" class="card-Btn1" target="_blank">${project.button}</a>
       </div>
-    </div>
   </section>
   `;
 
