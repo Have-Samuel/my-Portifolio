@@ -28,6 +28,12 @@ body {
   z-index: 100;
 }
 
+.wrapper {
+  max-width: 600px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
 .navbar {
   width: 100%;
   font-family: 'inter', sans-serif;
@@ -403,9 +409,9 @@ body {
   text-decoration: none;
 }
 
-.popup-btn span {
+/* .popup-btn span {
   margin-left: 12px;
-}
+} */
 
 .btn:hover,
 .popup-btn {
