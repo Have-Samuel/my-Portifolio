@@ -502,6 +502,20 @@ body {
   border: 1px solid #ff6b00;
 }
 
+.popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #c1c7d0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 10000;
+  overflow: auto;
+  padding-top: 80px;
+}
+
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
   background-repeat: no-repeat;

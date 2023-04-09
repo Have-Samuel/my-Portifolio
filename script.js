@@ -20,7 +20,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard2.png',
-    popupImg: '.images',
+    popupImg: '.images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -30,7 +30,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard3.png',
-    popupImg: '.images',
+    popupImg: '.images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -40,7 +40,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard4.png',
-    popupImg: '.images',
+    popupImg: '.images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -50,7 +50,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard5.png',
-    popupImg: '.images',
+    popupImg: '.images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -60,7 +60,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard6.png',
-    popupImg: '.images',
+    popupImg: 'images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -110,10 +110,10 @@ function projectCard(work) {
 
 const allProjects = document.querySelector('#section-cards');
 allProjects.innerHTML = `
-  ${projects.map((work) => projectCard(work)).join('')}
+  ${projects.map(projectCard).join('')}
 `;
 // Popup
-const projectBtn = document.querySelectorAll('.project-btn');
+const projectBtn = document.querySelectorAll('.btn');
 const main = document.querySelector('main');
 
 let modal;
@@ -136,8 +136,8 @@ for (let i = 0; i < projects.length; i += 1) {
   arrClassName.push(`
     <article class="popoup">
       <div class="popup-header">
-        <h2 class="popup-title">${projects[i].title}</h2>
-        <img class="close-icon" src="./images/Vector.png alt="close icon" id="close-icon">
+        <h2 class="title color-caption">${projects[i].title}</h2>
+        <img class="close-icon" src="./images/Vector.png" alt="close icon">
       </div>
       ${popupTechs(projects[i].technologies)}
       <div class="popup-details">
@@ -145,8 +145,8 @@ for (let i = 0; i < projects.length; i += 1) {
         <p class="popup-description">${projects[i].popupDescription}</p>
       </div>
       <div class="popup-footer">
-        <a class="popup-link" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live</a>
-        <a class="popup-link" href="${projects[i].sourceLink}" target="_blank" rel="noopener noreferrer">See Source</a>
+        <a class="popup-btn" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live</a>
+        <a class="popup-btn" href="${projects[i].sourceLink}" target="_blank" rel="noopener noreferrer">See Source</a>
       </div>
     </article>
   `);
@@ -160,8 +160,8 @@ projectBtn.forEach((btn, index) => {
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
-      modalContent.appendChild(modal);
       main.appendChild(modalContent);
+      main.appendChild(modal);
     }
   });
 });
