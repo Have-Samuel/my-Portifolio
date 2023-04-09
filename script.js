@@ -81,7 +81,7 @@ const projects = [
 function techs(tech) {
   return `
   <ul class="tech-list">
-    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 3).join('')}
+    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 4).join('')}
   </ul>
   `;
 }
@@ -96,13 +96,13 @@ const popupTechs = (tech) => `
 // Dynamically render the projects
 function projectCard(work) {
   return `
-  <article class="project">
-  <img class="project-image" src="${work.featuredImage}" alt="project image">
-  <div class="project-info">
-    <h2 class="project-title">${work.title}</h2>
-    <p class="project-description">${work.description}</p>
+  <article class="card">
+  <img class="card-img" src="${work.featuredImage}" alt="project image" aria-hidden="true">
+  <div class="card-description">
+    <h2 class="title color-caption">${work.title}</h2>
+    <p class="details">${work.description}</p>
     ${techs(work.technologies)}
-    <button class="project-btn" type="button">See Project</button>
+    <button class="btn" type="button">See Project</button>
   </div>
 </article>
   `;
@@ -137,9 +137,10 @@ for (let i = 0; i < projects.length; i += 1) {
     <article class="popoup">
       <div class="popup-header">
         <h2 class="popup-title">${projects[i].title}</h2>
-        ${popupTechs(projects[i].technologies)}
+        <img class="close-icon" src="./images/Vector.png alt="close icon" id="close-icon">
       </div>
-      <div class="popup-body">
+      ${popupTechs(projects[i].technologies)}
+      <div class="popup-details">
         <img class="popup-image" src="${projects[i].popupImg}" alt="popup image">
         <p class="popup-description">${projects[i].popupDescription}</p>
       </div>
@@ -158,7 +159,7 @@ projectBtn.forEach((btn, index) => {
       modal.innerHTML = arrClassName[index];
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
-      modalContent.addEventListener('click', modal);
+      modalContent.addEventListener('click', closeModal);
       modalContent.appendChild(modal);
       main.appendChild(modalContent);
     }
