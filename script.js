@@ -97,7 +97,7 @@ const popupTechs = (tech) => `
 function projectCard(work) {
   return `
   <article class="card">
-  <img class="card-img" src="${work.featuredImage}" alt="project image">
+  <img class="card-img" src="${work.featuredImage}" alt="project image" aria-hidden="true">
   <div class="card-description">
     <h2 class="title color-caption">${work.title}</h2>
     <p class="details">${work.description}</p>
@@ -139,7 +139,7 @@ for (let i = 0; i < projects.length; i += 1) {
         <h2 class="popup-title">${projects[i].title}</h2>
         ${popupTechs(projects[i].technologies)}
       </div>
-      <div class="popup-body">
+      <div class="popup-details">
         <img class="popup-image" src="${projects[i].popupImg}" alt="popup image">
         <p class="popup-description">${projects[i].popupDescription}</p>
       </div>
