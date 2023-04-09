@@ -77,8 +77,6 @@ const projects = [
   },
 ];
 
-
-
 // Technology list for the page
 function techs(tech) {
   return `

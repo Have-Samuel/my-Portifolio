@@ -316,6 +316,28 @@ body {
   border: 1px solid #dfe1e6;
 }
 
+.card-img,
+.popup-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.35s ease 0s;
+}
+
+.btn,
+.popup-btn {
+  margin: 12px 0;
+  font-size: 1.0625rem;
+  color: #396df2;
+  font-weight: 500;
+  padding: 12px;
+  line-height: 1.4;
+  width: 124px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .card-img:hover {
   transform: scale(0.99);
 }
@@ -341,8 +363,20 @@ body {
   row-gap: 10px;
 }
 
-.tag {
-  color: #3448fc;
+.popup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  margin-bottom: 8px;
+  width: unset;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.popup-btn span {
+  margin-left: 12px;
 }
 
 .section3 {
