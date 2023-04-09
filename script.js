@@ -141,7 +141,7 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
       ${popupTechs(projects[i].technologies)}
       <div class="popup-details">
-        <img class="popup-image" src="${projects[i].popupImg}" alt="popup image">
+        <img class="popup-img" src="${projects[i].popupImg}" alt="popup image">
         <p class="popup-description">${projects[i].popupDescription}</p>
       </div>
       <div class="popup-footer">

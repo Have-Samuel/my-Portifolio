@@ -521,7 +521,16 @@ body {
   padding-top: 80px;
 }
 
-p
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.popup-img {
+  border: 1px solid #c1c7d0;
+}
 
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
