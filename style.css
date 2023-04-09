@@ -300,6 +300,51 @@ body {
   border: 1px solid #ff6b00;
 }
 
+#section-cards {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 88px;
+  padding: 114px 24px;
+}
+
+.card,
+.popup {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #dfe1e6;
+}
+
+.card-img:hover {
+  transform: scale(0.99);
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.05rem;
+  line-height: 1.375;
+  margin-top: 12px;
+}
+
+.details,
+.popup-tags {
+  display: flex;
+  margin: 1rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.tag {
+  color: #3448fc;
+}
+
 .section3 {
   /* background-image: url('./images/Background.png'); */
   /* margin-top: 2rem; */

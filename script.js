@@ -77,6 +77,8 @@ const projects = [
   },
 ];
 
+
+
 // Technology list for the page
 function techs(tech) {
   return `
@@ -96,13 +98,13 @@ const popupTechs = (tech) => `
 // Dynamically render the projects
 function projectCard(work) {
   return `
-  <article class="project">
-  <img class="project-image" src="${work.featuredImage}" alt="project image">
-  <div class="project-info">
-    <h2 class="project-title">${work.title}</h2>
-    <p class="project-description">${work.description}</p>
+  <article class="card">
+  <img class="card-img" src="${work.featuredImage}" alt="project image">
+  <div class="card-description">
+    <h2 class="title color-caption">${work.title}</h2>
+    <p class="details">${work.description}</p>
     ${techs(work.technologies)}
-    <button class="project-btn" type="button">See Project</button>
+    <button class="btn" type="button">See Project</button>
   </div>
 </article>
   `;
@@ -158,7 +160,7 @@ projectBtn.forEach((btn, index) => {
       modal.innerHTML = arrClassName[index];
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
-      modalContent.addEventListener('click', modal);
+      modalContent.addEventListener('click', closeModal);
       modalContent.appendChild(modal);
       main.appendChild(modalContent);
     }
