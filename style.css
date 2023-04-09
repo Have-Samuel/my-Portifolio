@@ -310,6 +310,7 @@ body {
 
 .card,
 .popup {
+  border-radius: 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -319,6 +320,7 @@ body {
 
 .card-img,
 .popup-img {
+  border-radius: 10px;
   width: 100%;
   height: auto;
   transition: transform 0.35s ease 0s;
