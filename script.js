@@ -161,7 +161,7 @@ projectBtn.forEach((btn, index) => {
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
       main.appendChild(modalContent);
-      modalContent.appendChild(modal);
+      main.appendChild(modal);
     }
   });
 });
