@@ -13,137 +13,156 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
-// Form validation
-// const $form = document.querySelector('.js-form');
-// const $nameInput = document.querySelector('.js-name-input');
-// const $emailInput = document.querySelector('.js-email-input');
-// const $comsInput = document.querySelector('.js-textarea');
-
-// const validate = () => {
-//   const nameValue = $nameInput.value.trim();
-//   const emailValue = $emailInput.value.trim();
-//   const comsValue = $comsInput.value.trim();
-
-//   console.log('validate', nameValue, emailValue, comsValue);
-// };
-
-// $form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-
-//   validate();
-// });
-
 // PROJECTS
-const allProjects = document.querySelector('#section-cards');
-
 const projects = [
   {
-    projectId: 'projectOne',
-    name: 'Printing Data One',
-    featuredImage: './desktop-images/imagecard2.png',
+    title: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './desktop-images/imagecard2.png',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projecttwo',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard3.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectThree',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard4.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectFour',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard5.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectFive',
-    name: 'Printing Data One',
+    title: 'Printing Data One',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard6.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
   {
-    projectId: 'projectSix',
-    name: 'Printing Data One',
-    featuredImage: './desktop-images/imagecard2.png',
+    title: 'Printing Data One',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './desktop-images/imagecard2.png',
+    popupImg: '.images',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
-    button: 'See Project',
   },
 ];
 
-// const arrClassName = ['project1', 'project2', 'project3', 'project4', 'project5', 'project6'];
+// Technology list for the page
+function techs(tech) {
+  return `
+  <ul class="tech-list">
+    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 3).join('')}
+  </ul>
+  `;
+}
 
-// Looping through the cards
-for (let i = 0; i < projects.length; i += 1) {
-  const project = projects[i];
-  const projectCard = document.createElement('div');
-  projectCard.classList.add('card');
-
-  // image
-  const image = document.createElement('img');
-  image.classList.add('image');
-  image.src = project.featuredImage;
-  image.alt = 'project image';
-  projectCard.appendChild(image);
-
-  // card content
-  const cardContent = document.createElement('div');
-  cardContent.classList.add('card-content');
-  projectCard.appendChild(cardContent);
-
-  // card header
-  const cardHeader = document.createElement('h2');
-  cardHeader.classList.add('card-header');
-  cardHeader.textContent = project.name;
-  
-  // projectCard.className = `card, ${arrClassName[i]}`;
-  // projectCard.id = project.projectId;
-  projectCard.innerHTML = `
-    <div class="card-img">
-      <img class='image' src="${project.featuredImage}" alt="project image">
-    <div class="card-content">
-      <h2 class="card-header">${project.name}</h2>
-      <p class="card-paragraph">${project.description}</p>
-      <ul class="card-technologies">
-        <li class="card-tech_item">${project.technologies[0]}</li>
-        <li class="card-tech_item">${project.technologies[1]}</li>
-        <li class="card-tech_item">${project.technologies[2]}</li>
-        <li class="card-tech_item">${project.technologies[3]}</li>
-      </ul>
-      <div class="card-btn">
-        <a href="${project.button}" class="card-Btn1" target="_blank">${project.button}</a>
-      </div>
-      </div>
-    </div>
+// Technology list for the popup
+const popupTechs = (tech) => `
+  <ul class="tech-list">
+    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).join('')}
+  </ul>
   `;
 
-  allProjects.appendChild(projectCard);
+// Dynamically render the projects
+function projectCard(work) {
+  return `
+  <article class="project">
+  <img class="project-image" src="${work.featuredImage}" alt="project image">
+  <div class="project-info">
+    <h2 class="project-title">${work.title}</h2>
+    <p class="project-description">${work.description}</p>
+    ${techs(work.technologies)}
+    <button class="project-btn" type="button">See Project</button>
+  </div>
+</article>
+  `;
 }
+
+const allProjects = document.querySelector('#section-cards');
+allProjects.innerHTML = `
+  ${projects.map((work) => projectCard(work)).join('')}
+`;
+// Popup
+const projectBtn = document.querySelectorAll('.project-btn');
+const main = document.querySelector('main');
+
+let modal;
+let modalContent;
+
+function closeModal() {
+  if (modal) {
+    modal.remove();
+  }
+  if (modalContent) {
+    modalContent.remove();
+  }
+}
+
+const arrClassName = [];
+
+// Loop through the projects array
+for (let i = 0; i < projects.length; i += 1) {
+  modal = document.createElement('div');
+  arrClassName.push(`
+    <article class="popoup">
+      <div class="popup-header">
+        <h2 class="popup-title">${projects[i].title}</h2>
+        ${popupTechs(projects[i].technologies)}
+      </div>
+      <div class="popup-body">
+        <img class="popup-image" src="${projects[i].popupImg}" alt="popup image">
+        <p class="popup-description">${projects[i].popupDescription}</p>
+      </div>
+      <div class="popup-footer">
+        <a class="popup-link" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live</a>
+        <a class="popup-link" href="${projects[i].sourceLink}" target="_blank" rel="noopener noreferrer">See Source</a>
+      </div>
+    </article>
+  `);
+}
+
+// Project button event listener
+projectBtn.forEach((btn, index) => {
+  btn.addEventListener('click', (click) => {
+    if (click.target.id === btn.id) {
+      modal.innerHTML = arrClassName[index];
+      modalContent = document.createElement('div');
+      modalContent.classList.add('popup-content');
+      modalContent.addEventListener('click', modal);
+      modalContent.appendChild(modal);
+      main.appendChild(modalContent);
+    }
+  });
+});
+
+// ch
