@@ -20,7 +20,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard2.png',
-    popupImg: '.images/popup.png',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -30,7 +30,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard3.png',
-    popupImg: '.images/popup.png',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -40,7 +40,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard4.png',
-    popupImg: '.images/popup.png',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -50,7 +50,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard5.png',
-    popupImg: '.images/popup.png',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -60,7 +60,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard6.png',
-    popupImg: 'images/popup.png',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -70,7 +70,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './desktop-images/imagecard2.png',
-    popupImg: '.images',
+    popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
     liveLink: 'https://have-samuel.github.io/portfolio1/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
@@ -152,7 +152,7 @@ for (let i = 0; i < projects.length; i += 1) {
   `);
 }
 
-// Project button event listener
+// project button event listener and x button event listener
 projectBtn.forEach((btn, index) => {
   btn.addEventListener('click', (click) => {
     if (click.target.id === btn.id) {
@@ -160,10 +160,8 @@ projectBtn.forEach((btn, index) => {
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
-      main.appendChild(modalContent);
-      main.appendChild(modal);
+      main.append(modalContent);
+      main.append(modal);
     }
   });
 });
-
-// ch
