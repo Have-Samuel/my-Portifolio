@@ -134,7 +134,7 @@ const arrClassName = [];
 for (let i = 0; i < projects.length; i += 1) {
   modal = document.createElement('div');
   arrClassName.push(`
-    <article class="popoup">
+    <article class="popup">
       <div class="popup-header">
         <h2 class="title color-caption">${projects[i].title}</h2>
         <img class="close-icon" src="./images/Vector.png" alt="close icon">
@@ -161,7 +161,7 @@ projectBtn.forEach((btn, index) => {
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
       main.append(modalContent);
-      main.append(modal);
+      modalContent.append(modal);
     }
   });
 });

@@ -502,6 +502,11 @@ body {
   border: 1px solid #ff6b00;
 }
 
+.popup {
+  margin: 24px;
+  z-index: 200000;
+}
+
 .popup-content {
   display: flex;
   align-items: center;
@@ -515,6 +520,8 @@ body {
   overflow: auto;
   padding-top: 80px;
 }
+
+p
 
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
