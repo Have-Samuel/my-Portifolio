@@ -426,11 +426,6 @@ body {
   border: 1px solid #c1c7d0;
 }
 
-.tech-list,
- {
-
-}
-
 .card-technologies {
   display: flex;
   list-style: none;
@@ -540,6 +535,11 @@ body {
 .popup-footer {
   display: flex;
   gap: 12px;
+}
+
+.close-icon {
+  background-color: #a7aeff;
+  cursor: pointer;
 }
 
 .aboutme-section {

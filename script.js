@@ -160,8 +160,8 @@ projectBtn.forEach((btn, index) => {
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
-      main.append(modalContent);
-      modalContent.append(modal);
+      main.appendChild(modalContent);
+      modalContent.appendChild(modal);
     }
   });
 });
