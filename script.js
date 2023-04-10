@@ -146,8 +146,8 @@ for (let i = 0; i < projects.length; i += 1) {
         <p class="popup-description">${projects[i].popupDescription}</p>
       </div>
       <div class="popup-footer">
-        <a class="popup-btn" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live</a>
-        <a class="popup-btn" href="${projects[i].sourceLink}" target="_blank" rel="noopener noreferrer">See Source</a>
+        <a class="popup-btn" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live<span><img src="./images/Icon.png" alt=""></span></a>
+        <a class="popup-btn" href="${projects[i].sourceLink}" target="_blank" rel="noopener noreferrer">See Source<span><img src="./images/Github1.png" alt=""></span></a>
       </div>
     </article>
   `);
