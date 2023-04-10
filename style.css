@@ -523,6 +523,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
+  opacity: 0.9;
   background-color: #c1c7d0;
   width: 100%;
   top: 0;
@@ -541,7 +542,6 @@ body {
 
 .popup-img {
   border: 1px solid #c1c7d0;
-  border-radius: 5px;
 }
 
 .popup-details {
@@ -556,8 +556,9 @@ body {
 .close-icon {
   padding: 1rem;
   font-size: 1.5rem;
-  background-color: #cac4c4;
+  /* background-color: #cac4c4; */
   cursor: pointer;
+  color: #0d0d0d;
 }
 
 .fa-solid {

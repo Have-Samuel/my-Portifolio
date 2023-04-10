@@ -137,7 +137,8 @@ for (let i = 0; i < projects.length; i += 1) {
     <article class="popup">
       <div class="popup-header">
         <h2 class="title color-caption">${projects[i].title}</h2>
-        <i class="fa-solid fa-x" style="color: #0d0d0d;"></i>
+        <img class="close-icon" src="./images/Vector.png" alt="close icon">
+        <i class="fa-solid fa-x"></i>
       </div>
       ${popupTechs(projects[i].technologies)}
       <div class="popup-details">
