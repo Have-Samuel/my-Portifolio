@@ -345,6 +345,7 @@ body {
   border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .card-img:hover {
@@ -409,9 +410,9 @@ body {
   text-decoration: none;
 }
 
-/* .popup-btn span {
+.popup-btn span {
   margin-left: 12px;
-} */
+}
 
 .btn:hover,
 .popup-btn {
@@ -991,13 +992,6 @@ form {
     border: 1px solid red;
     width: 80%;
     margin: 0 auto;
-  }
-
-  .card {
-    border-radius: 10px;
-    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('./desktop-images/imagecard2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .card-header {
