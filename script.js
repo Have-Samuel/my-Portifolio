@@ -137,6 +137,7 @@ for (let i = 0; i < projects.length; i += 1) {
     <article class="popup">
       <div class="popup-header">
         <h2 class="title color-caption">${projects[i].title}</h2>
+        <i class="fa-solid fa-x"></i>
         <img class="close-icon" src="./images/Vector.png" alt="close icon">
       </div>
       ${popupTechs(projects[i].technologies)}
@@ -152,6 +153,7 @@ for (let i = 0; i < projects.length; i += 1) {
   `);
 }
 
+console.log(arrClassName);
 // project button event listener and x button event listener
 projectBtn.forEach((btn, index) => {
   btn.addEventListener('click', (click) => {
@@ -160,7 +162,7 @@ projectBtn.forEach((btn, index) => {
       modalContent = document.createElement('div');
       modalContent.classList.add('popup-content');
       modalContent.addEventListener('click', closeModal);
-      main.appendChild(modal);
+      main.appendChild(modalContent);
       modalContent.appendChild(modal);
     }
   });
