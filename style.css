@@ -90,6 +90,10 @@ body {
   right: 0;
 }
 
+.color-caption {
+  color: #344563;
+}
+
 .hamburger-menu {
   width: 35px;
   height: 25px;
@@ -550,8 +554,17 @@ body {
 }
 
 .close-icon {
-  background-color: #a7aeff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #cac4c4;
   cursor: pointer;
+}
+
+.fa-solid {
+  /* font-family: "Font Awesome 5 Free"; */
+  /* background-color: #915454; */
+  padding: 0.5rem;
+  color: #0d0d0d;
 }
 
 .aboutme-section {
