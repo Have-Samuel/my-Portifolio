@@ -323,7 +323,15 @@ body {
   padding: 114px 24px;
 }
 
-.card,
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #dfe1e6;
+}
+
 .popup {
   border-radius: 10px;
   background-color: #fff;
@@ -554,18 +562,11 @@ body {
 }
 
 .close-icon {
-  padding: 1rem;
-  font-size: 1.5rem;
-  /* background-color: #cac4c4; */
   cursor: pointer;
-  color: #0d0d0d;
-}
-
-.fa-solid {
-  /* font-family: "Font Awesome 5 Free"; */
-  /* background-color: #915454; */
-  padding: 0.5rem;
-  color: #0d0d0d;
+  border: 2px solid #83878b;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 .aboutme-section {
