@@ -1213,16 +1213,39 @@ textarea {
   .contact-section ul:active {
     transform: scale(1.1);
   }
+
+  @media (min-width: 1200px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      margin-left: -2.5rem;
+    }
+
+    .desktop_link {
+      margin-left: -1rem;
+    }
+
+    .envelope {
+      margin-left: 1rem;
+    }
+
+    .recent-works_placeholder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10rem;
+    }
+
+    #section-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
-
-/* @media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-} */
