@@ -1114,15 +1114,21 @@ form {
   .language-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
   }
 
   .aboutme-Languages {
     display: block;
+    margin-right: 1rem;
     /* margin-left: 2rem; */
   }
 
   .header-languages {
     display: flex;
+    flex-direction: row;
     /* margin-left: -70px; */
   }
 
@@ -1136,8 +1142,8 @@ form {
   }
 
   .header-languages3 {
-    margin-left: 1rem;
-    margin-top: 7rem;
+    /* margin-left: 1rem; */
+    margin-top: 9rem;
   }
 
   .aboutme-items {
