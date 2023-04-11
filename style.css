@@ -18,7 +18,7 @@ body {
 
 .container {
   position: fixed;
-  width: 375px;
+  width: 785px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -843,7 +843,7 @@ form {
   display: none;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 786px) {
   .hamburger-menu {
     display: none;
   }
@@ -1191,3 +1191,15 @@ form {
     gap: 2rem;
   }
 }
+
+/* @media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+} */
