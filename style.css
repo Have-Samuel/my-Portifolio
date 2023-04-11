@@ -1078,7 +1078,7 @@ form {
 
   .aboutme-section {
     background: url('./images/Group.png'), #1c1a19;
-    background-position: right top 25%;
+    background-position: right top 28%;
     background-repeat: no-repeat;
   }
 
@@ -1093,7 +1093,6 @@ form {
   }
 
   .aboutme p {
-    /* width: 566px; */
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -1108,24 +1107,23 @@ form {
   }
 
   .vector-line {
-    width: 100%;
-    margin: 14rem 0 8rem 4.5rem;
+    margin: 16rem 4.5rem 8rem 3.5rem;
+    width: 90%;
   }
 
   .language-section {
     display: flex;
     flex-direction: row;
-    gap: 13rem;
   }
 
   .aboutme-Languages {
     display: block;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   .header-languages {
     display: flex;
-    margin-left: -70px;
+    /* margin-left: -70px; */
   }
 
   .header-languages1 {
@@ -1134,12 +1132,12 @@ form {
   }
 
   .header-languages2 {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 
   .header-languages3 {
     margin-left: 1rem;
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
 
   .aboutme-items {
