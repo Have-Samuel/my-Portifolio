@@ -18,7 +18,7 @@ body {
 
 .container {
   position: fixed;
-  width: 375px;
+  width: 785px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,12 +26,6 @@ body {
   padding: 1.9rem 3rem;
   background-color: #3c3a39;
   z-index: 100;
-}
-
-.wrapper {
-  max-width: 600px;
-  padding: 0 24px;
-  margin: 0 auto;
 }
 
 .navbar {
@@ -183,8 +177,7 @@ body {
   padding: 120px 24px 120px 24px;
   background: url("./images/first-pic.png"), rgb(28, 26, 25);
   background-repeat: no-repeat;
-  background-position: 100% 112%;
-  height: 690px;
+  background-position: 100% 100%;
 }
 
 .headline h1 {
@@ -193,9 +186,11 @@ body {
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
-  letter-spacing: 0.3700000047683716px;
+  letter-spacing: 0.4px;
   text-align: left;
   color: #ff6b00;
+  width: 50%;
+  overflow-wrap: break-word;
 }
 
 .headline h2 {
@@ -206,6 +201,7 @@ body {
   letter-spacing: 0;
   text-align: left;
   color: #fff5e1;
+  width: 50%;
 }
 
 .headline p {
@@ -216,6 +212,7 @@ body {
   letter-spacing: 0;
   text-align: left;
   color: #fff;
+  width: 100%;
 }
 
 .unit-items {
@@ -345,7 +342,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
   border: 1px solid #dfe1e6;
   box-shadow: 2px 16px 16px 0 rgba(0, 0, 0, 0.2);
@@ -447,6 +443,13 @@ body {
   flex-direction: column;
 }
 
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
 .title {
   font-size: 2.05rem;
   line-height: 1.375;
@@ -522,13 +525,6 @@ body {
   z-index: 10000;
   overflow: auto;
   padding-top: 80px;
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 5px;
 }
 
 .popup-details {
@@ -843,9 +839,13 @@ form {
   display: none;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 786px) {
   .hamburger-menu {
     display: none;
+  }
+
+  .logo {
+    margin-right: 18rem;
   }
 
   body {
@@ -854,6 +854,10 @@ form {
   }
 
   .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: 1rem 9rem;
     z-index: 1;
@@ -902,9 +906,10 @@ form {
   .headline {
     background: url('./images/Illustration-header.png'), rgba(28, 26, 25, 1);
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 100% 100%;
     display: flex;
     flex-direction: row-reverse;
+    overflow: auto;
   }
 
   .headline h1 {
@@ -922,18 +927,27 @@ form {
     padding: 1rem 0 1rem 0;
   }
 
+  .headline h2 {
+    width: 49%;
+  }
+
   .unit-items {
     display: flex;
     flex-direction: column;
-    margin-top: 12rem;
-    margin-left: 4rem;
-    gap: 1rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
     padding: 0 6rem 0 0;
+    width: 10%;
   }
 
-  .recent-works {
+  .recent-works_placeholder {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 5rem;
   }
 
   .headers {
@@ -950,15 +964,8 @@ form {
     width: 52%;
   }
 
-  .recent-works_placeholder {
-    display: flex;
-    margin: 8rem 5rem;
-  }
-
   .placeholder {
-    padding: 0;
-    width: 100%;
-    margin-left: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .placeholder:hover {
@@ -984,12 +991,22 @@ form {
     padding: 0 0 1rem 1.5rem;
   }
 
+  .story-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    max-width: 22%;
+    margin: 0 0 0 1rem;
+  }
+
   #section-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     border: 1px solid red;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1061,9 +1078,8 @@ form {
 
   .aboutme-section {
     background: url('./images/Group.png'), #1c1a19;
-    background-position: right top 19%;
+    background-position: right top 25%;
     background-repeat: no-repeat;
-    padding: 8.1rem 0 8.1rem 9.5rem;
   }
 
   .aboutme h2 {
@@ -1077,8 +1093,7 @@ form {
   }
 
   .aboutme p {
-    height: 148px;
-    width: 566px;
+    /* width: 566px; */
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -1090,6 +1105,11 @@ form {
   .aboutme button {
     width: 171px;
     padding: 12px;
+  }
+
+  .vector-line {
+    width: 100%;
+    margin: 14rem 0 8rem 4.5rem;
   }
 
   .language-section {
@@ -1191,3 +1211,15 @@ form {
     gap: 2rem;
   }
 }
+
+/* @media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+} */
