@@ -183,8 +183,9 @@ body {
   padding: 120px 24px 120px 24px;
   background: url("./images/first-pic.png"), rgb(28, 26, 25);
   background-repeat: no-repeat;
-  background-position: 100% 112%;
-  height: 690px;
+  background-position: 100% 100%;
+  /* height: 700px; */
+  /* overflow: auto; */
 }
 
 .headline h1 {
@@ -196,6 +197,8 @@ body {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
+  width: 50%;
+  overflow-wrap: break-word;
 }
 
 .headline h2 {
@@ -206,6 +209,7 @@ body {
   letter-spacing: 0;
   text-align: left;
   color: #fff5e1;
+  width: 50%;
 }
 
 .headline p {
@@ -216,6 +220,8 @@ body {
   letter-spacing: 0;
   text-align: left;
   color: #fff;
+  /* height: 123px; */
+  width: 100%;
 }
 
 .unit-items {
@@ -345,7 +351,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
   border: 1px solid #dfe1e6;
   box-shadow: 2px 16px 16px 0 rgba(0, 0, 0, 0.2);
@@ -447,11 +452,18 @@ body {
   flex-direction: column;
 }
 
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
 .title {
   font-size: 2.05rem;
   line-height: 1.375;
   margin-top: 12px;
-  /* margin-left: 0.5rem; */
+  margin-left: 0.5rem;
 }
 
 .details,
@@ -522,13 +534,6 @@ body {
   z-index: 10000;
   overflow: auto;
   padding-top: 80px;
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 5px;
 }
 
 .popup-details {
@@ -848,12 +853,20 @@ form {
     display: none;
   }
 
+  .logo {
+    margin-right: 18rem;
+  }
+
   body {
     width: 100%;
     margin: 0 auto;
   }
 
   .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: 1rem 9rem;
     z-index: 1;
@@ -902,9 +915,10 @@ form {
   .headline {
     background: url('./images/Illustration-header.png'), rgba(28, 26, 25, 1);
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 100% 100%;
     display: flex;
     flex-direction: row-reverse;
+    overflow: auto;
   }
 
   .headline h1 {
@@ -922,13 +936,17 @@ form {
     padding: 1rem 0 1rem 0;
   }
 
+  .headline h2 {
+    width: 49%;
+  }
+
   .unit-items {
     display: flex;
     flex-direction: column;
-    margin-top: 12rem;
-    margin-left: 4rem;
-    gap: 1rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
     padding: 0 6rem 0 0;
+    width: 10%;
   }
 
   .recent-works {
