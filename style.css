@@ -149,6 +149,7 @@ body {
   font-weight: 600;
   color: #fff5e1;
   position: relative;
+  text-decoration: none;
 }
 
 .nav-link::before,
@@ -222,6 +223,10 @@ body {
   grid-template-columns: auto auto auto auto auto;
   gap: 30px;
   padding: 1rem 9.44rem 7.5rem 0;
+}
+
+.unit-item:hover {
+  transform: scale(1.1);
 }
 
 .recent-works_placeholder {
