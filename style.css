@@ -1010,10 +1010,6 @@ form {
     margin: 0 auto;
   }
 
-  .wrapper {
-    max-width: auto;
-  }
-
   .card-header {
     font-family: 'Crete Round', sans-serif;
     font-size: 32px;
@@ -1082,9 +1078,8 @@ form {
 
   .aboutme-section {
     background: url('./images/Group.png'), #1c1a19;
-    background-position: right top 19%;
+    background-position: right top 25%;
     background-repeat: no-repeat;
-    padding: 8.1rem 0 8.1rem 9.5rem;
   }
 
   .aboutme h2 {
@@ -1098,8 +1093,7 @@ form {
   }
 
   .aboutme p {
-    height: 148px;
-    width: 566px;
+    /* width: 566px; */
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -1111,6 +1105,11 @@ form {
   .aboutme button {
     width: 171px;
     padding: 12px;
+  }
+
+  .vector-line {
+    width: 100%;
+    margin: 14rem 0 8rem 4.5rem;
   }
 
   .language-section {
