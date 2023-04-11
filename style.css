@@ -641,11 +641,6 @@ body {
   color: #fff;
 }
 
-.languages-1:hover {
-  text-decoration: underline #87ceeb;
-  cursor: pointer;
-}
-
 .aboutme-items {
   display: flex;
   flex-direction: column;
@@ -661,10 +656,6 @@ body {
 
 .aboutme-item {
   padding: 10px 4px;
-}
-
-.aboutme-item:hover {
-  text-decoration: underline #87ceeb;
   cursor: pointer;
 }
 
@@ -688,11 +679,6 @@ body {
   color: #fff;
 }
 
-.frameworks:hover {
-  text-decoration: underline #87ceeb;
-  cursor: pointer;
-}
-
 .aboutme-frameworks-items {
   display: flex;
   flex-direction: column;
@@ -709,10 +695,7 @@ body {
 
 .aboutme-frame-item {
   padding: 10px 4px;
-}
-
-.aboutme-frame-item:hover {
-  text-decoration: underline #87ceeb;
+  cursor: pointer;
 }
 
 .circle-img {
@@ -724,11 +707,6 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
-}
-
-.skills:hover {
-  text-decoration: underline #87ceeb;
-  cursor: pointer;
 }
 
 .aboutme-skills-items {
@@ -747,10 +725,7 @@ body {
 
 .aboutme-skills-item {
   padding: 10px 4px;
-}
-
-.aboutme-skills-item:hover {
-  text-decoration: underline #87ceeb;
+  cursor: pointer;
 }
 
 .contact-section__form p {
@@ -765,8 +740,16 @@ body {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
   width: 100%;
-  margin: 0 auto;
+  max-width: 100%;
+  /* padding: 0 24px; */
+  /* margin: 0 auto; */
 }
 
 .form__field--error {
@@ -778,7 +761,7 @@ form {
   width: 80%;
   font-size: 1.0625rem;
   line-height: 1.5;
-  margin: 1rem 0 0 5rem;
+  /* margin: 1rem 0 0 5rem; */
   padding: 15px 38px 15px 16px;
   border: 1px solid #dfe1e6;
   border-radius: 4px;
@@ -791,7 +774,8 @@ textarea {
   background-color: #fbf8f7;
   margin: 24px;
   padding: 12px;
-  /* width: 100%; */
+  width: 90%;
+  max-width: 100%;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -810,8 +794,9 @@ textarea {
   background-color: #ff6b00;
   border: none;
   width: 40%;
+  max-width: 20%;
   color: #fff;
-  margin: 0 7rem 8.5rem 5.8rem;
+  margin: 1rem 7rem 8.5rem 5rem;
   border-radius: 8px;
 }
 
@@ -1190,7 +1175,7 @@ textarea {
   }
 
   .contact-section__form textarea {
-    width: 92%;
+    /* width: 92%; */
     outline: none;
     border: 1px solid #dbd8d7;
     border-radius: 5px;
