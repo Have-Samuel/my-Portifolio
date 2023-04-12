@@ -308,7 +308,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  background: #ff6b00;
+  background-color: #ff6b00;
   color: #fff;
   text-decoration: none;
   margin: 4rem 0  1rem 1.5rem;
@@ -985,7 +985,7 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30%;
+    width: 15%;
     max-width: 22%;
     margin: 0 0 0 1rem;
   }
@@ -1181,6 +1181,11 @@ textarea {
       justify-content: space-between;
       align-items: center;
       margin: 0 10rem;
+    }
+
+    .story-Btn {
+      width: 100%;
+      max-width: 30%;
     }
 
     #section-cards {
