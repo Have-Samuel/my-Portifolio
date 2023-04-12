@@ -68,7 +68,7 @@ const projects = [
   {
     title: 'Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     featuredImage: './desktop-images/imagecard2.png',
     popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
@@ -136,13 +136,13 @@ for (let i = 0; i < projects.length; i += 1) {
   arrClassName.push(`
     <article class="popup">
       <div class="popup-header">
-        <h2 class="title color-caption">${projects[i].title}</h2>
+        <h2 class="title color-caption large-size">${projects[i].title}</h2>
         <img class="close-icon" src="./images/cancel-black.png" alt="close icon">
       </div>
       ${popupTechs(projects[i].technologies)}
       <div class="popup-details">
         <img class="popup-img" src="${projects[i].popupImg}" alt="popup image">
-        <p class="popup-description">${projects[i].popupDescription}</p>
+        <p class="popup-description desc-large">${projects[i].popupDescription}</p>
       </div>
       <div class="popup-footer">
         <a class="popup-btn" href="${projects[i].liveLink}" target="_blank" rel="noopener noreferrer">See Live<span><img class="innerImg" src="./images/Icon.png" alt=""></span></a>

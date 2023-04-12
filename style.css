@@ -254,6 +254,11 @@ body {
   padding: 3.6rem 1.5rem 0 1.5rem;
 }
 
+.placeholder:hover {
+  transform: scale(1.05);
+  transition-duration: 250ms;
+}
+
 .stories {
   display: flex;
   font-family: "Crete Round", serif;
@@ -562,7 +567,7 @@ body {
   line-height: 88px;
   text-align: center;
   color: rgba(255, 107, 0, 1);
-  padding: 7.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 7.5rem 1rem 1.5rem 1rem;
 }
 
 .aboutme p {
@@ -922,7 +927,7 @@ textarea {
   .unit-items {
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 11rem;
     margin-left: 1rem;
     padding: 0 6rem 0 0;
     width: 10%;
@@ -1114,7 +1119,6 @@ textarea {
   }
 
   .contact-section__form p {
-    width: 92%;
     text-align: left;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
@@ -1191,6 +1195,54 @@ textarea {
       grid-template-columns: repeat(3, 1fr);
     }
 
+    .popup {
+      /* width: 90%; */
+      border-radius: 10px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      border: 1px solid #dfe1e6;
+      box-shadow: 2px 16px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .large-size {
+      font-family: 'Inter', sans-serif;
+      font-size: 4rem;
+      font-weight: 800;
+      color: #172b4d;
+    }
+
+    .popup-details {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin: 0 1rem;
+      gap: 3rem;
+    }
+
+    .popup-img {
+      max-width: 50%;
+      width: 60%;
+      height: 100%;
+    }
+
+    .desc-large {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #344563;
+      height: 336px;
+      width: 40%;
+    }
+
+    .popup-img:hover {
+      transform: scale(0.99);
+    }
+
     .aboutme h2 {
       margin: 8.1rem 45.8rem 0 7.2rem;
     }
@@ -1223,12 +1275,7 @@ textarea {
       flex-direction: row;
     }
 
-    .form {
-      /* margin-top: 4rem; */
-    }
-
     .contact-section__form p {
-      /* margin: 0 0 0 1.9rem; */
       margin-top: -3rem;
       width: 60%;
     }
