@@ -995,7 +995,6 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    border: 1px solid red;
     width: 100%;
     margin: 0 auto;
   }
@@ -1104,22 +1103,19 @@ textarea {
   .language-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    /* text-align: center; */
     width: 100%;
   }
 
   .aboutme-Languages {
     display: block;
     margin-right: 1rem;
-    /* margin-left: 2rem; */
   }
 
   .header-languages {
     display: flex;
     flex-direction: row;
-    /* margin-left: -70px; */
   }
 
   .header-languages1 {
@@ -1127,12 +1123,7 @@ textarea {
     margin-top: -4rem;
   }
 
-  .header-languages2 {
-    /* margin-left: 1rem; */
-  }
-
   .header-languages3 {
-    /* margin-left: 1rem; */
     margin-top: 9rem;
   }
 
@@ -1170,7 +1161,6 @@ textarea {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* margin: 6.1rem 10.5rem; */
   }
 
   .contact-section__form p {
@@ -1184,7 +1174,6 @@ textarea {
   }
 
   .contact-section__form textarea {
-    /* width: 92%; */
     outline: none;
     border: 1px solid #dbd8d7;
     border-radius: 5px;
@@ -1246,6 +1235,29 @@ textarea {
     #section-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .aboutme h2 {
+      margin: 8.1rem 45.8rem 0 7.2rem;
+    }
+
+    .aboutme p {
+      margin: 0 45.8rem 0 8.9rem;
+      width: 600px;
+    }
+
+    .aboutme button {
+      margin: 0 45.8rem 0 8.9rem;
+    }
+
+    .aboutme-section {
+      background-position: right top 10%;
+      background-repeat: no-repeat;
+    }
+
+    .vector-line {
+      margin: 8rem 4.5rem 4rem 4.5rem;
+      width: 90%;
     }
   }
 }
