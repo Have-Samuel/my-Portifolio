@@ -1,6 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio: Mobile version 
+![screenshot](./images/p-mob1.png)
+![screenshot](./images/p-mob2.png)
+![screenshot](./images/p-mob3.png)
+![screenshot](./images/p-mob4.png)
+![screenshot](./images/p-mob5.png)
+![screenshot](./images/p-mob6.png)
+
+# Portfolio: Desktop version 
 
 > This is my fast Portfolio page.
 ![screenshot](./images/Image1.png)
@@ -9,7 +17,6 @@
 ![screenshot](./images/Image4.png)
 ![screenshot](./images/Image5.png)
 
-This is the screenshot of my page
 
 ## Built With
 
