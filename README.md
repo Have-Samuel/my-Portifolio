@@ -57,10 +57,6 @@ Make any necessary editing.
 - LinkedIn: [Have](https://www.linkedin.com/in/have-samuel/)
 
 ## 🤝 Contributing
-GitHub: 
-Twitter: @twitterhandle
-LinkedIn: LinkedIn
-
 
 Contributions, issues, and feature requests are welcome!
 
