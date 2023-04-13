@@ -2,11 +2,11 @@
 
 # Portfolio: Mobile version 
 ![screenshot](./images/p-mob1.png)
-![screenshot](./images/Image2.png)
+![screenshot](./images/p-mob2.png)
 ![screenshot](./images/p-mob3.png)
 ![screenshot](./images/p-mob4.png)
 ![screenshot](./images/p-mob5.png)
-![screenshot](./images/p-mob6png)
+![screenshot](./images/p-mob6.png)
 
 # Portfolio: Desktop version 
 
