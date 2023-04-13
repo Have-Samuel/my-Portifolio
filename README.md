@@ -20,10 +20,12 @@
 
 ## Built With
 
-- HTML & CSS
-- Git and Git
+- HTML5 & CSS
+- Git and Git-Flow
 - Linters
 - Flexbox and CSS Grid Layout
+- Positioning
+- JavaScript
 ## Live Demo
 
 [Live Demo Link](https://have-samuel.github.io/portfolio/)
@@ -62,7 +64,7 @@ LinkedIn: LinkedIn
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Have-Samuel/my-Portifolio/issues).
 
 ## Show your support
 
