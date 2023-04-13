@@ -46,14 +46,12 @@ Use the commad below to get a copy:
 ```
 git clone git@github.com:Have-Samuel/portfolio1.git
 ```
-### Usage
-Make any necessary editing.
 ## Authors
 
 👤 **Have-Samuel**
 
 - GitHub: [Have](https://github.com/Have-Samuel)
-- Twitter: [samie@1](https://twitter.com/home)
+- Twitter: [samie@1](https://twitter.com/samhave1)
 - LinkedIn: [Have](https://www.linkedin.com/in/have-samuel/)
 
 ## 🤝 Contributing
