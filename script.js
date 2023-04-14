@@ -167,27 +167,3 @@ projectBtn.forEach((btn, index) => {
 });
 
 // scrolling images
-const motionImgs = [
-  {
-    img1: './images/imageCard1.png',
-    img2: './images/imagecard2.png',
-    img3: './images/imagecard3.png',
-    img4: './images/imagecard4.png',
-    img5: './images/imagecard5.png',
-    img6: './images/imagecard6.png',
-  },
-];
-
-const scrollImages = document.querySelectorAll('#latest-works');
-scrollImages.forEach((img) => {
-  img.innerHTML = `
-  <div class="placeholder">
-    <img src="${motionImgs[0].img1}" alt="image1">
-    <img src="${motionImgs[0].img2}" alt="image2">
-    <img src="${motionImgs[0].img3}" alt="image3">
-    <img src="${motionImgs[0].img4}" alt="image4">
-    <img src="${motionImgs[0].img5}" alt="image5">
-    <img src="${motionImgs[0].img6}" alt="image6">
-  </div>
-  `;
-});
