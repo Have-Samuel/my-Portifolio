@@ -175,12 +175,15 @@ const createImg = (src, placeholder) => {
   return img;
 };
 
+// create image
 const img = createImg(
   './desktop-images/imagecard4.png',
 );
 
+// append image to the DOM
 const scroller = document.querySelector('#latest-works').appendChild(img);
 
+// array of images
 const arr = [
   './desktop-images/imagecard4.png',
   './desktop-images/imagecard3.png',
@@ -189,30 +192,25 @@ const arr = [
   './desktop-images/imagecard6.png',
 ];
 
-// slider function
+// slider function to change the image
 const slider = () => {
   let count = 0;
   setInterval(() => {
-    if (count === arr.length) {
+    if (count < 5) {
+      img.src = arr[count];
+    } else {
       count = 0;
+      img.src = arr[count];
     }
-    scroller.src = arr[count];
     count += 1;
   }, 1000);
 };
 
-// mouseover and mouseout event listener
-scroller.addEventListener('mouseenter', slider);
-
-// Stopping the slider
-scroller.addEventListener('mouseout', () => {
+// start the slider
+scroller.addEventListener('mouseenter', () => {
+  slider();
+});
+// stop the slider
+scroller.removeEventListener('mouseout', () => {
   clearInterval(slider);
 });
-
-// // mouseover and mouseout event listener
-// scroller.addEventListener('mouseenter', slider);
-
-// // Stopping the slider
-// scroller.addEventListener('mouseout', () => {
-//   clearInterval(slider);
-// });
