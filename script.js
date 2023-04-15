@@ -167,27 +167,52 @@ projectBtn.forEach((btn, index) => {
 });
 
 // scrolling images
-const motionImgs = [
-  {
-    img1: './images/imageCard1.png',
-    img2: './images/imagecard2.png',
-    img3: './images/imagecard3.png',
-    img4: './images/imagecard4.png',
-    img5: './images/imagecard5.png',
-    img6: './images/imagecard6.png',
-  },
+const createImg = (src, placeholder) => {
+  const img = document.createElement('img');
+  img.src = src;
+  img.classList.add('placeholder');
+  img.placeholder = placeholder;
+  return img;
+};
+
+const img = createImg(
+  './desktop-images/imagecard4.png',
+);
+
+const scroller = document.querySelector('#latest-works').appendChild(img);
+
+const arr = [
+  './desktop-images/imagecard4.png',
+  './desktop-images/imagecard3.png',
+  './desktop-images/imagecard4.png',
+  './desktop-images/imagecard5.png',
+  './desktop-images/imagecard6.png',
 ];
 
-const scrollImages = document.querySelectorAll('#latest-works');
-scrollImages.forEach((img) => {
-  img.innerHTML = `
-  <div class="placeholder">
-    <img src="${motionImgs[0].img1}" alt="image1">
-    <img src="${motionImgs[0].img2}" alt="image2">
-    <img src="${motionImgs[0].img3}" alt="image3">
-    <img src="${motionImgs[0].img4}" alt="image4">
-    <img src="${motionImgs[0].img5}" alt="image5">
-    <img src="${motionImgs[0].img6}" alt="image6">
-  </div>
-  `;
+// slider function
+const slider = () => {
+  let count = 0;
+  setInterval(() => {
+    if (count === arr.length) {
+      count = 0;
+    }
+    scroller.src = arr[count];
+    count += 1;
+  }, 1000);
+};
+
+// mouseover and mouseout event listener
+scroller.addEventListener('mouseenter', slider);
+
+// Stopping the slider
+scroller.addEventListener('mouseout', () => {
+  clearInterval(slider);
 });
+
+// // mouseover and mouseout event listener
+// scroller.addEventListener('mouseenter', slider);
+
+// // Stopping the slider
+// scroller.addEventListener('mouseout', () => {
+//   clearInterval(slider);
+// });
