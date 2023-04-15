@@ -176,33 +176,43 @@ const createImg = (src, placeholder) => {
 };
 
 const img = createImg(
-  './images/illustration-features-tab-1.svg',
+  './desktop-images/imagecard4.png',
 );
 
 const scroller = document.querySelector('#latest-works').appendChild(img);
 
 const arr = [
-  'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo23tYn4lKpHQfnMMHNWcf3pSMyg3wNQrJT2yFJSHA&s',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KslTKEQwBhWnNp3xHOcGLH9E5k3KCP2Bjk7F-OmIGw&s',
-  'https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg',
-  'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg',
+  './desktop-images/imagecard4.png',
+  './desktop-images/imagecard3.png',
+  './desktop-images/imagecard4.png',
+  './desktop-images/imagecard5.png',
+  './desktop-images/imagecard6.png',
 ];
 
+// slider function
 const slider = () => {
   let count = 0;
   setInterval(() => {
-    if (count < 5) {
-      img.src = arr[count];
-    } else {
+    if (count === arr.length) {
       count = 0;
-      img.src = arr[count];
     }
+    scroller.src = arr[count];
     count += 1;
-  }, 3000);
+  }, 1000);
 };
 
-scroller.addEventListener('mouseover', slider());
+// mouseover and mouseout event listener
+scroller.addEventListener('mouseenter', slider);
+
+// Stopping the slider
 scroller.addEventListener('mouseout', () => {
   clearInterval(slider);
 });
+
+// // mouseover and mouseout event listener
+// scroller.addEventListener('mouseenter', slider);
+
+// // Stopping the slider
+// scroller.addEventListener('mouseout', () => {
+//   clearInterval(slider);
+// });
