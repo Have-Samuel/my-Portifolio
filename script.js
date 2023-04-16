@@ -197,29 +197,20 @@ const slider = () => {
   let count = 0;
   setInterval(() => {
     console.log('switching to next image', count);
-    if (count < arr.length) {
+    if (count < arr.length - 1) {
       img.src = arr[count];
       count += 1;
     } else {
       count = 0;
       img.src = arr[count];
     }
-    console.log('count', count);
-    count += 1;
   }, 1000);
 };
 
-// start the slider when the user hovers over the image
-scroller.addEventListener('mouseover', () => {
-  slider();
-});
-
-// stop the slider when the user hovers out the image
+// Stop lopping when user hovers out the image
 scroller.addEventListener('mouseout', () => {
   clearInterval(slider);
 });
 
-// // stop the slider when the user hovers over the image
-// scroller.addEventListener('mouseout', () => {
-//   clearInterval(slider);
-// });
+// Start Slider when user hovers on the image
+scroller.addEventListener('mouseover', slider);
