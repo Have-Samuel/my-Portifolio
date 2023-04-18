@@ -210,7 +210,9 @@ const slider = () => {
 // Stop lopping when user hovers out the image
 scroller.addEventListener('mouseout', () => {
   clearInterval(slider);
-});
 
-// Start Slider when user hovers on the image
-scroller.addEventListener('mouseover', slider);
+  // Start looping when user hovers out the image
+  scroller.addEventListener('mouseover', () => {
+    slider();
+  });
+});
