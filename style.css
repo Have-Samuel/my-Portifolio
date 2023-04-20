@@ -832,6 +832,13 @@ textarea {
   display: none;
 }
 
+.form__error {
+  color: red;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 786px) {
   .hamburger-menu {
     display: none;

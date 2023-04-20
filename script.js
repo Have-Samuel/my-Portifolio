@@ -171,14 +171,26 @@ const fullName = document.querySelector('.name-input');
 const email = document.querySelector('.email-input');
 const message = document.querySelector('.textarea');
 const submitBtn = document.querySelector('#form-Btn');
-const error = document.querySelector('.error-msg');
+const error = document.querySelector('.form__error');
+
+
 
 const isValid = (e) => {
   e.preventDefault();
   if (email.value.toLowerCase() !== email.value) {
-    error.innerHTML = 'Please Enter Valid Email In Lower Case';
+    error.innerHTML = 'Email should be in Lower case!';
+  } else if (fullName.value.length < 3) {
+    error.innerHTML = 'Full name should be at least 3 characters!';
+  } else if (message.value.length < 10) {
+    error.innerHTML = 'Message should be at least 10 characters!';
   } else {
-    error.innerHTML = '';
+    error.innerHTML = 'Form submitted successfully!';
+  } if (email.value.toLowerCase() === email.value
+  && fullName.value.length >= 3
+  && message.value.length >= 10) {
+    fullName.value = '';
+    email.value = '';
+    message.value = '';
   }
 };
 
