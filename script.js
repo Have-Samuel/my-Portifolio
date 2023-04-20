@@ -167,3 +167,19 @@ projectBtn.forEach((btn, index) => {
 });
 
 // Form Validation
+const fullName = document.querySelector('.js-name-input');
+const email = document.querySelector('.js-email-input');
+const message = document.querySelector('.js-textarea');
+const submitBtn = document.querySelector('#form-Btn');
+const error = document.querySelector('.error-msg');
+
+const isValid = (e) => {
+  e.preventDefault();
+  if (email.value.toLowerCase() !== email.value) {
+    error.innerHTML = 'Please Enter Valid Email In Lower Case';
+  } else {
+    error.innerHTML = '';
+  }
+};
+
+submitBtn.addEventListener('click', isValid);
