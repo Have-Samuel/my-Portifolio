@@ -171,15 +171,15 @@ const form = document.querySelector('.js-form');
 const fullName = document.querySelector('.name-input');
 const email = document.querySelector('.email-input');
 const message = document.querySelector('.textarea');
-// const submitBtn = document.querySelector('#form-Btn');
-// const error = document.querySelector('.form__error');
 
 // Adding an Error message
 function errorText(input, message) {
   const formControl = input.parentElement;
-  formControl.className = 'form__field error';
   const small = formControl.querySelector('small');
+
   small.innerText = message;
+
+  formControl.className = 'form__field error';
 }
 
 // Validating the form
@@ -192,17 +192,17 @@ function validate() {
     return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
   }
 
-  if (fullNameValue === '') {
+  if (!fullNameValue) {
     errorText(fullName, 'Full name cannot be empty');
   }
 
-  if (emailValue === '') {
+  if (!emailValue) {
     errorText(email, 'Email cannot be empty');
   } else if (!isEmail(emailValue)) {
     errorText(email, 'Email is not valid');
   }
 
-  if (messageValue === '') {
+  if (!messageValue) {
     errorText(message, 'Message cannot be empty');
   }
 }
@@ -216,35 +216,40 @@ function removeError() {
   });
 }
 
+function resetInput() {
+  form.reset();
+}
+
 // submitBtn.addEventListener('click', validate);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validate();
   removeError();
+  resetInput();
 });
 
-// Local Storage
-const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
+// // Local Storage
+// const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
 
-const saveData = () => {
-  if (localStorage.getItem('formDetails')) {
-    const data = JSON.parse(localStorage.getItem('formDetails'));
-    fullName.value = data.fullName;
-    email.value = data.email;
-    message.value = data.message;
-  }
-};
+// const saveData = () => {
+//   if (localStorage.getItem('formDetails')) {
+//     const data = JSON.parse(localStorage.getItem('formDetails'));
+//     fullName.value = data.fullName;
+//     email.value = data.email;
+//     message.value = data.message;
+//   }
+// };
 
-saveData();
+// saveData();
 
-inputs.forEach((input) => {
-  input.addEventListener('input', () => {
-    const data = {
-      fullName: fullName.value,
-      email: email.value,
-      message: message.value,
-    };
-    localStorage.setItem('formDetails', JSON.stringify(data));
-  });
-});
+// inputs.forEach((input) => {
+//   input.addEventListener('input', () => {
+//     const data = {
+//       fullName: fullName.value,
+//       email: email.value,
+//       message: message.value,
+//     };
+//     localStorage.setItem('formDetails', JSON.stringify(data));
+//   });
+// });
