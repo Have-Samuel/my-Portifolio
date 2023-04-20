@@ -167,9 +167,9 @@ projectBtn.forEach((btn, index) => {
 });
 
 // Form Validation
-const fullName = document.querySelector('.js-name-input');
-const email = document.querySelector('.js-email-input');
-const message = document.querySelector('.js-textarea');
+const fullName = document.querySelector('.name-input');
+const email = document.querySelector('.email-input');
+const message = document.querySelector('.textarea');
 const submitBtn = document.querySelector('#form-Btn');
 const error = document.querySelector('.error-msg');
 
@@ -183,3 +183,28 @@ const isValid = (e) => {
 };
 
 submitBtn.addEventListener('click', isValid);
+
+// Local Storage
+const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
+
+const saveData = () => {
+  if (localStorage.getItem('formDetails')) {
+    const data = JSON.parse(localStorage.getItem('formDetails'));
+    fullName.value = data.fullName;
+    email.value = data.email;
+    message.value = data.message;
+  }
+};
+
+saveData();
+
+inputs.forEach((input) => {
+  input.addEventListener('input', () => {
+    const data = {
+      fullName: fullName.value,
+      email: email.value,
+      message: message.value,
+    };
+    localStorage.setItem('formDetails', JSON.stringify(data));
+  });
+});
