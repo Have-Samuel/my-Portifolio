@@ -832,16 +832,14 @@ textarea {
   display: none;
 }
 
-/* .form__error {
-  color: red;
-  font-size: 0.8rem;
-  margin: 0;
-  padding: 0;
-} */
+.form {
+  position: relative;
+  padding-bottom: 10px;
+}
 
 .form__field {
   position: relative;
-  padding-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .form__field input,
@@ -870,8 +868,8 @@ textarea {
   font-weight: 400;
   line-height: 17px;
   position: absolute;
-  bottom: -0.5rem;
-  right: 10px;
+  bottom: -20px;
+  right: 12px;
 }
 
 .form__field.error small {
