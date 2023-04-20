@@ -192,17 +192,17 @@ function validate() {
     return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
   }
 
-  if (fullNameValue === '') {
+  if (!fullNameValue) {
     errorText(fullName, 'Full name cannot be empty');
   }
 
-  if (emailValue === '') {
+  if (!emailValue) {
     errorText(email, 'Email cannot be empty');
   } else if (!isEmail(emailValue)) {
     errorText(email, 'Email is not valid');
   }
 
-  if (messageValue === '') {
+  if (!messageValue) {
     errorText(message, 'Message cannot be empty');
   }
 }
@@ -216,12 +216,17 @@ function removeError() {
   });
 }
 
+function resetInput() {
+  form.reset();
+}
+
 // submitBtn.addEventListener('click', validate);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validate();
   removeError();
+  resetInput();
 });
 
 // Local Storage
