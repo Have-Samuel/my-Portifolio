@@ -171,15 +171,15 @@ const form = document.querySelector('.js-form');
 const fullName = document.querySelector('.name-input');
 const email = document.querySelector('.email-input');
 const message = document.querySelector('.textarea');
-// const submitBtn = document.querySelector('#form-Btn');
-// const error = document.querySelector('.form__error');
 
 // Adding an Error message
 function errorText(input, message) {
   const formControl = input.parentElement;
-  formControl.className = 'form__field error';
   const small = formControl.querySelector('small');
+
   small.innerText = message;
+
+  formControl.className = 'form__field error';
 }
 
 // Validating the form
@@ -229,27 +229,27 @@ form.addEventListener('submit', (e) => {
   resetInput();
 });
 
-// Local Storage
-const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
+// // Local Storage
+// const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
 
-const saveData = () => {
-  if (localStorage.getItem('formDetails')) {
-    const data = JSON.parse(localStorage.getItem('formDetails'));
-    fullName.value = data.fullName;
-    email.value = data.email;
-    message.value = data.message;
-  }
-};
+// const saveData = () => {
+//   if (localStorage.getItem('formDetails')) {
+//     const data = JSON.parse(localStorage.getItem('formDetails'));
+//     fullName.value = data.fullName;
+//     email.value = data.email;
+//     message.value = data.message;
+//   }
+// };
 
-saveData();
+// saveData();
 
-inputs.forEach((input) => {
-  input.addEventListener('input', () => {
-    const data = {
-      fullName: fullName.value,
-      email: email.value,
-      message: message.value,
-    };
-    localStorage.setItem('formDetails', JSON.stringify(data));
-  });
-});
+// inputs.forEach((input) => {
+//   input.addEventListener('input', () => {
+//     const data = {
+//       fullName: fullName.value,
+//       email: email.value,
+//       message: message.value,
+//     };
+//     localStorage.setItem('formDetails', JSON.stringify(data));
+//   });
+// });
