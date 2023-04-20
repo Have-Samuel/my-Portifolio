@@ -192,18 +192,19 @@ const arr = [
   './desktop-images/imagecard6.png',
 ];
 
-// slider function to change the image
+// Slider function to change the images
 const slider = () => {
   let count = 0;
   setInterval(() => {
-    console.log('switching to next image', count);
-    if (count < arr.length - 1) {
-      img.src = arr[count];
-      count += 1;
-    } else {
+    console.log('count', count);
+    if (count < 5) {
       count = 0;
       img.src = arr[count];
+    } else {
+      // count = 0;
+      img.src = arr[count];
     }
+    // count += 1;
   }, 1000);
 };
 
