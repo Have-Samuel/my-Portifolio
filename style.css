@@ -812,11 +812,8 @@ body {
   max-width: 100%;
   padding: 15px 38px 15px 16px;
   cursor: pointer;
-  width: 100%;
-  max-width: 100%;
   font-size: 1.0625rem;
   line-height: 1.5;
-  padding: 15px 38px 15px 16px;
   border: 1px solid #dfe1e6;
   border-radius: 8px;
   background-color: #fbf8f7;
@@ -830,7 +827,8 @@ body {
   border: 1px solid rgba(94, 84, 164, 1);
 }
 
-.form__field.error input {
+.form__field.error input,
+.form__field.error textarea {
   border-color: red;
 }
 
@@ -848,10 +846,6 @@ body {
 
 .form__field.error small {
   visibility: visible;
-}
-
-.form__field.error textarea {
-  border: 1px solid red;
 }
 
 @media (min-width: 786px) {
