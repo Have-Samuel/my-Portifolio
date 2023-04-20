@@ -207,11 +207,21 @@ function validate() {
   }
 }
 
+// Remove Error message
+function removeError() {
+  const formError = document.querySelectorAll('.error');
+
+  formError.forEach((error) => {
+    error.classList.remove('error');
+  });
+}
+
 // submitBtn.addEventListener('click', validate);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validate();
+  removeError();
 });
 
 // Local Storage

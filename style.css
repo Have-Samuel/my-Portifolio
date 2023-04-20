@@ -844,6 +844,20 @@ textarea {
   padding-bottom: 10px;
 }
 
+.form__field input,
+.form__field textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 38px 15px 16px;
+  cursor: pointer;
+}
+
+.form__field input:focus,
+.form__field textarea:focus {
+  outline: none;
+  border: 1px solid rgba(94, 84, 164, 1);
+}
+
 .form__field.error input {
   border-color: red;
 }
@@ -857,7 +871,7 @@ textarea {
   line-height: 17px;
   position: absolute;
   bottom: -0.5rem;
-  right: 0;
+  right: 10px;
 }
 
 .form__field.error small {
