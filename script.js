@@ -167,34 +167,52 @@ projectBtn.forEach((btn, index) => {
 });
 
 // Form Validation
+const form = document.querySelector('.js-form');
 const fullName = document.querySelector('.name-input');
 const email = document.querySelector('.email-input');
 const message = document.querySelector('.textarea');
-const submitBtn = document.querySelector('#form-Btn');
-const error = document.querySelector('.form__error');
+// const submitBtn = document.querySelector('#form-Btn');
+// const error = document.querySelector('.form__error');
 
+// Adding an Error message
+function errorText(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control error';
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+}
 
+// Validating the form
+function validate() {
+  const fullNameValue = fullName.value.trim();
+  const emailValue = email.value.trim();
+  const messageValue = message.value.trim();
 
-const isValid = (e) => {
-  e.preventDefault();
-  if (email.value.toLowerCase() !== email.value) {
-    error.innerHTML = 'Email should be in Lower case!';
-  } else if (fullName.value.length < 3) {
-    error.innerHTML = 'Full name should be at least 3 characters!';
-  } else if (message.value.length < 10) {
-    error.innerHTML = 'Message should be at least 10 characters!';
-  } else {
-    error.innerHTML = 'Form submitted successfully!';
-  } if (email.value.toLowerCase() === email.value
-  && fullName.value.length >= 3
-  && message.value.length >= 10) {
-    fullName.value = '';
-    email.value = '';
-    message.value = '';
+  function isEmail(email) {
+    return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
   }
-};
 
-submitBtn.addEventListener('click', isValid);
+  if (fullNameValue === '') {
+    errorText(fullName, 'Full name cannot be empty');
+  }
+
+  if (emailValue === '') {
+    errorText(email, 'Email cannot be empty');
+  } else if (!isEmail(emailValue)) {
+    errorText(email, 'Email is not valid');
+  }
+
+  if (messageValue === '') {
+    errorText(message, 'Message cannot be empty');
+  }
+}
+
+// submitBtn.addEventListener('click', validate);
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validate();
+});
 
 // Local Storage
 const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');

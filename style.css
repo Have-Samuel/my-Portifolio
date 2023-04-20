@@ -839,6 +839,10 @@ textarea {
   padding: 0;
 }
 
+.form__field.error input {
+  border: 1px solid red;
+}
+
 @media (min-width: 786px) {
   .hamburger-menu {
     display: none;
