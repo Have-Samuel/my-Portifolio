@@ -761,10 +761,10 @@ form {
   padding: 0 24px;
 }
 
-.form__field--error {
+/* .form__field--error {
   border: 1px solid red;
   border-radius: 10px;
-}
+} */
 
 .input-contact {
   width: 100%;
@@ -830,6 +830,54 @@ textarea {
 
 .desktop-nav {
   display: none;
+}
+
+.form {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form__field input,
+.form__field textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 38px 15px 16px;
+  cursor: pointer;
+}
+
+.form__field input:focus,
+.form__field textarea:focus {
+  outline: none;
+  border: 1px solid rgba(94, 84, 164, 1);
+}
+
+.form__field.error input {
+  border-color: red;
+}
+
+.form__field small {
+  visibility: hidden;
+  color: red;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 17px;
+  position: absolute;
+  bottom: -20px;
+  right: 12px;
+}
+
+.form__field.error small {
+  visibility: visible;
+}
+
+.form__field.error textarea {
+  border: 1px solid red;
 }
 
 @media (min-width: 786px) {

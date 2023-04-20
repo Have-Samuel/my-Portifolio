@@ -167,19 +167,84 @@ projectBtn.forEach((btn, index) => {
 });
 
 // Form Validation
-const fullName = document.querySelector('.js-name-input');
-const email = document.querySelector('.js-email-input');
-const message = document.querySelector('.js-textarea');
-const submitBtn = document.querySelector('#form-Btn');
-const error = document.querySelector('.error-msg');
+const form = document.querySelector('.js-form');
+const fullName = document.querySelector('.name-input');
+const email = document.querySelector('.email-input');
+const message = document.querySelector('.textarea');
+// const submitBtn = document.querySelector('#form-Btn');
+// const error = document.querySelector('.form__error');
 
-const isValid = (e) => {
+// Adding an Error message
+function errorText(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = 'form__field error';
+  const small = formControl.querySelector('small');
+  small.innerText = message;
+}
+
+// Validating the form
+function validate() {
+  const fullNameValue = fullName.value.trim();
+  const emailValue = email.value.trim();
+  const messageValue = message.value.trim();
+
+  function isEmail(email) {
+    return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
+  }
+
+  if (fullNameValue === '') {
+    errorText(fullName, 'Full name cannot be empty');
+  }
+
+  if (emailValue === '') {
+    errorText(email, 'Email cannot be empty');
+  } else if (!isEmail(emailValue)) {
+    errorText(email, 'Email is not valid');
+  }
+
+  if (messageValue === '') {
+    errorText(message, 'Message cannot be empty');
+  }
+}
+
+// Remove Error message
+function removeError() {
+  const formError = document.querySelectorAll('.error');
+
+  formError.forEach((error) => {
+    error.classList.remove('error');
+  });
+}
+
+// submitBtn.addEventListener('click', validate);
+
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (email.value.toLowerCase() !== email.value) {
-    error.innerHTML = 'Please Enter Valid Email In Lower Case';
-  } else {
-    error.innerHTML = '';
+  validate();
+  removeError();
+});
+
+// Local Storage
+const inputs = document.querySelectorAll('.name-input, .email-input, .textarea');
+
+const saveData = () => {
+  if (localStorage.getItem('formDetails')) {
+    const data = JSON.parse(localStorage.getItem('formDetails'));
+    fullName.value = data.fullName;
+    email.value = data.email;
+    message.value = data.message;
   }
 };
 
-submitBtn.addEventListener('click', isValid);
+saveData();
+
+inputs.forEach((input) => {
+  input.addEventListener('input', () => {
+    const data = {
+      fullName: fullName.value,
+      email: email.value,
+      message: message.value,
+    };
+    localStorage.setItem('formDetails', JSON.stringify(data));
+  });
+});
