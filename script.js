@@ -177,7 +177,7 @@ const message = document.querySelector('.textarea');
 // Adding an Error message
 function errorText(input, message) {
   const formControl = input.parentElement;
-  formControl.className = 'form-control error';
+  formControl.className = 'form__field error';
   const small = formControl.querySelector('small');
   small.innerText = message;
 }
