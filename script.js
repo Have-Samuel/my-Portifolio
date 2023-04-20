@@ -166,53 +166,20 @@ projectBtn.forEach((btn, index) => {
   });
 });
 
-// scrolling images
-const createImg = (src, placeholder) => {
-  const img = document.createElement('img');
-  img.src = src;
-  img.classList.add('placeholder');
-  img.placeholder = placeholder;
-  return img;
+// Form Validation
+const fullName = document.querySelector('.js-name-input');
+const email = document.querySelector('.js-email-input');
+const message = document.querySelector('.js-textarea');
+const submitBtn = document.querySelector('#form-Btn');
+const error = document.querySelector('.error-msg');
+
+const isValid = (e) => {
+  e.preventDefault();
+  if (email.value.toLowerCase() !== email.value) {
+    error.innerHTML = 'Please Enter Valid Email In Lower Case';
+  } else {
+    error.innerHTML = '';
+  }
 };
 
-// create image
-const img = createImg(
-  './desktop-images/imagecard4.png',
-);
-
-// append image to the DOM
-const scroller = document.querySelector('#latest-works').appendChild(img);
-
-// array of images
-const arr = [
-  './desktop-images/imagecard4.png',
-  './desktop-images/imagecard3.png',
-  './desktop-images/imagecard4.png',
-  './desktop-images/imagecard5.png',
-  './desktop-images/imagecard6.png',
-];
-
-// slider function to change the image
-const slider = () => {
-  let count = 0;
-  setInterval(() => {
-    console.log('switching to next image', count);
-    if (count < arr.length - 1) {
-      img.src = arr[count];
-      count += 1;
-    } else {
-      count = 0;
-      img.src = arr[count];
-    }
-  }, 1000);
-};
-
-// Stop lopping when user hovers out the image
-scroller.addEventListener('mouseout', () => {
-  clearInterval(slider);
-
-  // Start looping when user hovers out the image
-  scroller.addEventListener('mouseover', () => {
-    slider();
-  });
-});
+submitBtn.addEventListener('click', isValid);
