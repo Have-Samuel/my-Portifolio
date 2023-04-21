@@ -173,13 +173,13 @@ const email = document.querySelector('.email-input');
 const message = document.querySelector('.textarea');
 
 // Adding an Error message
-function errorText(input, message) {
-  const formControl = input.parentElement;
+function errorText(ele, message) {
+  const formControl = ele.parentElement;
+
   const small = formControl.querySelector('small');
+  formControl.className = 'form__field error';
 
   small.innerText = message;
-
-  formControl.className = 'form__field error';
 }
 
 // Validating the form
