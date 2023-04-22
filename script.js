@@ -167,10 +167,10 @@ projectBtn.forEach((btn, index) => {
 });
 
 // Form Validation
-const form = document.querySelector('.js-form');
-const fullName = document.querySelector('.name-input');
-const email = document.querySelector('.email-input');
-const message = document.querySelector('.textarea');
+const form = document.querySelector('#js-form');
+const fullName = document.querySelector('#name-input');
+const email = document.querySelector('#email-input');
+const message = document.querySelector('#message-input');
 
 // Adding an Error message
 function errorText(ele, message) {

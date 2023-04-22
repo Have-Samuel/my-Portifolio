@@ -147,10 +147,11 @@
             like to chat please get in touch.
           </p>
           
-          <form class="form js-form"  method="POST">
+          <form class="form" id="js-form"  method="POST">
             <div class="form__field">
               <input
-              class="input-contact name-input"
+              class="input-contact"
+              id="name-input"
               type="text"
               name="name-input"
               placeholder="Full name"
@@ -159,7 +160,8 @@
             </div>
             <div class="form__field">
               <input
-              class="input-contact email-input"
+              class="input-contact"
+              id="email-input"
               type="email"
               name="email-input"
               placeholder="Email address"/>
@@ -168,6 +170,7 @@
             <div class="form__field">
               <textarea
               class="textarea"
+              id="message-input"
               name="comments-input"
               id="comments"
               cols="100"
