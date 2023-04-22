@@ -1201,7 +1201,7 @@ body {
   }
 
   .form__field small {
-    visibility: hidden;
+    /* visibility: hidden; */
     color: red;
     font-size: 0.8rem;
     font-style: italic;
@@ -1213,7 +1213,7 @@ body {
   }
 
   .form__field.error small {
-    /* visibility: visible; */
+    visibility: visible;
   }
 
   .contact-section__form p {
