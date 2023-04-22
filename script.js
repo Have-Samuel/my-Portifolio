@@ -203,9 +203,9 @@ function validate() {
     errorText(email, 'Email is not valid');
   }
 
-  if (!messageValue) {
-    errorText(message, 'Message cannot be empty');
-  }
+  // if (!messageValue) {
+  //   errorText(message, 'Message cannot be empty');
+  // }
 }
 
 // Remove Error message
