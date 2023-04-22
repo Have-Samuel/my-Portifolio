@@ -180,7 +180,7 @@ function errorText(ele, message) {
 
   formControl.className = 'form__field error';
 
-  console.log(small);
+  // console.log(small);
 }
 
 // Validating the form
