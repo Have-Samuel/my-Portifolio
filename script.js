@@ -187,7 +187,7 @@ function errorText(ele, message) {
 function validate() {
   const fullNameValue = fullName.value.trim();
   const emailValue = email.value.trim();
-  const messageValue = message.value.trim();
+  // const messageValue = message.value.trim();
 
   function isEmail(email) {
     return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
