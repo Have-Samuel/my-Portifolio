@@ -170,7 +170,7 @@ projectBtn.forEach((btn, index) => {
 const form = document.querySelector('#js-form');
 const fullName = document.querySelector('#name-input');
 const email = document.querySelector('#email-input');
-const message = document.querySelector('#message-input');
+// const message = document.querySelector('#message-input');
 
 // Adding an Error message
 function errorText(ele, message) {
