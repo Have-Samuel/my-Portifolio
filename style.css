@@ -1213,7 +1213,7 @@ body {
   }
 
   .form__field.error small {
-    visibility: visible;
+    /* visibility: visible; */
   }
 
   .contact-section__form p {
@@ -1360,10 +1360,10 @@ body {
       margin-top: 8rem;
     }
 
-    /* .form__field {
+    .form__field {
       position: relative;
       margin-bottom: 1.5rem;
-    } */
+    }
 
     .contact-section__form {
       display: flex;
