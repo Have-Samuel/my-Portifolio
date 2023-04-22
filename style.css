@@ -1360,10 +1360,10 @@ body {
       margin-top: 8rem;
     }
 
-    .form__field {
+    /* .form__field {
       position: relative;
       margin-bottom: 1.5rem;
-    }
+    } */
 
     .contact-section__form {
       display: flex;
