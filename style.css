@@ -814,11 +814,11 @@ body {
   cursor: pointer;
   font-size: 1.0625rem;
   line-height: 1.5;
-  border: 1px solid #dfe1e6;
   border-radius: 8px;
   background-color: #fbf8f7;
   font-family: "Inter", sans-serif;
   outline: none;
+  border: none;
 }
 
 .form__field input:focus,
@@ -1158,6 +1158,12 @@ body {
 
   form {
     margin: 2rem auto;
+    position: relative;
+  }
+
+  .form__field {
+    position: relative;
+    margin-bottom: 1rem;
   }
 
   .contact-section__form {
@@ -1168,6 +1174,48 @@ body {
     width: 100%;
   }
 
+  .form__field input,
+  .form__field textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 38px 15px 16px;
+    cursor: pointer;
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    background-color: #fbf8f7;
+    font-family: "Inter", sans-serif;
+    outline: none;
+  }
+
+  .form__field input:focus,
+  .form__field textarea:focus {
+    outline: none;
+    border: 1px solid rgba(94, 84, 164, 1);
+  }
+
+  .form__field.error input,
+  .form__field.error textarea {
+    border-color: red;
+  }
+
+  .form__field small {
+    visibility: hidden;
+    color: red;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 17px;
+    position: absolute;
+    bottom: -20px;
+    right: 12px;
+  }
+
+  .form__field.error small {
+    visibility: visible;
+  }
+
   .contact-section__form p {
     text-align: left;
     font-family: 'Inter', sans-serif;
@@ -1175,12 +1223,6 @@ body {
     font-weight: 700;
     line-height: 52px;
     color: #172b4d;
-  }
-
-  .contact-section__form textarea {
-    outline: none;
-    border: 1px solid #dbd8d7;
-    border-radius: 5px;
   }
 
   .new-lining {
@@ -1314,7 +1356,13 @@ body {
     }
 
     form {
+      position: relative;
       margin-top: 8rem;
+    }
+
+    .form__field {
+      position: relative;
+      margin-bottom: 1.5rem;
     }
 
     .contact-section__form {
@@ -1323,13 +1371,35 @@ body {
     }
 
     .contact-section__form p {
-      margin-top: -3rem;
+      margin-top: -12rem;
       width: 60%;
     }
 
-    /* .items li:hover,
-    .items li:active {
-      transform: scale(1.1);
-    } */
+    .form__field input:focus,
+    .form__field textarea:focus {
+      outline: none;
+      border: 1px solid rgba(94, 84, 164, 1);
+    }
+
+    .form__field.error input,
+    .form__field.error textarea {
+      border-color: red;
+    }
+
+    .form__field small {
+      visibility: hidden;
+      color: red;
+      font-size: 0.8rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 17px;
+      position: absolute;
+      bottom: -20px;
+      right: 12px;
+    }
+
+    .form__field.error small {
+      visibility: visible;
+    }
   }
 }
