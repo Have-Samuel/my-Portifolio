@@ -170,7 +170,7 @@ projectBtn.forEach((btn, index) => {
 const form = document.querySelector('#js-form');
 const fullName = document.querySelector('#name-input');
 const email = document.querySelector('#email-input');
-const message = document.querySelector('#message-input');
+// const message = document.querySelector('#message-input');
 
 // Adding an Error message
 function errorText(ele, message) {
@@ -180,14 +180,14 @@ function errorText(ele, message) {
 
   formControl.className = 'form__field error';
 
-  console.log(small);
+  // console.log(small);
 }
 
 // Validating the form
 function validate() {
   const fullNameValue = fullName.value.trim();
   const emailValue = email.value.trim();
-  const messageValue = message.value.trim();
+  // const messageValue = message.value.trim();
 
   function isEmail(email) {
     return /^([a-zA-Z0-9_\-\\.]+)@([a-zA-Z0-9_\-\\.]+)\.([a-zA-Z]{2,5})$/.test(email);
@@ -203,9 +203,9 @@ function validate() {
     errorText(email, 'Email is not valid');
   }
 
-  if (!messageValue) {
-    errorText(message, 'Message cannot be empty');
-  }
+  // if (!messageValue) {
+  //   errorText(message, 'Message cannot be empty');
+  // }
 }
 
 // Remove Error message
