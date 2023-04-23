@@ -912,6 +912,24 @@ body {
     background-color: #e4752b;
   }
 
+  .nav-link-eve {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff5e1;
+    position: relative;
+    text-decoration: none;
+    margin-left: 0.6rem;
+  }
+
+  .far {
+    line-height: 0;
+  }
+
+  .nav-link-eve:hover,
+  .nav-link-eve:active {
+    color: #e4752b;
+  }
+
   .headline {
     background: url('./images/Illustration-header.png'), rgba(28, 26, 25, 1);
     background-repeat: no-repeat;
