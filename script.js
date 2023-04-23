@@ -18,12 +18,12 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'Basic Portfolio Website that built with HTML, CSS and JavaScript, and shows two pages as a sample if more needed.',
-    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    popupDescription: 'This a basic Portfolio Website that built with HTML, CSS and JavaScript, and shows two pages as a sample for the whole website to become functional.',
     featuredImage: './desktop-images/slider-1.png',
     popupImg: './desktop-images/slider-1.png',
-    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
+    liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
+    sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
   },
   {
     title: 'Printing Data',
