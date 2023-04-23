@@ -316,11 +316,20 @@ body {
   border: 1px solid #ff6b00;
 }
 
+.heAders h2 {
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 3rem 0 0 0;
+  text-align: center;
+}
+
 #section-cards {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 88px;
-  padding: 114px 24px;
+  padding: 30px 24px;
 }
 
 .card {
@@ -351,6 +360,7 @@ body {
   width: 100%;
   height: auto;
   transition: transform 0.35s ease 0s;
+  border: 0.5px dotted #c1c7d0;
 }
 
 .card-img:hover {
