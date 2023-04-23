@@ -221,11 +221,9 @@ function resetInput() {
   form.reset();
 }
 
-// submitBtn.addEventListener('click', validate);
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  removeError();
   validate();
-  // removeError();
   resetInput();
 });
