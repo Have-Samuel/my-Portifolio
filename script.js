@@ -1,4 +1,3 @@
-// Mobile MenuPop
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
 
@@ -13,7 +12,6 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
-// PROJECTS
 const projects = [
   {
     title: 'Printing One Data',
@@ -77,7 +75,6 @@ const projects = [
   },
 ];
 
-// Technology list for the page
 function techs(tech) {
   return `
   <ul class="tech-list">
@@ -86,14 +83,12 @@ function techs(tech) {
   `;
 }
 
-// Technology list for the popup
 const popupTechs = (tech) => `
   <ul class="tech-list">
     ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).join('')}
   </ul>
   `;
 
-// Dynamically render the projects
 function projectCard(work) {
   return `
   <article class="card">
@@ -112,7 +107,7 @@ const allProjects = document.querySelector('#section-cards');
 allProjects.innerHTML = `
   ${projects.map(projectCard).join('')}
 `;
-// Popup
+
 const projectBtn = document.querySelectorAll('.btn');
 const main = document.querySelector('main');
 
@@ -130,7 +125,6 @@ function closeModal() {
 
 const arrClassName = [];
 
-// Loop through the projects array
 for (let i = 0; i < projects.length; i += 1) {
   modal = document.createElement('div');
   arrClassName.push(`
@@ -152,7 +146,6 @@ for (let i = 0; i < projects.length; i += 1) {
   `);
 }
 
-// project button event listener and x button event listener
 projectBtn.forEach((btn, index) => {
   btn.addEventListener('click', (click) => {
     if (click.target.id === btn.id) {
@@ -166,24 +159,19 @@ projectBtn.forEach((btn, index) => {
   });
 });
 
-// Form Validation
 const form = document.querySelector('#js-form');
 const fullName = document.querySelector('#name-input');
 const email = document.querySelector('#email-input');
 const message = document.querySelector('#message-input');
 
-// Adding an Error message
 function errorText(ele, message) {
   const formControl = ele.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = message;
 
   formControl.classList.add('error');
-
-  console.log(formControl);
 }
 
-// Validating the form
 function validate() {
   const fullNameValue = fullName.value.trim();
   const emailValue = email.value.trim();
@@ -195,20 +183,29 @@ function validate() {
 
   if (!fullNameValue) {
     errorText(fullName, 'Full name cannot be empty');
+  } else {
+    errorText(fullName, '');
   }
 
   if (!emailValue) {
     errorText(email, 'Email cannot be empty');
   } else if (!isEmail(emailValue)) {
     errorText(email, 'Email is not valid');
+  } else {
+    errorText(email, '');
   }
 
   if (!messageValue) {
     errorText(message, 'Message cannot be empty');
+  } else {
+    errorText(message, '');
+  }
+
+  if (!form) {
+    errorText.innerHTML = '';
   }
 }
 
-// Remove Error message
 function removeError() {
   const formError = document.querySelectorAll('.error');
 
@@ -221,11 +218,9 @@ function resetInput() {
   form.reset();
 }
 
-// submitBtn.addEventListener('click', validate);
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  removeError();
   validate();
-  // removeError();
   resetInput();
 });
