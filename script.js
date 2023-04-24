@@ -29,7 +29,7 @@ const projects = [
     title: 'Meme Generator',
     description: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text.',
     popupDescription: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text. ',
-    featuredImage: './desktop-images/slider-2.png',
+    featuredImage: './desktop-images/slider2-2.png',
     popupImg: './desktop-images/slider-2.png',
     technologies: ['Javascript', 'Html', 'Css'],
     liveLink: 'https://mem-gen.netlify.app/',
@@ -46,34 +46,34 @@ const projects = [
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
   },
   {
-    title: 'Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: './desktop-images/imagecard5.png',
-    popupImg: './images/popup.png',
-    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    title: 'Connect Four',
+    description: 'Connect Four is played on a grid, with two players, 1 (red) and 2 (blue). The players alternate turns, dropping a piece of their color in the top of a column. The piece will fall down to the further-down unoccupied slot. The game is won when a player makes four in a row (horizontally, vertically, or diagonally and anti-diagonally)',
+    popupDescription: 'Connect Four is played on a grid, with two players, 1 (red) and 2 (blue). The players alternate turns, dropping a piece of their color in the top of a column. The piece will fall down to the further-down unoccupied slot. The game is won when a player makes four in a row (horizontally, vertically, or diagonally and anti-diagonally)',
+    featuredImage: './desktop-images/Connect-41.png',
+    popupImg: './desktop-images/Connect-42.png',
+    technologies: ['Javascript', 'Gitflow', 'Best-Practices'],
+    liveLink: 'https://connect-44.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/connect-fourTrl',
   },
   {
-    title: 'Printing Data',
+    title: 'Article Preview Component',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
     popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: './desktop-images/imagecard6.png',
-    popupImg: './images/popup.png',
-    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    featuredImage: './desktop-images/drawers.jpg',
+    popupImg: './desktop-images/drawers.jpg',
+    technologies: ['Javascript', 'Html', 'Css'],
+    liveLink: 'https://article-preview-card212.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/arcticle-preview-component',
   },
   {
-    title: 'Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    featuredImage: './desktop-images/imagecard2.png',
-    popupImg: './images/popup.png',
-    technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
-    sourceLink: 'https://github.com/Have-Samuel/portfolio1',
+    title: 'Interactive Rating Component',
+    description: 'Users should be able to: View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Select and submit a number rating See the "Thank you" card state after submitting a rating',
+    popupDescription: 'Users should be able to: View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Select and submit a number rating See the "Thank you" card state after submitting a rating',
+    featuredImage: './desktop-images/desKtopVersion.png',
+    popupImg: './desktop-images/deSktopVersion.png',
+    technologies: ['Flexbox', 'Html', 'Css', 'Gitflow', 'Javascript'],
+    liveLink: 'https://rating-component1.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/Interactive-rating-component',
   },
 ];
 
@@ -81,7 +81,7 @@ const projects = [
 function techs(tech) {
   return `
   <ul class="tech-list">
-    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 4).join('')}
+    ${tech.map((tech) => `<li class="tech-item">${tech}</li>`).slice(0, 5).join('')}
   </ul>
   `;
 }
