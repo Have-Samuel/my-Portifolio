@@ -1,5 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
+My Portfolio is responsive to different sizes of devices, with some of my recent works.
+
 # Portfolio: Mobile version 
 ![screenshot](./images/p-mob1.png)
 ![screenshot](./images/p-mob2.png)
@@ -28,7 +31,7 @@
 - JavaScript
 ## Live Demo
 
-[Live Demo Link](https://have-samuel.github.io/portfolio/)
+[Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
 
 
 ## Getting Started
