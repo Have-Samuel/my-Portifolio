@@ -29,7 +29,7 @@ const projects = [
     title: 'Meme Generator',
     description: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text.',
     popupDescription: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text. ',
-    featuredImage: './desktop-images/slider-2.png',
+    featuredImage: './desktop-images/slider2-2.png',
     popupImg: './desktop-images/slider-2.png',
     technologies: ['Javascript', 'Html', 'Css'],
     liveLink: 'https://mem-gen.netlify.app/',
