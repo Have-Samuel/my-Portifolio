@@ -583,7 +583,7 @@ body {
   margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.aboutme button {
+.aboutme .resume {
   background-color: #ff6b00;
   color: #fff;
   padding: 15px;
@@ -600,8 +600,8 @@ body {
   border-radius: 8px;
 }
 
-.aboutme button:hover,
-.aboutmebutton:active {
+.aboutme .resume:hover,
+.aboutme .resume:active {
   color: #ff6b00;
   background-color: #fff;
   border: 1px solid #ff6b00;
