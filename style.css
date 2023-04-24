@@ -330,6 +330,7 @@ body {
   grid-template-columns: auto;
   grid-gap: 88px;
   padding: 30px 24px;
+  flex-shrink: 2;
 }
 
 .card {
