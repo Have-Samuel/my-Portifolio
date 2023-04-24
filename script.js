@@ -46,13 +46,13 @@ const projects = [
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
   },
   {
-    title: 'Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-    popupDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    title: 'Connect Four',
+    description: 'Connect Four is played on a grid, with two players, 1 (red) and 2 (blue). The players alternate turns, dropping a piece of their color in the top of a column. The piece will fall down to the further-down unoccupied slot. The game is won when a player makes four in a row (horizontally, vertically, or diagonally and anti-diagonally)',
+    popupDescription: 'Connect Four is played on a grid, with two players, 1 (red) and 2 (blue). The players alternate turns, dropping a piece of their color in the top of a column. The piece will fall down to the further-down unoccupied slot. The game is won when a player makes four in a row (horizontally, vertically, or diagonally and anti-diagonally)',
     featuredImage: './desktop-images/imagecard5.png',
     popupImg: './images/popup.png',
     technologies: ['Javascript', 'React', 'Ruby', 'Rails'],
-    liveLink: 'https://have-samuel.github.io/portfolio1/',
+    liveLink: 'https://connect-44.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/portfolio1',
   },
   {
