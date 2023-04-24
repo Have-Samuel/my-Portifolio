@@ -1142,7 +1142,7 @@ body {
     text-align: left;
   }
 
-  .aboutme button {
+  .aboutme .resume {
     width: 171px;
     padding: 12px;
   }
@@ -1392,7 +1392,7 @@ body {
       width: 600px;
     }
 
-    .aboutme button {
+    .aboutme .resume {
       margin: 0 45.8rem 0 8.9rem;
     }
 
