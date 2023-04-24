@@ -150,12 +150,12 @@
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
           </p>
-          
-          <form class="form" action="https://formspree.io/f/moqzynzj" id="js-form" method="post">
+          <form class="form" id="js-form" action="https://formspree.io/f/mwkjawyz" method="POST">
             <div class="form__field">
               <input
               class="input-contact"
               id="name-input"
+              name="name"
               type="text"
               placeholder="Full name"
               maxlength="50"/>
@@ -165,15 +165,16 @@
               <input
               class="input-contact"
               id="email-input"
+              name="email"
               type="email"
-              placeholder="Email address"/>
+              placeholder="Email address" required/>
               <small>Error</small>
             </div>
             <div class="form__field">
               <textarea
               class="textarea"
               id="message-input"
-              id="comments"
+              name="message"
               cols="100"
               rows="5"
               maxlength="500"
