@@ -62,7 +62,7 @@ const projects = [
     featuredImage: './desktop-images/drawers.jpg',
     popupImg: './desktop-images/drawers.jpg',
     technologies: ['Javascript', 'Html', 'Css'],
-    liveLink: 'https://article-preview-card212.netlify.app/',
+    liveLink: 'https://bright-gumption-25360.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/arcticle-preview-component',
   },
   {
