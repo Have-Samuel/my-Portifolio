@@ -2,6 +2,7 @@
 
 
 My Portfolio is responsive to different sizes of devices, with some of my recent works.
+And the popUps are also responsive depending on different screens.
 
 # Portfolio: Mobile version 
 ![screenshot](./images/p-mob1.png)
