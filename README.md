@@ -61,6 +61,7 @@ git clone git@github.com:Have-Samuel/portfolio1.git
 
 ## 🤝 Contributing
 
+Thanks to .[#Microverse](https://www.microverse.org/)
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Have-Samuel/my-Portifolio/issues).
