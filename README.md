@@ -25,7 +25,8 @@ And the popUps are also responsive depending on different screens.
 ## Built With
 
 - HTML5 & CSS
-- Git and Git-Flow
+- Best Practices
+- Git & Git-Flow
 - Linters
 - Flexbox and CSS Grid Layout
 - Positioning
