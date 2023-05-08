@@ -1338,6 +1338,10 @@ body {
       grid-template-columns: repeat(3, 1fr);
     }
 
+    .btn {
+      border-radius: 8px;
+    }
+
     .card {
       padding: 1rem;
     }
