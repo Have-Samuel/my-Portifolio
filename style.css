@@ -319,7 +319,7 @@ body {
 .heAders h2 {
   color: #091e42;
   font-family: 'Crete Round', serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   padding: 3rem 0 0 0;
   text-align: center;
@@ -1036,6 +1036,10 @@ body {
     margin: 0 auto;
   }
 
+  .heAders h2 {
+    font-size: 37px;
+  }
+
   .btn {
     border-radius: 0 0 8px 8px;
   }
@@ -1336,6 +1340,10 @@ body {
     #section-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .heAders h2 {
+      font-size: 45px;
     }
 
     .btn {
