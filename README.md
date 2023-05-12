@@ -31,6 +31,7 @@ And the popUps are also responsive depending on different screens.
 - Flexbox and CSS Grid Layout
 - Positioning
 - JavaScript
+- Git & GitFlow
 ## Live Demo
 
 [Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
