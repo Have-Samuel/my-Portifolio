@@ -27,10 +27,10 @@ body {
 
 .header.scroll {
   position: fixed;
-  top: 0;
+  top: -7rem;
   left: 0;
   width: 100%;
-  height: -7rem;
+  height: 7rem;
   transition: 0.5s;
 }
 
