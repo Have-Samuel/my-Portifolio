@@ -1,3 +1,17 @@
+/* eslint-disable no-unused-expressions */
+// NavBar Scolling
+const header = document.querySelector('.header');
+
+let preScrollPos = window.pageXOffset;
+
+window.onscroll = () => {
+  const currentScrollPos = window.pageYOffset;
+
+  preScrollPos > currentScrollPos ? header.classList.remove('scroll') : header.classList.add('scroll');
+
+  preScrollPos = currentScrollPos;
+};
+
 // Mobile MenuPop
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
