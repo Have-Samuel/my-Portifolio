@@ -1,17 +1,13 @@
+/* eslint-disable no-unused-expressions */
 // NavBar Scolling
 const header = document.querySelector('.header');
 
 let preScrollPos = window.pageXOffset;
-// console.log(preScrollPos);
 
 window.onscroll = () => {
   const currentScrollPos = window.pageYOffset;
 
-  if (preScrollPos > currentScrollPos) {
-    header.classList.remove('scroll');
-  } else {
-    header.classList.add('scroll');
-  }
+  preScrollPos > currentScrollPos ? header.classList.remove('scroll') : header.classList.add('scroll');
 
   preScrollPos = currentScrollPos;
 };
