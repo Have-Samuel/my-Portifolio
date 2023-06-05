@@ -1,3 +1,6 @@
+// NavBar Scolling
+const header = document.querySelector('.header');
+
 // Mobile MenuPop
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
