@@ -30,16 +30,6 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
-    title: 'Interactive Credit Card',
-    description: 'Simple Credit Card built with jQuery and Javascript, the User fills the form and see the details update on the Card, If there is any errors, they get notices, and the card is Responsive to different screen sizes..',
-    popupDescription: 'Users should be able to Fill in the form and see the card details update in real time, Receive error messages when the form is submitted: if Any input field is empty, The card number, expiry date, or CVC fields are in the wrong format, View the optimal layout depending on their device\'s screen sizeSee hover, active, and focus states for interactive elements on the page',
-    featuredImage: './desktop-images/desktop-preview.jpg',
-    popupImg: './desktop-images/desktop-design-1.jpg',
-    technologies: ['jQuery', 'Flexbox', 'Javascript', 'Positioning'],
-    liveLink: 'https://cc-kashata-d11e95.netlify.app/',
-    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
-  },
-  {
     title: 'Meme Generator',
     description: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text.',
     popupDescription: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text. ',
@@ -48,6 +38,16 @@ const projects = [
     technologies: ['Javascript', 'Html', 'Css'],
     liveLink: 'https://mem-gen.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/memeGenerator',
+  },
+  {
+    title: 'Interactive Credit Card',
+    description: 'Simple Credit Card built with jQuery and Javascript, the User fills the form and see the details update on the Card, If there is any errors, they get notices, and the card is Responsive to different screen sizes..',
+    popupDescription: 'Users should be able to Fill in the form and see the card details update in real time, Receive error messages when the form is submitted: if Any input field is empty, The card number, expiry date, or CVC fields are in the wrong format, View the optimal layout depending on their device\'s screen sizeSee hover, active, and focus states for interactive elements on the page',
+    featuredImage: './desktop-images/desktop-preview.jpg',
+    popupImg: './desktop-images/desktop-design-1.jpg',
+    technologies: ['jQuery', 'Flexbox', 'Javascript', 'Positioning'],
+    liveLink: 'https://cc-kashata-d11e95.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
   },
   {
     title: 'Portfolio Website',
