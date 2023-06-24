@@ -30,14 +30,14 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
-    title: 'Meme Generator',
-    description: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text.',
-    popupDescription: 'Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text. ',
-    featuredImage: './desktop-images/slider2-2.png',
-    popupImg: './desktop-images/slider-2.png',
-    technologies: ['Javascript', 'Html', 'Css'],
-    liveLink: 'https://mem-gen.netlify.app/',
-    sourceLink: 'https://github.com/Have-Samuel/memeGenerator',
+    title: 'Advice Generator',
+    description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size (Responsive), See hover states for all interactive elements on the page, Generate a new piece of advice at random ID by clicking the dice icon.',
+    popupDescription: 'View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Generate a new piece of advice by clicking the dice icon. Use the Axios Library to request data from the Advice Slip JSON API. Use async/await to handle the Promise returned by the Axios Library. Display the returned advice slip in the app. Display a loading state when waiting for a response from the API.',
+    featuredImage: './desktop-images/desktop-previewAd.jpg',
+    popupImg: './desktop-images/desktop-Av-design.jpg',
+    technologies: ['API', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
+    liveLink: 'https://chipper-advicer.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/advice-generator-app',
   },
   {
     title: 'Interactive Credit Card',
