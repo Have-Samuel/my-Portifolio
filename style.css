@@ -593,7 +593,7 @@ body {
 .aboutme-section {
   background: url('./images/Group-aboutme.png'), #1c1a19;
   background-repeat: no-repeat;
-  background-position: bottom 71% right;
+  background-position: bottom 80% right;
   margin-top: 7.5rem;
 }
 
@@ -642,7 +642,7 @@ body {
 
 .vector-line {
   width: 80%;
-  margin: 21rem 1rem 8rem 2.3rem;
+  margin: 11rem 1rem 8rem 2.3rem;
   border: 1px solid #928c8c;
 }
 
@@ -1189,7 +1189,7 @@ body {
   }
 
   .vector-line {
-    margin: 16rem 4.5rem 8rem 3.5rem;
+    margin: 16rem 4.5rem 0 3.5rem;
     width: 90%;
   }
 
@@ -1213,7 +1213,11 @@ body {
 
   .header-languages1 {
     margin-left: 2.5rem;
-    margin-top: -4rem;
+    margin-top: -3rem;
+  }
+
+  .header-languages2 {
+    margin-top: -8rem;
   }
 
   .header-languages3 {
@@ -1453,6 +1457,10 @@ body {
     .vector-line {
       margin: 8rem 4.5rem 4rem 4.5rem;
       width: 90%;
+    }
+
+    .header-languages3 {
+      margin-top: 8.5rem;
     }
 
     form {
