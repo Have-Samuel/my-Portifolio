@@ -81,8 +81,8 @@ const projects = [
   },
   {
     title: 'Interactive Rating Component',
-    description: 'Users should be able to: View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Select and submit a number rating See the "Thank you" card state after submitting a rating',
-    popupDescription: 'Users should be able to: View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Select and submit a number rating See the "Thank you" card state after submitting a rating',
+    description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Select and submit a number rating, See the "Thank you" card state after submitting a rating',
+    popupDescription: 'Users should view the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Select and submit a number rating, See the "Thank you" card state after submitting a rating',
     featuredImage: './desktop-images/desKtopVersion.png',
     popupImg: './desktop-images/deSktopVersion.png',
     technologies: ['Flexbox', 'Html', 'Css', 'Gitflow', 'Javascript'],
