@@ -1189,7 +1189,7 @@ body {
   }
 
   .vector-line {
-    margin: 16rem 4.5rem 8rem 3.5rem;
+    margin: 16rem 4.5rem 0 3.5rem;
     width: 90%;
   }
 
@@ -1213,7 +1213,11 @@ body {
 
   .header-languages1 {
     margin-left: 2.5rem;
-    margin-top: -4rem;
+    margin-top: -3rem;
+  }
+
+  .header-languages2 {
+    margin-top: -8rem;
   }
 
   .header-languages3 {
@@ -1453,6 +1457,10 @@ body {
     .vector-line {
       margin: 8rem 4.5rem 4rem 4.5rem;
       width: 90%;
+    }
+
+    .header-languages3 {
+      margin-top: 8.5rem;
     }
 
     form {
