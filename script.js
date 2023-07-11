@@ -30,9 +30,9 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
-    title: '',
-    description: 'Simple Credit Card built with jQuery and Javascript, the User fills the form and see the details update on the Card, If there is any errors, they get notices, and the card is Responsive to different screen sizes..',
-    popupDescription: 'Users should be able to Fill in the form and see the card details update in real time, Receive error messages when the form is submitted: if Any input field is empty, The card number, expiry date, or CVC fields are in the wrong format, View the optimal layout depending on their device\'s screen sizeSee hover, active, and focus states for interactive elements on the page',
+    title: 'Expenses chart component',
+    description: 'Users should be able to View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page',
+    popupDescription: 'View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page, `BONUS`: Use the JSON data file provided to dynamically size the bars on the chart',
     featuredImage: './desktop-images/desktop-preview.jpg',
     popupImg: './desktop-images/desktop-design-1.jpg',
     technologies: ['jQuery', 'Flexbox', 'Javascript', 'Positioning'],
