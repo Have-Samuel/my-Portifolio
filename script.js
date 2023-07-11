@@ -30,6 +30,16 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
+    title: '',
+    description: 'Simple Credit Card built with jQuery and Javascript, the User fills the form and see the details update on the Card, If there is any errors, they get notices, and the card is Responsive to different screen sizes..',
+    popupDescription: 'Users should be able to Fill in the form and see the card details update in real time, Receive error messages when the form is submitted: if Any input field is empty, The card number, expiry date, or CVC fields are in the wrong format, View the optimal layout depending on their device\'s screen sizeSee hover, active, and focus states for interactive elements on the page',
+    featuredImage: './desktop-images/desktop-preview.jpg',
+    popupImg: './desktop-images/desktop-design-1.jpg',
+    technologies: ['jQuery', 'Flexbox', 'Javascript', 'Positioning'],
+    liveLink: 'https://cc-kashata-d11e95.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
+  },
+  {
     title: 'Advice Generator',
     description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size (Responsive), See hover states for all interactive elements on the page, Generate a new piece of advice at random ID by clicking the dice icon.',
     popupDescription: 'View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Generate a new piece of advice by clicking the dice icon. Use the Axios Library to request data from the Advice Slip JSON API. Use async/await to handle the Promise returned by the Axios Library. Display the returned advice slip in the app. Display a loading state when waiting for a response from the API.',
@@ -58,16 +68,6 @@ const projects = [
     technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
     liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
     sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
-  },
-  {
-    title: 'Ping Single Column',
-    description: 'Users should be able to: View the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page, Submit their email address, Receive an error message when the form is submitted empty.',
-    popupDescription: 'Users should be able to: View the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page, Submit their email address, Receive an error message when the form is submitted empty.',
-    featuredImage: './desktop-images/desktop-design.jpg',
-    popupImg: './desktop-images/desktop-design.jpg',
-    technologies: ['Javascript', 'Gitflow', 'Best-Practices'],
-    liveLink: 'https://ping-single-column-nine.vercel.app/',
-    sourceLink: 'https://github.com/Have-Samuel/ping-single-column',
   },
   {
     title: 'Autocomplete Search Box',
