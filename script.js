@@ -30,6 +30,16 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
+    title: 'Expenses chart component',
+    description: 'Users should be able to View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page',
+    popupDescription: 'View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page, `BONUS`: Use the JSON data file provided to dynamically size the bars on the chart',
+    featuredImage: './desktop-images/desktop-preview-v.jpg',
+    popupImg: './desktop-images/desktop-design-f.jpg',
+    technologies: ['Chart.JS', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
+    liveLink: 'https://cc-kashata-d11e95.netlify.app/',
+    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
+  },
+  {
     title: 'Advice Generator',
     description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size (Responsive), See hover states for all interactive elements on the page, Generate a new piece of advice at random ID by clicking the dice icon.',
     popupDescription: 'View the optimal layout for the app depending on their device\'s screen size See hover states for all interactive elements on the page Generate a new piece of advice by clicking the dice icon. Use the Axios Library to request data from the Advice Slip JSON API. Use async/await to handle the Promise returned by the Axios Library. Display the returned advice slip in the app. Display a loading state when waiting for a response from the API.',
@@ -58,16 +68,6 @@ const projects = [
     technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
     liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
     sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
-  },
-  {
-    title: 'Ping Single Column',
-    description: 'Users should be able to: View the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page, Submit their email address, Receive an error message when the form is submitted empty.',
-    popupDescription: 'Users should be able to: View the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page, Submit their email address, Receive an error message when the form is submitted empty.',
-    featuredImage: './desktop-images/desktop-design.jpg',
-    popupImg: './desktop-images/desktop-design.jpg',
-    technologies: ['Javascript', 'Gitflow', 'Best-Practices'],
-    liveLink: 'https://ping-single-column-nine.vercel.app/',
-    sourceLink: 'https://github.com/Have-Samuel/ping-single-column',
   },
   {
     title: 'Autocomplete Search Box',
