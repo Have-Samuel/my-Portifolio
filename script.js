@@ -31,7 +31,7 @@ menuIcon.addEventListener('click', () => {
 const projects = [
   {
     title: 'Expenses chart component',
-    description: 'Users should be able to View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page',
+    description: 'Users should be able to View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page.',
     popupDescription: 'View the bar chart and hover over the individual bars to see the correct amounts for each day, See the current day’s bar highlighted in a different colour to the other bars, View the optimal layout for the content depending on their device’s screen size, See hover states for all interactive elements on the page, `BONUS`: Use the JSON data file provided to dynamically size the bars on the chart',
     featuredImage: './desktop-images/desktop-preview-v.jpg',
     popupImg: './desktop-images/desktop-design-f.jpg',
