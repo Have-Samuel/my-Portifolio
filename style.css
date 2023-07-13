@@ -965,7 +965,7 @@ body {
   }
 
   .headline {
-    background: url('./desktop-images/me.jpg'), rgba(28, 26, 25, 1);
+    background: url('./desktop-images/Illustration-header.png'), rgba(28, 26, 25, 1);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     display: flex;
