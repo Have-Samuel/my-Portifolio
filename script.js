@@ -37,7 +37,7 @@ const projects = [
     popupImg: './desktop-images/desktop-design-f.jpg',
     technologies: ['Chart.JS', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
     liveLink: 'https://cc-kashata-d11e95.netlify.app/',
-    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
+    sourceLink: 'https://have-samuel.github.io/expenses-chart-component/',
   },
   {
     title: 'Advice Generator',
