@@ -208,11 +208,13 @@ body {
 
 .headline {
   padding: 50px 24px 50px 24px;
-  background: url('./desktop-images/nEwbGi-2.jpg'), url('./images/first-pic.png');
-  background-size: cover;
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  /* background-position: 100% 100%; */
+  /* background: url('./desktop-images/nEwbGi-2.jpg'), url('./images/first-pic.png'); */
+  /* background: url('./desktop-images/me.jpg'); */
+  background: url('./images/first-pic.png'), rgba(28, 26, 25, 1);
+  /* background-size: cover; */
+  /* background-position: right bottom, left top; */
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .headline h1 {
