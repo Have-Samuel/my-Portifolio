@@ -965,7 +965,7 @@ body {
   }
 
   .headline {
-    background: url('./desktop-images/Illustration-header.png'), rgba(28, 26, 25, 1);
+    background: url('./desktop-images/Illustration-header.png'), rgb(10, 10, 10);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     display: flex;
@@ -1160,7 +1160,7 @@ body {
   }
 
   .aboutme-section {
-    background: url('./images/Group.png'), #1c1a19;
+    background: url('./images/Group.png'), rgb(10, 10, 10);
     background-position: right top 28%;
     background-repeat: no-repeat;
   }
