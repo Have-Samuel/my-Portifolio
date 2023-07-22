@@ -208,7 +208,9 @@ body {
 
 .headline {
   padding: 120px 24px 120px 24px;
-  background: url("./images/first-pic.png"), rgb(28, 26, 25);
+  /* background: url("./images/first-pic.png"), rgb(28, 26, 25); */
+  background: url('./desktop-images/nEwbGi-2.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
