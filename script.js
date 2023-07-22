@@ -2,10 +2,10 @@
 // NavBar Scolling
 const header = document.querySelector('.header');
 
-let preScrollPos = window.pageXOffset;
+let preScrollPos = window.scrollX;
 
 window.onscroll = () => {
-  const currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.scrollY;
 
   preScrollPos > currentScrollPos ? header.classList.remove('scroll') : header.classList.add('scroll');
 
