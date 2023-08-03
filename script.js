@@ -83,11 +83,11 @@ const projects = [
     title: 'Time tracking dashboard',
     description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Switch between viewing Daily, Weekly, and Monthly stats.',
     popupDescription: 'Users should view the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Switch between viewing Daily, Weekly, and Monthly stats.',
-    featuredImage: './desktop-images/desKtopVersion.png',
-    popupImg: './desktop-images/deSktopVersion.png',
-    technologies: ['Flexbox', 'Html', 'Css', 'Gitflow', 'Javascript'],
-    liveLink: 'https://rating-component1.netlify.app/',
-    sourceLink: 'https://github.com/Have-Samuel/Interactive-rating-component',
+    featuredImage: './desktop-images/desktop-preview-00.jpg',
+    popupImg: './desktop-images/desktop-design-Z.jpg',
+    technologies: ['Json', 'Javascript', 'Best Practices'],
+    liveLink: 'https://have-samuel.github.io/time-tracking-dashboard/',
+    sourceLink: 'https://github.com/Have-Samuel/time-tracking-dashboard',
   },
 ];
 
