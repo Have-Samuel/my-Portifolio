@@ -33,8 +33,8 @@ And the popUps are also responsive depending on different screens.
 - JavaScript
 - Git & GitFlow
 ## Live Demo
-
-[Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
+- [Github Link](https://github.com/Have-Samuel/my-Portifolio)
+- [Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
 
 
 ## Getting Started
