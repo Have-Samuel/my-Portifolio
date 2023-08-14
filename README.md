@@ -59,7 +59,7 @@ git clone git@github.com:Have-Samuel/portfolio1.git
 - [Github](https://github.com/Have-Samuel)
 - [FrontendMentor](https://www.frontendmentor.io/profile/Have-Samuel)
 - [Twitter](https://twitter.com/samhave1)
-- LinkedIn: [Have](https://www.linkedin.com/in/have-samuel/)
+- [LinkedIn](https://www.linkedin.com/in/have-samuel/)
 
 ## 🤝 Contributing
 
