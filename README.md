@@ -14,7 +14,6 @@ And the popUps are also responsive depending on different screens.
 
 # Portfolio: Desktop version 
 
-> This is my fast Portfolio page.
 ![screenshot](./images/Image1.png)
 ![screenshot](./images/Image2.png)
 ![screenshot](./images/Image3.png)
@@ -32,6 +31,7 @@ And the popUps are also responsive depending on different screens.
 - Positioning
 - JavaScript
 - Git & GitFlow
+- 
 ## Live Demo
 - [Github Link](https://github.com/Have-Samuel/my-Portifolio)
 - [Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
