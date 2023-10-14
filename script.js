@@ -37,7 +37,7 @@ const projects = [
     popupImg: './desktop-images/desktop-Design.jpg',
     technologies: ['Best Practices', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/Have-Samuel/section-with-dropdown',
   },
   {
     title: 'Advice Generator',
