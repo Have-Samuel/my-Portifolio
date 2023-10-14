@@ -36,7 +36,7 @@ const projects = [
     featuredImage: './desktop-images/desktop-Preview.jpg',
     popupImg: './desktop-images/desktop-Design.jpg',
     technologies: ['Best Practices', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
-    liveLink: '',
+    liveLink: 'https://subtle-dd.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/section-with-dropdown',
   },
   {
