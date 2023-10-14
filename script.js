@@ -30,7 +30,7 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
-    title: 'Intro section with dropdown navigation',
+    title: 'section with dropdown menu',
     description: 'Users should be able to view the relevant dropdown menus on desktop and mobile when interacting with the navigation links, view the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     popupDescription: 'Users should be able to see all dropdown menus on desktop and mobile when interacting with the navigation links, see the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     featuredImage: './desktop-images/desktop-Preview.jpg',
