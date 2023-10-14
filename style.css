@@ -1510,5 +1510,9 @@ body {
     .form__field.error small {
       visibility: visible;
     }
+
+    .close-icon {
+      margin-right: 1rem;
+    }
   }
 }
