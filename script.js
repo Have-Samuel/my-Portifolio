@@ -35,9 +35,9 @@ const projects = [
     popupDescription: 'Users should be able to see all dropdown menus on desktop and mobile when interacting with the navigation links, see the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     featuredImage: './desktop-images/desktop-Preview.jpg',
     popupImg: './desktop-images/desktop-Design.jpg',
-    technologies: ['Chart.JS', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
-    liveLink: 'https://have-samuel.github.io/expenses-chart-component/',
-    sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
+    technologies: ['Best Practices', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
+    liveLink: '',
+    sourceLink: '',
   },
   {
     title: 'Advice Generator',
