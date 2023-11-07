@@ -30,12 +30,22 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
+    title: 'Age Calculator',
+    description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Calculate the age of a person in years, months, and days by selecting their date of birth from a date picker, Receive an error message if no date of birth is selected, After submitting the form, see a card with the date of birth details.',
+    popupDescription: 'Users should be able to View the layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Calculate the age of a person in years, months, and days by selecting their date of birth from a date picker, Receive an error message if no date of birth is selected, After submitting the form, see a card with the date of birth details.',
+    featuredImage: './desktop-images/desktop-previeW.jpg',
+    popupImg: './desktop-images/desktop-DesIgn.jpg',
+    technologies: ['Javascript', 'HTML', 'CSS', 'Gitflow'],
+    liveLink: 'https://have-samuel.github.io/age-Calculator-App/',
+    sourceLink: 'https://github.com/Have-Samuel/age-Calculator-App',
+  },
+  {
     title: 'section with dropdown menu',
     description: 'Users should be able to view the relevant dropdown menus on desktop and mobile when interacting with the navigation links, view the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     popupDescription: 'Users should be able to see all dropdown menus on desktop and mobile when interacting with the navigation links, see the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     featuredImage: './desktop-images/desktop-Preview.jpg',
     popupImg: './desktop-images/desktop-Design.jpg',
-    technologies: ['Best Practices', 'Javascript', 'HTML', 'CSS', 'Gitflow'],
+    technologies: ['Javascript', 'HTML', 'CSS', 'Gitflow'],
     liveLink: 'https://subtle-dd.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/section-with-dropdown',
   },
@@ -68,16 +78,6 @@ const projects = [
     technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
     liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
     sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
-  },
-  {
-    title: 'Autocomplete Search Box',
-    description: 'Autofill Search Bar for various types of fruit!You may be familiar with autofill from a search engine like Google. When you type anything into Google, a drop down appears with suggestions for what you may want to search for. If you click on one of these suggestions, it populates the search bar with that suggestion.',
-    popupDescription: 'Autofill Search Bar for various types of fruit!You may be familiar with autofill from a search engine like Google. When you type anything into Google, a drop down appears with suggestions for what you may want to search for. If you click on one of these suggestions, it populates the search bar with that suggestion.',
-    featuredImage: './desktop-images/autoFill.png',
-    popupImg: './desktop-images/autofill-2.png',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://fruit-finder123.netlify.app/',
-    sourceLink: 'https://github.com/Have-Samuel/fruitSearch',
   },
   {
     title: 'Time tracking dashboard',
