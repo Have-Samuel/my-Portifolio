@@ -79,6 +79,18 @@ body {
   transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
+.hamburger-menu {
+  width: 35px;
+  height: 25px;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .logo {
   color: white;
   text-decoration: none;
@@ -120,18 +132,6 @@ body {
 .color-caption {
   color: #172b4d;
   font-family: 'Roboto', sans-serif;
-}
-
-.hamburger-menu {
-  width: 35px;
-  height: 25px;
-  position: fixed;
-  top: 30px;
-  right: 50px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .main {
