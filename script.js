@@ -33,7 +33,7 @@ const projects = [
     title: 'Loopstudios Landing Page',
     description: 'Users should be able to view the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page.',
     popupDescription: 'Users should be able to view the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page.',
-    featuredImage: './desktop-images/desktop-preview-00.jpg',
+    featuredImage: './desktop-images/desktOp-preview.jpg',
     popupImg: './desktop-images/desktop-design-Z.jpg',
     technologies: ['Json', 'Javascript', 'Best Practices'],
     liveLink: 'https://have-samuel.github.io/time-tracking-dashboard/',
