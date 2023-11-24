@@ -30,6 +30,16 @@ menuIcon.addEventListener('click', () => {
 // PROJECTS
 const projects = [
   {
+    title: 'Loopstudios Landing Page',
+    description: 'Users should be able to view the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page.',
+    popupDescription: 'Users should be able to view the optimal layout for the site depending on their device\'s screen size, See hover states for all interactive elements on the page.',
+    featuredImage: './desktop-images/desktOp-preview.jpg',
+    popupImg: './desktop-images/desktOp-preview.jpg',
+    technologies: ['html-css', 'Javascript', 'Best Practices', 'Gitflow'],
+    liveLink: 'https://have-samuel.github.io/time-tracking-dashboard/',
+    sourceLink: 'https://github.com/Have-Samuel/time-tracking-dashboard',
+  },
+  {
     title: 'Age Calculator',
     description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Calculate the age of a person in years, months, and days by selecting their date of birth from a date picker, Receive an error message if no date of birth is selected, After submitting the form, see a card with the date of birth details.',
     popupDescription: 'Users should be able to View the layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Calculate the age of a person in years, months, and days by selecting their date of birth from a date picker, Receive an error message if no date of birth is selected, After submitting the form, see a card with the date of birth details.',
@@ -40,7 +50,7 @@ const projects = [
     sourceLink: 'https://github.com/Have-Samuel/age-Calculator-App',
   },
   {
-    title: 'section with dropdown menu',
+    title: 'Section with Dropdown Menu',
     description: 'Users should be able to view the relevant dropdown menus on desktop and mobile when interacting with the navigation links, view the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     popupDescription: 'Users should be able to see all dropdown menus on desktop and mobile when interacting with the navigation links, see the optimal layout for the content depending on their device\'s screen size, and see hover states for all interactive elements on the page.',
     featuredImage: './desktop-images/desktop-Preview.jpg',
@@ -78,16 +88,6 @@ const projects = [
     technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
     liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
     sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
-  },
-  {
-    title: 'Time tracking dashboard',
-    description: 'Users should be able to View the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Switch between viewing Daily, Weekly, and Monthly stats.',
-    popupDescription: 'Users should view the optimal layout for the app depending on their device\'s screen size, See hover states for all interactive elements on the page, Switch between viewing Daily, Weekly, and Monthly stats.',
-    featuredImage: './desktop-images/desktop-preview-00.jpg',
-    popupImg: './desktop-images/desktop-design-Z.jpg',
-    technologies: ['Json', 'Javascript', 'Best Practices'],
-    liveLink: 'https://have-samuel.github.io/time-tracking-dashboard/',
-    sourceLink: 'https://github.com/Have-Samuel/time-tracking-dashboard',
   },
 ];
 
