@@ -253,7 +253,15 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-column-start: auto;
   gap: 1.9rem;
-  padding: 1rem 9.44rem 7.5rem 0;
+  padding: 1.5rem 9.44rem 7.5rem 0;
+}
+
+.mentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -1.3rem 0;
 }
 
 .unit-item:hover {
