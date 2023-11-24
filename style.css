@@ -256,14 +256,6 @@ body {
   padding: 1.5rem 9.44rem 7.5rem 0;
 }
 
-.mentor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: -1.3rem 0;
-}
-
 .unit-item:hover {
   transform: scale(1.1);
 }
