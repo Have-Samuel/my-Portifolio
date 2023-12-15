@@ -36,7 +36,7 @@ const projects = [
     featuredImage: './desktop-images/desktOp-preview.jpg',
     popupImg: './desktop-images/desktOp-preview.jpg',
     technologies: ['html-css', 'Javascript', 'Best Practices', 'Gitflow'],
-    liveLink: 'https://have-samuel.github.io/time-tracking-dashboard/',
+    liveLink: 'https://have-samuel.github.io/loopstudio-landing-page/',
     sourceLink: 'https://github.com/Have-Samuel/time-tracking-dashboard',
   },
   {
