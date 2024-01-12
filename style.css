@@ -1336,8 +1336,12 @@ body {
     gap: 4rem;
   }
 
-  .contact-section ul:hover,
-  .contact-section ul:active {
+  .contact-section ul li {
+    list-style: none;
+  }
+
+  .contact-section ul li:hover,
+  .contact-section ul li:active {
     transform: scale(1.1);
   }
 
