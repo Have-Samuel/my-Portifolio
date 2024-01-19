@@ -775,6 +775,11 @@ body {
   cursor: pointer;
 }
 
+.aboutme-skills-item:hover {
+  color: #ff6b00;
+
+}
+
 .contact-section__form p {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
