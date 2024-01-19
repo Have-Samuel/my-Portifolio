@@ -896,6 +896,22 @@ body {
   visibility: visible;
 }
 
+.items li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  height: 24px;
+  transition-property: margin;
+  transition-duration: 200ms;
+  display: flex;
+}
+
+.items li a:hover,
+.items li a:active {
+  transform: scale(1.1);
+}
+
 @media (min-width: 786px) {
   .hamburger-menu {
     display: none;
