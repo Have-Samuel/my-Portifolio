@@ -80,14 +80,14 @@ const projects = [
     sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
   },
   {
-    title: 'Portfolio Website',
-    description: 'Basic Portfolio Website that built with HTML, CSS and JavaScript, and shows two pages as a sample if more needed.',
-    popupDescription: 'This a basic Portfolio Website that built with HTML, CSS and JavaScript, and shows two pages as a sample for the whole website to become functional.',
-    featuredImage: './desktop-images/slider-1.png',
-    popupImg: './desktop-images/slider-1.png',
-    technologies: ['Javascript', 'Flexbox', 'Html', 'Css'],
-    liveLink: 'https://have-samuel.github.io/PortfolioCsT1/',
-    sourceLink: 'https://github.com/Have-Samuel/PortfolioCsT1',
+    title: 'Url-shortening-api-Landing-Page',
+    description: 'Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if - The input field is empty, The input URL is not valid',
+    popupDescription: 'The user should be able to - View the optimal layout for the site depending on their device\'s screen size Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if: The input field is empty.',
+    featuredImage: './desktop-images/desktop-wider.jpg',
+    popupImg: './desktop-images/desktop-wider.jpg',
+    technologies: ['Javascript', 'APIs', 'Flexbox', 'Html', 'Css'],
+    liveLink: 'https://have-samuel.github.io/url-shortening-api-landing-Page/',
+    sourceLink: 'https://github.com/Have-Samuel/url-shortening-api-landing-Page',
   },
 ];
 
