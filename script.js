@@ -86,7 +86,7 @@ const projects = [
     featuredImage: './desktop-images/desktop-wider.jpg',
     popupImg: './desktop-images/desktop-wider.jpg',
     technologies: ['Javascript', 'APIs', 'Flexbox', 'Html', 'Css'],
-    liveLink: 'https://have-samuel.github.io/url-shortening-api-landing-Page/',
+    liveLink: 'https://url-shortening-api-landing-page-delta.vercel.app/',
     sourceLink: 'https://github.com/Have-Samuel/url-shortening-api-landing-Page',
   },
 ];
