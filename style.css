@@ -77,7 +77,6 @@ body {
   right: -250vh;
   display: flex;
   flex-direction: column;
-  /* margin: 4rem 1rem 1rem 0; */
   transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
