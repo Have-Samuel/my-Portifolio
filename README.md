@@ -1,10 +1,11 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 My Portfolio is responsive to different sizes of devices, with some of my recent works.
 And the popUps are also responsive depending on different screens.
 
-# Portfolio: Mobile version 
+# Portfolio: Mobile version
+
 ![screenshot](./images/p-mob1.png)
 ![screenshot](./images/p-mob2.png)
 ![screenshot](./images/p-mob3.png)
@@ -12,14 +13,13 @@ And the popUps are also responsive depending on different screens.
 ![screenshot](./images/p-mob5.png)
 ![screenshot](./images/p-mob6.png)
 
-# Portfolio: Desktop version 
+# Portfolio: Desktop version
 
 ![screenshot](./images/Image1.png)
 ![screenshot](./images/Image2.png)
 ![screenshot](./images/Image3.png)
 ![screenshot](./images/Image4.png)
 ![screenshot](./images/Image5.png)
-
 
 ## Built With
 
@@ -31,7 +31,9 @@ And the popUps are also responsive depending on different screens.
 - Positioning
 - JavaScript
 - Git & GitFlow
+
 ## Live Demo
+
 - [Github Link](https://github.com/Have-Samuel/my-Portifolio)
 - [Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
 
@@ -48,10 +50,13 @@ Have Git  installed correctly.
 open the terminal and install the copy of the repository.
 
 ### Install
+
 Use the commad below to get a copy:
+
 ```
 git clone git@github.com:Have-Samuel/portfolio1.git
 ```
+
 ## Authors
 
 👤 **Have-Samuel**
