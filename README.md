@@ -1,4 +1,3 @@
-
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 My Portfolio is responsive to different sizes of devices, with some of my recent works.
