@@ -52,9 +52,7 @@ open the terminal and install the copy of the repository.
 
 Use the commad below to get a copy:
 
-```
-git clone git@github.com:Have-Samuel/portfolio1.git
-```
+git clone <git@github.com>:Have-Samuel/portfolio1.git
 
 ## Authors
 
