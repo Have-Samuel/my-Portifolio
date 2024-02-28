@@ -35,15 +35,16 @@ And the popUps are also responsive depending on different screens.
 - [Github Link](https://github.com/Have-Samuel/my-Portifolio)
 - [Live Link](https://my-portifolio-git-dev-have-samuel.vercel.app/)
 
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 Have Git  installed correctly.
 
 ### setup
+
 open the terminal and install the copy of the repository.
 
 ### Install
