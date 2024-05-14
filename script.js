@@ -79,6 +79,16 @@ const projects = [
     liveLink: 'https://cc-kashata-d11e95.netlify.app/',
     sourceLink: 'https://github.com/Have-Samuel/interactive-Card-Details',
   },
+  {
+    title: 'Url-shortening-api-Landing-Page',
+    description: 'Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if - The input field is empty, The input URL is not valid',
+    popupDescription: 'The user should be able to - View the optimal layout for the site depending on their device\'s screen size Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if: The input field is empty.',
+    featuredImage: './desktop-images/desktop-wider.jpg',
+    popupImg: './desktop-images/desktop-wider.jpg',
+    technologies: ['Javascript', 'APIs', 'Flexbox', 'Html', 'Css'],
+    liveLink: 'https://url-shortening-api-landing-page-delta.vercel.app/',
+    sourceLink: 'https://github.com/Have-Samuel/url-shortening-api-landing-Page',
+  }
 ];
 
 // Technology list for the page
