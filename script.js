@@ -1,4 +1,4 @@
-  /* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-expressions */
 // NavBar Scolling
 const header = document.querySelector('.header');
 
@@ -88,7 +88,7 @@ const projects = [
     technologies: ['Javascript', 'APIs', 'Flexbox', 'Html', 'Css'],
     liveLink: 'https://url-shortening-api-landing-page-delta.vercel.app/',
     sourceLink: 'https://github.com/Have-Samuel/url-shortening-api-landing-Page',
-  }
+  },
 ];
 
 // Technology list for the page
